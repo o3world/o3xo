@@ -6,17 +6,27 @@
     'use strict';
 
     /**
+     * Calculates the relative path prefix based on current page depth
+     * @returns {string} Relative path prefix (e.g., '', '../', '../../')
+     */
+    function getRelativePrefix() {
+        const path = window.location.pathname;
+        const cleanPath = path.replace(/\/(index\.html)?$/, '');
+        const segments = cleanPath.split('/').filter(seg => seg.length > 0);
+
+        if (segments.length === 0) {
+            return '';
+        }
+
+        return '../'.repeat(segments.length);
+    }
+
+    /**
      * Determines the correct path to includes directory based on current page location
      * @returns {string} Path to includes directory
      */
     function getIncludesPath() {
-        const path = window.location.pathname;
-        // If we're in a subdirectory (e.g., /about/, /contact/), use relative path
-        if (path !== '/' && path !== '/index.html' && path.includes('/')) {
-            return '../includes/';
-        }
-        // Otherwise we're at root
-        return 'includes/';
+        return getRelativePrefix() + 'includes/';
     }
 
     /**
@@ -39,7 +49,10 @@
                 return response.text();
             })
             .then(html => {
-                target.innerHTML = html;
+                // Replace root-absolute asset paths with relative paths
+                const relativePrefix = getRelativePrefix();
+                const processedHtml = html.replace(/url\(['"]?\/assets\//g, `url('${relativePrefix}assets/`);
+                target.innerHTML = processedHtml;
             })
             .catch(error => {
                 console.error(`Error loading component ${componentPath}:`, error);

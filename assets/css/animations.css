@@ -2,86 +2,88 @@
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(15px);
+        transform: translateZ(0) translateY(15px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateZ(0) translateY(0);
     }
 }
 
 @keyframes slideInLeft {
     from {
         opacity: 0;
-        transform: translateX(-30px);
+        transform: translateZ(0) translateX(-30px);
     }
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateZ(0) translateX(0);
     }
 }
 
 @keyframes slideInRight {
     from {
         opacity: 0;
-        transform: translateX(30px);
+        transform: translateZ(0) translateX(30px);
     }
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateZ(0) translateX(0);
     }
 }
 
 /* Initial hidden state for animated elements */
 .animate-on-scroll {
     opacity: 0;
+    transform: translateZ(0);
+    will-change: transform, opacity;
 }
 
 /* Animated states */
 .animate-on-scroll.fade-in {
-    animation: fadeIn 0.4s ease-out forwards;
+    animation: fadeIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 .animate-on-scroll.slide-in-left {
-    animation: slideInLeft 0.4s ease-out forwards;
+    animation: slideInLeft 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 .animate-on-scroll.slide-in-right {
-    animation: slideInRight 0.4s ease-out forwards;
+    animation: slideInRight 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 /* Stagger delays */
-.stagger-1 { animation-delay: 0.04s; }
-.stagger-2 { animation-delay: 0.08s; }
-.stagger-3 { animation-delay: 0.12s; }
-.stagger-4 { animation-delay: 0.16s; }
-.stagger-5 { animation-delay: 0.2s; }
-.stagger-6 { animation-delay: 0.24s; }
+.stagger-1 { animation-delay: 0.08s; }
+.stagger-2 { animation-delay: 0.12s; }
+.stagger-3 { animation-delay: 0.16s; }
+.stagger-4 { animation-delay: 0.2s; }
+.stagger-5 { animation-delay: 0.24s; }
+.stagger-6 { animation-delay: 0.28s; }
 
 /* Hero load animations */
 .hero-title {
-    animation: fadeIn 0.5s ease-out 0.1s forwards;
+    animation: fadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.1s forwards;
     opacity: 0;
 }
 
 .hero-text {
-    animation: fadeIn 0.5s ease-out 0.25s forwards;
+    animation: fadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.25s forwards;
     opacity: 0;
 }
 
 /* Hero stats card animations - sequential with left to right movement */
 .hero-stats article:nth-child(1) {
-    animation: slideInLeft 0.4s ease-out 0.4s forwards;
+    animation: slideInLeft 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.4s forwards;
     opacity: 0;
 }
 
 .hero-stats article:nth-child(2) {
-    animation: slideInLeft 0.4s ease-out 0.52s forwards;
+    animation: slideInLeft 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.52s forwards;
     opacity: 0;
 }
 
 .hero-stats article:nth-child(3) {
-    animation: slideInLeft 0.4s ease-out 0.64s forwards;
+    animation: slideInLeft 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.64s forwards;
     opacity: 0;
 }
 
@@ -115,6 +117,7 @@
 
     .animate-on-scroll {
         opacity: 1;
+        transform: none;
     }
 
     .hero-title,

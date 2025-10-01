@@ -11,29 +11,32 @@
 
     // Intersection Observer configuration
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.2,
+        rootMargin: '0px 0px -20% 0px'
     };
 
     // Create observer
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add(entry.target.dataset.animation);
+                const animationClass = entry.target.dataset.animation;
+                if (animationClass) {
+                    entry.target.classList.add(animationClass);
+                }
                 observer.unobserve(entry.target); // Only animate once
             }
         });
     }, observerOptions);
 
     // Observe all elements with animation classes
+    const animationClasses = ['fade-in', 'slide-in-left', 'slide-in-right'];
+
     document.querySelectorAll('.animate-on-scroll').forEach((el) => {
-        // Store the animation type
-        if (el.classList.contains('fade-in')) {
-            el.dataset.animation = 'fade-in';
-        } else if (el.classList.contains('slide-in-left')) {
-            el.dataset.animation = 'slide-in-left';
-        } else if (el.classList.contains('slide-in-right')) {
-            el.dataset.animation = 'slide-in-right';
+        const appliedClass = animationClasses.find(cls => el.classList.contains(cls));
+
+        if (appliedClass) {
+            el.dataset.animation = appliedClass;
+            el.classList.remove(appliedClass);
         }
 
         observer.observe(el);

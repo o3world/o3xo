@@ -163,7 +163,9 @@ Defined in [assets/css/main.css](assets/css/main.css):
 
 ### Local Testing
 
-Open `index.html` directly in browser or use a local server:
+**Important:** You must use a local server to test the site. Opening `index.html` directly in your browser (`file://`) will fail because the component loader uses `fetch()`, which modern browsers block for local files due to CORS restrictions.
+
+Use any of these local server options:
 
 ```bash
 # Python
@@ -175,6 +177,8 @@ npx http-server
 # PHP
 php -S localhost:8000
 ```
+
+Then visit `http://localhost:8000` in your browser.
 
 ### Deployment
 
