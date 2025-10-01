@@ -1,0 +1,126 @@
+/* Animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Initial hidden state for animated elements */
+.animate-on-scroll {
+    opacity: 0;
+}
+
+/* Animated states */
+.animate-on-scroll.fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+.animate-on-scroll.slide-in-left {
+    animation: slideInLeft 0.4s ease-out forwards;
+}
+
+.animate-on-scroll.slide-in-right {
+    animation: slideInRight 0.4s ease-out forwards;
+}
+
+/* Stagger delays */
+.stagger-1 { animation-delay: 0.04s; }
+.stagger-2 { animation-delay: 0.08s; }
+.stagger-3 { animation-delay: 0.12s; }
+.stagger-4 { animation-delay: 0.16s; }
+.stagger-5 { animation-delay: 0.2s; }
+.stagger-6 { animation-delay: 0.24s; }
+
+/* Hero load animations */
+.hero-title {
+    animation: fadeIn 0.5s ease-out 0.1s forwards;
+    opacity: 0;
+}
+
+.hero-text {
+    animation: fadeIn 0.5s ease-out 0.25s forwards;
+    opacity: 0;
+}
+
+/* Hero stats card animations - sequential with left to right movement */
+.hero-stats article:nth-child(1) {
+    animation: slideInLeft 0.4s ease-out 0.4s forwards;
+    opacity: 0;
+}
+
+.hero-stats article:nth-child(2) {
+    animation: slideInLeft 0.4s ease-out 0.52s forwards;
+    opacity: 0;
+}
+
+.hero-stats article:nth-child(3) {
+    animation: slideInLeft 0.4s ease-out 0.64s forwards;
+    opacity: 0;
+}
+
+/* Consistent hover effects */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.02);
+}
+
+/* Respect user preferences for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .animate-on-scroll {
+        opacity: 1;
+    }
+
+    .hero-title,
+    .hero-text,
+    .hero-stats article {
+        opacity: 1;
+        animation: none;
+    }
+}
