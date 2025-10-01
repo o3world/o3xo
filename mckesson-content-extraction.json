@@ -1,0 +1,149 @@
+{
+  "page_title": "McKesson - Strategic Data Insight",
+  "hero_section": {
+    "heading": "Enter AI's frontier where potential meets performance",
+    "subheading": "The pressure to implement AI is real, but knowing where to start shouldn't keep you up at night. O3XO takes you beyond AI hype into clear results, where we help leaders prove value quickly and build industry‑centric capabilities that propel you forward.",
+    "background_image": "assets/images/_assets/v11/0aad7f20626c100397b89c85d5229449d050c32c.png"
+  },
+  "key_statistics": [
+    {
+      "number": "50%+",
+      "description": "average efficiency gain",
+      "background": "assets/images/_assets/v11/1efbd36937f978cc6e1e2140fef339da15c6e122.png"
+    },
+    {
+      "number": "10x",
+      "description": "faster information access",
+      "background": "assets/images/_assets/v11/1efbd36937f978cc6e1e2140fef339da15c6e122.png"
+    },
+    {
+      "number": "<90 days",
+      "description": "average time to ROI",
+      "background": "assets/images/_assets/v11/1efbd36937f978cc6e1e2140fef339da15c6e122.png"
+    }
+  ],
+  "strategy_section": {
+    "heading": "Your AI strategy + execution-partner",
+    "intro": "O3XO takes executives, technology and innovation leaders from boardroom pressure to competitive advantage in less than 90 days. We combine O3's 20+ years of digital transformation expertise with industry‑specific AI capabilities to deliver human‑looped solutions that enhance expertise, prove ROI fast, and scale-responsibly.",
+    "features": [
+      {
+        "title": "Identify high‑impact use cases",
+        "description": "Industry‑specific opportunities, not generic AI applications"
+      },
+      {
+        "title": "Prove value in less than 90 days",
+        "description": "Quickly develop solutions that deliver and key KPIs"
+      },
+      {
+        "title": "Train and empower teams",
+        "description": "Solutions that enhance expertise with proper support"
+      },
+      {
+        "title": "Scale responsibly",
+        "description": "From pilots to enterprise platforms with built‑in governance"
+      }
+    ]
+  },
+  "industries_section": {
+    "heading": "AI expertise tailored to your industry",
+    "subheading": "We help data‑rich, complex businesses like yours use AI in a meaningful, measurable way.",
+    "background_image": "assets/images/_assets/v11/b7b53f3a52e1153b3a340a193e14e8405eddf760.png",
+    "industries": [
+      {
+        "name": "Construction",
+        "description": "Faster estimates, better profit predictions, smoother project delivery"
+      },
+      {
+        "name": "Industrial services",
+        "description": "Automate tedious tasks, improve operations, scale expertise in real time"
+      },
+      {
+        "name": "Pharma + life sciences",
+        "description": "More leads, greater efficiency in R&D, compliance, and commercialization"
+      },
+      {
+        "name": "Real estate",
+        "description": "Early tenant identification, streamlined management, accounting efficiency"
+      },
+      {
+        "name": "Finance + insurance",
+        "description": "Stronger customer support, smarter underwriting, advisor amplification"
+      },
+      {
+        "name": "Technology",
+        "description": "Product‑specific AI, faster lead generation, automated customer support"
+      }
+    ]
+  },
+  "case_studies": {
+    "heading": "Impact in action",
+    "subheading": "See how we help supercharge teams, create business opportunities, and streamline operations.",
+    "studies": [
+      {
+        "client": "Buffalo Construction",
+        "title": "Automating closeout",
+        "description": "Discover how AI‑powered closeouts saved weeks on every project",
+        "stat_number": "2+",
+        "stat_description": "Weeks saved on closeout process",
+        "image": "assets/images/_assets/v11/b73f54238f27003a55847041745c328aa273b1cc.png"
+      },
+      {
+        "client": "Tyndale",
+        "title": "AI‑driven product insight",
+        "description": "See how we turned years of expert content into new client connections",
+        "stat_number": "20+",
+        "stat_description": "New contacts per week",
+        "image": "assets/images/_assets/v11/e1897b30882eea5b49d6f40c508ca479dcd0b130.png"
+      },
+      {
+        "client": "McKesson Compile",
+        "title": "AI strategy acceleration",
+        "description": "See how we identified dozens of use cases in our rapid workshop process",
+        "stat_number": "<3",
+        "stat_description": "Weeks from strategy to prioritized AI roadmap",
+        "image": "assets/images/_assets/v11/c925d2ae431e6087d8dce2db3aec69eaf7bad2e1.png"
+      }
+    ]
+  },
+  "testimonial_section": {
+    "label": "Trusted by leading organizations",
+    "quote": "I was expecting the ROI for our project next year, but we are going to immediately see that value now.",
+    "attribution": "Brett Norton, President, Buffalo Construction, Inc",
+    "background_image": "assets/images/_assets/v11/0aad7f20626c100397b89c85d5229449d050c32c.png"
+  },
+  "insights_section": {
+    "heading": "Insights from the next frontier",
+    "articles": [
+      {
+        "title": "The build vs. buy dilemma: Making smart AI investment choices",
+        "image": "assets/images/_assets/v11/05c87c35bdc072d97c50c27804f4c156baffc14e.png"
+      },
+      {
+        "title": "The AI hierarchy of needs: a strategic framework for businesses",
+        "image": "assets/images/_assets/v11/4a1649202df08c0b7d08a73a3cd6f1052a7ca277.png",
+        "link": "https://www.o3world.com/perspectives/the-ai-hierarchy-of-needs-a-strategic-framework-for-businesses/"
+      },
+      {
+        "title": "Beyond efficiency: The real ROI of AI—and how to measure it",
+        "image": "assets/images/_assets/v11/f750f34c486572890a752692f7d4e4ba8ab87934.png"
+      }
+    ]
+  },
+  "conference_section": {
+    "heading": "Thought leaders in AI innovation",
+    "subheading": "1682: the business of innovation conference",
+    "description": "The 1682 Conference brings together leaders, innovators, and visionaries to explore the power of AI in shaping profit and process.",
+    "cta": "Learn more about 1682",
+    "background_image": "assets/images/_assets/v11/edbd365f5063c6c56ab161b5ac1fc6376a6eea1d.png"
+  },
+  "cta_section": {
+    "heading": "Stop guessing, start discovering",
+    "subheading": "Identify the AI use cases that matter most for your business.",
+    "cta_text": "Take the AI assessment",
+    "background_image": "assets/images/_assets/v11/7a3ee15f08f196610d718bc51d65af17bff3ccee.png"
+  },
+  "footer": {
+    "tagline": "Transforming businesses through intelligent AI implementation.",
+    "copyright": "© 2025 O3 World, LLC. All rights reserved."
+  }
+}
