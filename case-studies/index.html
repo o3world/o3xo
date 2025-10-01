@@ -41,21 +41,30 @@
                     </svg>
                 </a>
                 <nav aria-label="Main navigation">
-                    <ul class="flex items-center gap-8">
+                    <ul class="flex flex-col gap-4 text-white sm:flex-row sm:items-start sm:gap-8">
                         <li>
-                            <a href="/case-studies/" class="text-white hover:text-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black rounded px-2 py-1">
-                                Case studies
-                            </a>
+                            <a href="/case-studies/" class="font-semibold hover:text-gray-300">Case studies</a>
+                            <ul class="mt-2 space-y-1 text-sm text-gray-300">
+                                <li><a href="#case-study-buffalo" class="hover:text-white">Buffalo Construction</a></li>
+                                <li><a href="#case-study-tyndale" class="hover:text-white">Tyndale</a></li>
+                                <li><a href="#case-study-mckesson" class="hover:text-white">McKesson Compile</a></li>
+                                <li><a href="#case-study-sti" class="hover:text-white">STI Firestop</a></li>
+                                <li><a href="#case-study-ehazard" class="hover:text-white">e-Hazard</a></li>
+                                <li><a href="#case-study-global-tech" class="hover:text-white">Global tech firm</a></li>
+                                <li><a href="#case-study-american-family" class="hover:text-white">American Family Insurance</a></li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="/about/" class="text-white hover:text-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black rounded px-2 py-1">
-                                About
-                            </a>
+                            <a href="/about/" class="font-semibold hover:text-gray-300">About</a>
+                            <ul class="mt-2 space-y-1 text-sm text-gray-300">
+                                <li><a href="/about/#about-story" class="hover:text-white">Our story</a></li>
+                                <li><a href="/about/#about-why" class="hover:text-white">Why O3XO</a></li>
+                                <li><a href="/about/#about-principles" class="hover:text-white">Guiding principles</a></li>
+                                <li><a href="/about/#about-leadership" class="hover:text-white">Leadership</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="/contact/" class="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-black">
-                                Contact
-                            </a>
+                        <li class="sm:self-center">
+                            <a href="/contact/" class="inline-flex items-center justify-center rounded-lg bg-red-600 px-6 py-2 font-semibold text-white hover:bg-red-700">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -83,7 +92,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Buffalo Construction -->
                     <a href="/case-studies/buffalo-construction/" class="block">
-                        <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-on-scroll fade-in">
+                    <article id="case-study-buffalo" class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-on-scroll fade-in">
                         <div class="h-64 bg-gray-300 bg-cover bg-center" style="background-image: url('../assets/images/buffalo-case-study.png');"></div>
                         <div class="p-6 space-y-4">
                             <div class="flex items-center justify-between border-b border-gray-200 pb-2">
@@ -104,7 +113,7 @@
 
                     <!-- Tyndale -->
                     <a href="/case-studies/tyndale/" class="block">
-                        <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-on-scroll fade-in">
+                    <article id="case-study-tyndale" class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-on-scroll fade-in">
                         <div class="h-64 bg-gray-300 bg-cover bg-center" style="background-image: url('../assets/images/tyndale-case-study.png');"></div>
                         <div class="p-6 space-y-4">
                             <div class="flex items-center justify-between border-b border-gray-200 pb-2">
@@ -125,7 +134,7 @@
 
                     <!-- McKesson Compile -->
                     <a href="/case-studies/mckesson/" class="block">
-                        <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-on-scroll fade-in">
+                    <article id="case-study-mckesson" class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-on-scroll fade-in">
                         <div class="h-64 bg-gray-300 bg-cover bg-center" style="background-image: url('../assets/images/mckesson-case-study.png');"></div>
                         <div class="p-6 space-y-4">
                             <div class="flex items-center justify-between border-b border-gray-200 pb-2">
@@ -146,7 +155,7 @@
 
                     <!-- STI Firestop -->
                     <a href="/case-studies/sti-firestop/" class="block">
-                        <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-on-scroll fade-in">
+                        <article id="case-study-sti" class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-on-scroll fade-in">
                         <div class="h-64 bg-gray-300 bg-cover bg-center" style="background-image: url('../assets/images/sti-firestop-case-study.png');"></div>
                         <div class="p-6 space-y-4">
                             <div class="flex items-center justify-between border-b border-gray-200 pb-2">
@@ -167,7 +176,7 @@
 
                     <!-- E-Hazard -->
                     <a href="/case-studies/e-hazard/" class="block">
-                        <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-on-scroll fade-in">
+                        <article id="case-study-ehazard" class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-on-scroll fade-in">
                         <div class="h-64 bg-gray-300 bg-cover bg-center" style="background-image: url('../assets/images/ehazard-case-study.png');"></div>
                         <div class="p-6 space-y-4">
                             <div class="flex items-center justify-between border-b border-gray-200 pb-2">
@@ -188,7 +197,7 @@
 
                     <!-- Global Tech Firm -->
                     <a href="/case-studies/global-tech/" class="block">
-                        <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-on-scroll fade-in">
+                        <article id="case-study-global-tech" class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-on-scroll fade-in">
                         <div class="h-64 bg-gray-300 bg-cover bg-center" style="background-image: url('../assets/images/global-tech-case-study.png');"></div>
                         <div class="p-6 space-y-4">
                             <div class="flex items-center justify-between border-b border-gray-200 pb-2">
@@ -209,7 +218,7 @@
 
                     <!-- American Family Insurance -->
                     <a href="/case-studies/american-family/" class="block">
-                        <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-on-scroll fade-in">
+                        <article id="case-study-american-family" class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 animate-on-scroll fade-in">
                         <div class="h-64 bg-gray-300 bg-cover bg-center" style="background-image: url('../assets/images/american-family-case-study.png');"></div>
                         <div class="p-6 space-y-4">
                             <div class="flex items-center justify-between border-b border-gray-200 pb-2">
@@ -277,6 +286,7 @@
 
     <!-- Scripts -->
     <script src="../assets/js/component-loader.js"></script>
+    <script src="../assets/js/navigation.js"></script>
     <script src="../assets/js/animations.js"></script>
 </body>
 </html>

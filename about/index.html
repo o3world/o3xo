@@ -41,21 +41,29 @@
                     </svg>
                 </a>
                 <nav aria-label="Main navigation">
-                    <ul class="flex items-center gap-8">
+                    <ul class="flex flex-col gap-4 text-white sm:flex-row sm:items-start sm:gap-8">
                         <li>
-                            <a href="/case-studies/" class="text-white hover:text-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black rounded px-2 py-1">
-                                Case studies
-                            </a>
+                            <a href="/case-studies/" class="font-semibold hover:text-gray-300">Case studies</a>
+                            <ul class="mt-2 space-y-1 text-sm text-gray-300">
+                                <li><a href="/case-studies/#case-study-buffalo" class="hover:text-white">Buffalo Construction</a></li>
+                                <li><a href="/case-studies/#case-study-tyndale" class="hover:text-white">Tyndale</a></li>
+                                <li><a href="/case-studies/#case-study-mckesson" class="hover:text-white">McKesson Compile</a></li>
+                                <li><a href="/case-studies/#case-study-sti" class="hover:text-white">STI Firestop</a></li>
+                                <li><a href="/case-studies/#case-study-ehazard" class="hover:text-white">e-Hazard</a></li>
+                                <li><a href="/case-studies/#case-study-global-tech" class="hover:text-white">Global tech firm</a></li>
+                            </ul>
                         </li>
                         <li>
-                            <a href="/about/" class="text-white hover:text-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black rounded px-2 py-1">
-                                About
-                            </a>
+                            <a href="/about/" class="font-semibold hover:text-gray-300">About</a>
+                            <ul class="mt-2 space-y-1 text-sm text-gray-300">
+                                <li><a href="#about-story" class="hover:text-white">Our story</a></li>
+                                <li><a href="#about-why" class="hover:text-white">Why O3XO</a></li>
+                                <li><a href="#about-principles" class="hover:text-white">Guiding principles</a></li>
+                                <li><a href="#about-leadership" class="hover:text-white">Leadership</a></li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="/contact/" class="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-black">
-                                Contact
-                            </a>
+                        <li class="sm:self-center">
+                            <a href="/contact/" class="inline-flex items-center justify-center rounded-lg bg-red-600 px-6 py-2 font-semibold text-white hover:bg-red-700">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -65,7 +73,7 @@
 
     <main id="main-content">
         <!-- Hero Section -->
-        <section class="relative w-full pt-32">
+        <section id="about-overview" class="relative w-full pt-32">
             <div class="absolute top-0 left-0 right-0 bg-cover bg-center bg-no-repeat" style="background-image: url('../assets/images/header-background.png'); height: calc(100% + 40px);">
                 <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/60"></div>
             </div>
@@ -78,7 +86,7 @@
         </section>
 
         <!-- Reaching Beyond Section -->
-        <section class="mt-12 py-12 bg-white">
+        <section id="about-story" class="mt-12 py-12 bg-white">
             <div class="max-w-7xl mx-auto px-4 md:px-6">
                 <div class="max-w-6xl">
                     <h2 class="text-foreground mb-8 text-3xl md:text-4xl font-bold animate-on-scroll fade-in">Reaching beyond the familiar</h2>
@@ -91,7 +99,7 @@
         </section>
 
         <!-- Why O3XO Section -->
-        <section class="py-12 relative" style="background-image: url('../assets/images/industries-bg.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <section id="about-why" class="py-12 relative" style="background-image: url('../assets/images/industries-bg.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div class="absolute inset-0 bg-black/40"></div>
             <div class="relative z-10 max-w-7xl mx-auto px-6">
                 <div class="mb-12 animate-on-scroll fade-in">
@@ -160,7 +168,7 @@
         </section>
 
         <!-- Guiding Principles Section -->
-        <section class="py-12 bg-white">
+        <section id="about-principles" class="py-12 bg-white">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="mb-12 animate-on-scroll fade-in">
                     <h2 class="text-gray-900 mb-6 text-3xl md:text-4xl font-bold">Our guiding principles for responsible AI</h2>
@@ -217,7 +225,7 @@
         </section>
 
         <!-- Leadership Team Section -->
-        <section class="py-12 bg-black">
+        <section id="about-leadership" class="py-12 bg-black">
             <div class="max-w-7xl mx-auto px-6">
                 <h2 class="text-white mb-12 text-3xl md:text-4xl font-bold animate-on-scroll fade-in">Leading with years of AI expertise</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
@@ -319,6 +327,7 @@
 
     <!-- Scripts -->
     <script src="../assets/js/component-loader.js"></script>
+    <script src="../assets/js/navigation.js"></script>
     <script src="../assets/js/animations.js"></script>
 </body>
 </html>

@@ -53,6 +53,11 @@
                 const relativePrefix = getRelativePrefix();
                 const processedHtml = html.replace(/url\(['"]?\/assets\//g, `url('${relativePrefix}assets/`);
                 target.innerHTML = processedHtml;
+
+                const componentName = target.dataset.component || componentPath;
+                const detail = { name: componentName, element: target };
+                target.dispatchEvent(new CustomEvent('component:loaded', { detail }));
+                document.dispatchEvent(new CustomEvent('component:loaded', { detail }));
             })
             .catch(error => {
                 console.error(`Error loading component ${componentPath}:`, error);

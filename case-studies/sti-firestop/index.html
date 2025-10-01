@@ -3,261 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STI Firestop: Process Automation | O3XO Case Study</title>
-    <meta name="description" content="Discover how STI Firestop achieved 60% efficiency gains with O3XO's AI solutions.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#1a1a1a',
-                        secondary: '#FFC92B',
-                        background: '#FFFFFF',
-                        foreground: '#1a1a1a',
-                        muted: '#666666',
-                        card: '#F8F8F8',
-                        sidebar: '#212427',
-                        destructive: '#F16822',
-                    },
-                    borderRadius: {
-                        'button': '8px',
-                        'card': '12px',
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        .animate-on-scroll.fade-in {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    <title>STI Firestop Case Study | O3XO</title>
+    <meta name="description" content="Learn how STI Firestop reduced product search time to &lt;5 seconds with O3XO's AI-powered search revolution.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://o3xo.com/case-studies/sti-firestop/">
+    <meta property="og:title" content="STI Firestop Case Study | O3XO">
+    <meta property="og:description" content="Learn how STI Firestop revolutionized product search with AI.">
+    <meta property="og:image" content="https://o3xo.com/assets/images/case-studies/sti-firestop.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://o3xo.com/case-studies/sti-firestop/">
+    <meta property="twitter:title" content="STI Firestop Case Study | O3XO">
+    <meta property="twitter:description" content="Learn how STI Firestop revolutionized product search with AI.">
+    <meta property="twitter:image" content="https://o3xo.com/assets/images/case-studies/sti-firestop.png">
+
+    <!-- Tailwind CSS v4 via CDN -->
+    <script src="https://cdn.tailwindcss.com?v=4"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/images/favicon.ico">
+
+    <!-- Animations CSS -->
+    <link rel="stylesheet" href="../../assets/css/animations.css">
 </head>
-<body class="bg-background text-foreground">
-    <div id="header-placeholder"></div>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Header Component -->
+    <div data-component="header"></div>
 
-    <main class="pt-24 pb-16">
-        <section class="max-w-7xl mx-auto px-4 md:px-6 mb-8">
-            <a href="/case-studies/" class="inline-flex items-center text-muted hover:text-foreground transition-colors group">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 group-hover:-translate-x-1 transition-transform">
-                    <path d="m15 18-6-6 6-6"></path>
-                </svg>
-                Back to Case Studies
-            </a>
-        </section>
-
-        <section class="max-w-7xl mx-auto px-4 md:px-6 mb-16">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="animate-on-scroll">
-                    <div class="inline-block bg-secondary/10 text-secondary px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                        Industrial Services
-                    </div>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                        STI Firestop: Process Automation
-                    </h1>
-                    <p class="text-xl text-muted mb-8">
-                        Transforming operations through intelligent AI implementation
-                    </p>
-                    <div class="flex flex-wrap gap-6">
-                        <div>
-                            <div class="text-3xl font-bold text-secondary mb-2">60%</div>
-                            <div class="text-muted">Efficiency Gain</div>
-                        </div>
-                        <div>
-                            <div class="text-3xl font-bold text-secondary mb-2">85</div>
-                            <div class="text-muted">Days to ROI</div>
-                        </div>
-                        <div>
-                            <div class="text-3xl font-bold text-secondary mb-2">10x</div>
-                            <div class="text-muted">Faster Access</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="animate-on-scroll">
-                    <div class="rounded-card overflow-hidden shadow-lg" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); height: 400px;"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-card py-16 mb-16">
-            <div class="max-w-7xl mx-auto px-4 md:px-6">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <div class="animate-on-scroll">
-                        <h2 class="text-3xl font-bold mb-6">The Challenge</h2>
-                        <p class="text-lg text-muted mb-4">
-                            STI Firestop faced significant operational challenges that required innovative AI solutions to streamline processes, improve efficiency, and drive measurable business outcomes.
-                        </p>
-                        <p class="text-lg text-muted">
-                            Manual workflows and data silos prevented the organization from scaling effectively and meeting growing customer demands.
-                        </p>
-                    </div>
-                    <div class="animate-on-scroll">
-                        <div class="bg-background rounded-card p-8" style="background-image: url('/assets/images/yellow-card-bg.png'); background-size: cover;">
-                            <h3 class="text-xl font-bold mb-4">Key Challenges</h3>
-                            <ul class="space-y-3">
-                                <li class="flex items-start">
-                                    <svg class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>Time-consuming manual processes</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>Limited scalability</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>Inconsistent data quality</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="w-6 h-6 text-secondary mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                                    </svg>
-                                    <span>Delayed decision-making</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="max-w-7xl mx-auto px-4 md:px-6 mb-16">
-            <div class="animate-on-scroll mb-12">
-                <h2 class="text-3xl font-bold mb-6">The Solution</h2>
-                <p class="text-xl text-muted max-w-3xl">
-                    O3XO implemented a comprehensive AI solution tailored to STI Firestop's specific needs, combining automation, intelligent data processing, and predictive analytics.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="animate-on-scroll bg-card rounded-card p-8">
-                    <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Process Automation</h3>
-                    <p class="text-muted">
-                        Intelligent automation of repetitive tasks, freeing team members to focus on high-value strategic work.
-                    </p>
-                </div>
-
-                <div class="animate-on-scroll bg-card rounded-card p-8">
-                    <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Data Integration</h3>
-                    <p class="text-muted">
-                        Unified data platform providing real-time insights and eliminating information silos across the organization.
-                    </p>
-                </div>
-
-                <div class="animate-on-scroll bg-card rounded-card p-8">
-                    <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Rapid Deployment</h3>
-                    <p class="text-muted">
-                        Fast implementation with minimal disruption, delivering value within weeks of deployment.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-gradient-to-br from-sidebar to-gray-800 text-white py-16 mb-16">
-            <div class="max-w-7xl mx-auto px-4 md:px-6">
-                <div class="animate-on-scroll mb-12">
-                    <h2 class="text-3xl font-bold mb-6">The Results</h2>
-                    <p class="text-xl text-gray-300 max-w-3xl">
-                        STI Firestop achieved significant improvements across key performance metrics, transforming their operations with measurable ROI.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="animate-on-scroll bg-white/10 backdrop-blur-sm rounded-card p-6" style="background-image: url('/assets/images/yellow-card-bg.png'); background-size: cover; background-blend-mode: overlay;">
-                        <div class="text-4xl font-bold text-secondary mb-2">60%</div>
-                        <div class="text-sm text-gray-300 mb-1">Efficiency Gain</div>
-                        <div class="text-xs text-gray-400">Across key processes</div>
-                    </div>
-
-                    <div class="animate-on-scroll bg-white/10 backdrop-blur-sm rounded-card p-6" style="background-image: url('/assets/images/yellow-card-bg.png'); background-size: cover; background-blend-mode: overlay;">
-                        <div class="text-4xl font-bold text-secondary mb-2">10x</div>
-                        <div class="text-sm text-gray-300 mb-1">Faster Access</div>
-                        <div class="text-xs text-gray-400">To critical information</div>
-                    </div>
-
-                    <div class="animate-on-scroll bg-white/10 backdrop-blur-sm rounded-card p-6" style="background-image: url('/assets/images/yellow-card-bg.png'); background-size: cover; background-blend-mode: overlay;">
-                        <div class="text-4xl font-bold text-secondary mb-2">95%</div>
-                        <div class="text-sm text-gray-300 mb-1">Accuracy Rate</div>
-                        <div class="text-xs text-gray-400">In automated processes</div>
-                    </div>
-
-                    <div class="animate-on-scroll bg-white/10 backdrop-blur-sm rounded-card p-6" style="background-image: url('/assets/images/yellow-card-bg.png'); background-size: cover; background-blend-mode: overlay;">
-                        <div class="text-4xl font-bold text-secondary mb-2">85</div>
-                        <div class="text-sm text-gray-300 mb-1">Days to ROI</div>
-                        <div class="text-xs text-gray-400">Immediate value</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="max-w-7xl mx-auto px-4 md:px-6">
-            <div class="animate-on-scroll bg-gradient-to-r from-secondary to-orange-400 rounded-card p-8 md:p-12 text-center">
-                <h2 class="text-3xl font-bold mb-4">Ready to achieve similar results?</h2>
-                <p class="text-xl mb-8 max-w-2xl mx-auto">
-                    Discover how O3XO can help your organization unlock the power of AI to drive efficiency, reduce costs, and accelerate growth.
-                </p>
-                <a href="/contact/" class="inline-flex items-center bg-sidebar hover:bg-gray-800 text-white px-8 py-4 rounded-button text-lg font-semibold transition-all duration-300 hover:scale-105">
-                    Get Started Today
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
-                        <path d="M5 12h14"></path>
-                        <path d="m12 5 7 7-7 7"></path>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[60vh] min-h-[400px] bg-cover bg-center" style="background-image: url('../../assets/images/case-studies/sti-firestop.png');">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div>
+            <div class="relative h-full max-w-7xl mx-auto px-6 flex flex-col justify-center">
+                <a href="../" class="inline-flex items-center text-white hover:text-yellow-300 transition mb-6 group">
+                    <svg class="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                     </svg>
+                    Back to Case Studies
                 </a>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">STI Firestop</h1>
+                <p class="text-xl md:text-2xl text-white/90 max-w-2xl">Product search revolution</p>
+            </div>
+        </section>
+
+        <!-- Metrics Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Metric 1 -->
+                    <div class="rounded-lg p-8 text-gray-900 relative overflow-hidden h-full flex flex-col hover:scale-105 transition-all duration-300 animate-on-scroll fade-in" style="background-color: #FFD700;">
+                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('../../assets/images/yellow-card-bg.png'); background-size: cover; border-radius: inherit; transform: scale(1.1);"></div>
+                        <div class="relative z-10 flex-1 flex flex-col justify-center">
+                            <h3 class="text-5xl font-bold mb-4">&lt;5 seconds</h3>
+                            <p class="text-xl">Average product search time from minutes to seconds</p>
+                        </div>
+                    </div>
+
+                    <!-- Metric 2 -->
+                    <div class="rounded-lg p-8 text-gray-900 relative overflow-hidden h-full flex flex-col hover:scale-105 transition-all duration-300 animate-on-scroll fade-in" style="background-color: #FFD700;">
+                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('../../assets/images/yellow-card-bg.png'); background-size: cover; border-radius: inherit; transform: scale(1.1);"></div>
+                        <div class="relative z-10 flex-1 flex flex-col justify-center">
+                            <h3 class="text-5xl font-bold mb-4">95% accuracy</h3>
+                            <p class="text-xl">In matching customers to the right products</p>
+                        </div>
+                    </div>
+
+                    <!-- Metric 3 -->
+                    <div class="rounded-lg p-8 text-gray-900 relative overflow-hidden h-full flex flex-col hover:scale-105 transition-all duration-300 animate-on-scroll fade-in" style="background-color: #FFD700;">
+                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('../../assets/images/yellow-card-bg.png'); background-size: cover; border-radius: inherit; transform: scale(1.1);"></div>
+                        <div class="relative z-10 flex-1 flex flex-col justify-center">
+                            <h3 class="text-5xl font-bold mb-4">3x increase</h3>
+                            <p class="text-xl">In customer satisfaction scores</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenge Section -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8 animate-on-scroll slide-in-left">The Challenge</h2>
+                    <div class="prose prose-lg max-w-none animate-on-scroll fade-in">
+                        <p class="text-lg mb-6">STI Firestop, a leading provider of firestop products and solutions, faced a critical challenge: their extensive product catalog of specialized fire protection materials was difficult for customers and sales teams to navigate effectively.</p>
+                        <ul class="space-y-3 text-lg">
+                            <li>Complex product catalog with thousands of technical specifications</li>
+                            <li>Customers struggling to find the right products for specific applications</li>
+                            <li>Sales team spending excessive time on product lookups during customer interactions</li>
+                            <li>Traditional keyword search failing to understand technical requirements and use cases</li>
+                            <li>Lost sales opportunities due to slow response times and incorrect product recommendations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8 animate-on-scroll slide-in-left">The Solution</h2>
+                    <div class="prose prose-lg max-w-none animate-on-scroll fade-in">
+                        <p class="text-lg mb-6">O3XO developed an AI-powered intelligent product search system that understands technical requirements, application contexts, and building codes to instantly recommend the optimal firestop solutions.</p>
+                        <ul class="space-y-3 text-lg">
+                            <li>Built semantic search engine that understands technical terminology and application contexts</li>
+                            <li>Trained AI on product specifications, installation guides, and building code requirements</li>
+                            <li>Created natural language interface allowing users to describe their needs conversationally</li>
+                            <li>Implemented intelligent filtering based on project requirements, materials, and compliance needs</li>
+                            <li>Integrated with product database to provide real-time availability and pricing</li>
+                            <li>Added visual product identification for field applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8 animate-on-scroll slide-in-left">The Results</h2>
+                    <div class="prose prose-lg max-w-none animate-on-scroll fade-in">
+                        <p class="text-lg mb-6">The AI-powered search system transformed STI Firestop's customer experience and sales efficiency, dramatically reducing search time while improving accuracy and satisfaction.</p>
+                        <ul class="space-y-3 text-lg">
+                            <li><strong>Search time reduced to under 5 seconds</strong> from an average of several minutes per product lookup</li>
+                            <li><strong>95% accuracy in product recommendations</strong> matching customers to optimal solutions</li>
+                            <li><strong>3x increase in customer satisfaction scores</strong> for product selection experience</li>
+                            <li><strong>40% reduction in sales cycle time</strong> through faster product identification</li>
+                            <li><strong>Significant decrease in product returns</strong> due to more accurate initial recommendations</li>
+                            <li><strong>Sales team productivity increased</strong> by eliminating time-consuming manual catalog searches</li>
+                        </ul>
+                        <blockquote class="border-l-4 border-blue-600 pl-6 my-8 italic text-xl">
+                            "O3XO's intelligent search system completely transformed how our customers and sales team find products. What used to take minutes of catalog flipping now happens in seconds with better accuracy. It's like having a product expert available 24/7."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 animate-on-scroll fade-in">Ready to revolutionize your product search?</h2>
+                <p class="text-xl text-white/90 mb-8 animate-on-scroll fade-in">Let's build an intelligent search system that understands your products and customers.</p>
+                <a href="../../contact/" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition font-semibold text-lg animate-on-scroll fade-in">Get in Touch</a>
             </div>
         </section>
     </main>
 
-    <div id="footer-placeholder"></div>
-    <div id="sticky-cta-placeholder"></div>
+    <!-- Footer Component -->
+    <div data-component="footer"></div>
 
-    <script src="/assets/js/component-loader.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
+    <!-- Sticky CTA Component -->
+    <div data-component="sticky-cta"></div>
 
-            const observer = new IntersectionObserver(function(entries) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('fade-in');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, observerOptions);
+    <!-- Component Loader -->
+    <script src="../../assets/js/component-loader.js"></script>
 
-            document.querySelectorAll('.animate-on-scroll').forEach(element => {
-                observer.observe(element);
-            });
-        });
-    </script>
+    <!-- Animations -->
+    <script src="../../assets/js/animations.js"></script>
+
+    <!-- Noscript fallback -->
+    <noscript>
+        <style>
+            [data-component] { display: none; }
+        </style>
+        <header class="bg-white shadow-sm sticky top-0 z-50">
+            <nav class="max-w-7xl mx-auto px-6 py-4">
+                <div class="flex items-center justify-between">
+                    <a href="../../">
+                        <img src="../../assets/images/logo.svg" alt="O3XO Logo" class="h-8">
+                    </a>
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="../../" class="text-gray-700 hover:text-blue-600">Home</a>
+                        <a href="../../about/" class="text-gray-700 hover:text-blue-600">About</a>
+                        <a href="../" class="text-blue-600 font-semibold">Case Studies</a>
+                        <a href="../../contact/" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </noscript>
 </body>
 </html>
