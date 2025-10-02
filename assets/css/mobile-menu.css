@@ -1,0 +1,7 @@
+/* Mobile menu full-screen styling */
+@media (max-width: 1023px) {
+    #primary-menu {
+        height: calc(100vh - 72px);
+        height: calc(100dvh - 72px);
+    }
+}

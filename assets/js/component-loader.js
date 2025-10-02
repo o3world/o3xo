@@ -41,7 +41,9 @@
             return;
         }
 
-        fetch(componentPath)
+        // Add cache-busting query parameter
+        const cacheBuster = `?v=${Date.now()}`;
+        fetch(componentPath + cacheBuster)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);

@@ -100,8 +100,14 @@
             updateToggleIcons(expanded);
             if (expanded) {
                 navPanel.classList.remove('hidden');
-                // On mobile, show all submenu panels
+                // Disable body scroll on mobile
                 if (!isDesktop()) {
+                    document.body.style.overflow = 'hidden';
+                    document.body.style.position = 'fixed';
+                    document.body.style.width = '100%';
+                    document.body.style.top = `-${window.scrollY}px`;
+
+                    // Show all submenu panels on mobile
                     menuItems.forEach((item) => {
                         const panel = item.querySelector('[role="menu"]');
                         if (panel) {
@@ -110,7 +116,16 @@
                         }
                     });
                 }
-            } else if (!isDesktop()) {
+            } else {
+                // Re-enable body scroll on mobile
+                if (!isDesktop()) {
+                    const scrollY = document.body.style.top;
+                    document.body.style.overflow = '';
+                    document.body.style.position = '';
+                    document.body.style.width = '';
+                    document.body.style.top = '';
+                    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+                }
                 navPanel.classList.add('hidden');
             }
             if (!expanded) {
