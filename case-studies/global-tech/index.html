@@ -28,6 +28,59 @@
 
     <!-- Animations CSS -->
     <link rel="stylesheet" href="../../assets/css/animations.css">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://o3xo.ai/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Case Studies",
+        "item": "https://o3xo.ai/case-studies/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Global Technology Firm",
+        "item": "https://o3xo.ai/case-studies/global-tech/"
+      }]
+    }
+    </script>
+
+    <!-- Article Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Global Technology Firm: Streamlining enterprise RFP responses with intelligent automation",
+      "description": "Learn how Global Tech saved 40% time on RFPs with O3XO's RFP automation solution.",
+      "image": "https://o3xo.ai/assets/images/case-studies/global-tech.png",
+      "author": {
+        "@type": "Organization",
+        "name": "O3XO"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "O3XO",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://o3xo.ai/assets/images/logo.svg"
+        }
+      },
+      "datePublished": "2024-05-05",
+      "dateModified": "2024-10-01"
+    }
+    </script>
 </head>
 <body class="bg-gray-50 text-gray-900">
     <!-- Header Component -->
@@ -45,8 +98,8 @@
                     </svg>
                     Back to Case Studies
                 </a>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">Global Tech</h1>
-                <p class="text-xl md:text-2xl text-white/90 max-w-2xl">RFP automation</p>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">Global Technology Firm</h1>
+                <p class="text-xl md:text-2xl text-white/90 max-w-2xl">Streamlining enterprise RFP responses with intelligent automation</p>
             </div>
         </section>
 
@@ -84,66 +137,54 @@
             </div>
         </section>
 
-        <!-- Challenge Section -->
+        <!-- Introduction -->
         <section class="py-16 bg-white">
             <div class="max-w-7xl mx-auto px-6">
-                <div class="max-w-4xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-8 animate-on-scroll slide-in-left">The Challenge</h2>
-                    <div class="prose prose-lg max-w-none animate-on-scroll fade-in">
-                        <p class="text-lg mb-6">Global Tech, a technology solutions provider, faced a major bottleneck in their sales process: responding to RFPs (Requests for Proposal). Their team was overwhelmed by the time-intensive process of crafting detailed, customized responses, limiting their ability to pursue new opportunities.</p>
-                        <ul class="space-y-3 text-lg">
-                            <li>RFP responses taking 40-60 hours per proposal to complete</li>
-                            <li>Team forced to decline opportunities due to bandwidth constraints</li>
-                            <li>Previous responses scattered across email, SharePoint, and individual hard drives</li>
-                            <li>Inconsistent messaging and quality across different proposal responses</li>
-                            <li>Difficulty finding relevant past content to reuse effectively</li>
-                            <li>Manual formatting and compliance checking consuming valuable time</li>
-                        </ul>
-                    </div>
+                <div class="max-w-4xl mx-auto mb-16">
+                    <p class="text-xl text-gray-700 leading-relaxed animate-on-scroll fade-in">
+                        This global technology firm needed to respond to hundreds of RFPs annually while maintaining quality. O3XO's generative AI solution dramatically accelerated response times while preserving expertise.
+                    </p>
                 </div>
-            </div>
-        </section>
 
-        <!-- Solution Section -->
-        <section class="py-16 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="max-w-4xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-8 animate-on-scroll slide-in-left">The Solution</h2>
-                    <div class="prose prose-lg max-w-none animate-on-scroll fade-in">
-                        <p class="text-lg mb-6">O3XO built an AI-powered RFP automation system that intelligently drafts proposal responses by learning from past successful submissions, company materials, and industry best practices.</p>
-                        <ul class="space-y-3 text-lg">
-                            <li>Developed AI system trained on Global Tech's library of successful past proposals</li>
-                            <li>Created intelligent content matching that finds relevant responses from previous RFPs</li>
-                            <li>Built automated first-draft generation for common RFP sections and questions</li>
-                            <li>Implemented smart search across all proposal content and company materials</li>
-                            <li>Added compliance checking to ensure responses meet RFP requirements</li>
-                            <li>Created collaboration workflows for team review and refinement</li>
-                            <li>Integrated with CRM and document management systems</li>
-                        </ul>
+                <!-- Opportunity -->
+                <div class="max-w-4xl mx-auto space-y-16">
+                    <div class="animate-on-scroll fade-in">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Opportunity</h2>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800">Managing hundreds of high-stakes proposals with precision</h3>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            A global technology firm faced mounting pressure from the sheer volume of Request for Proposals (RFPs) flooding their business development pipeline, hundreds per year across diverse markets and solutions. Each RFP response required extensive manual effort: referencing previous proposals, mining vast databases of technical content, copying and pasting information from disparate sources, and ensuring consistency across complex multi-section documents. This labor-intensive process created bottlenecks that delayed responses, strained specialist resources, and risked missing critical opportunities in competitive markets. The challenge lay in accelerating RFP turnaround times while maintaining the precision, customization, and strategic positioning that wins enterprise deals.
+                        </p>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Results Section -->
-        <section class="py-16 bg-white">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="max-w-4xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-8 animate-on-scroll slide-in-left">The Results</h2>
-                    <div class="prose prose-lg max-w-none animate-on-scroll fade-in">
-                        <p class="text-lg mb-6">The RFP automation system transformed Global Tech's sales capabilities, enabling them to pursue significantly more opportunities while improving response quality and win rates.</p>
-                        <ul class="space-y-3 text-lg">
-                            <li><strong>40% reduction in time</strong> spent on RFP response preparation and review</li>
-                            <li><strong>3x increase in RFP capacity</strong> with the same team size, unlocking new revenue opportunities</li>
-                            <li><strong>25% improvement in win rates</strong> through higher quality, more consistent responses</li>
-                            <li><strong>Average response time reduced from 40-60 hours to 20-30 hours</strong> per RFP</li>
-                            <li><strong>100% compliance</strong> with RFP requirements through automated checking</li>
-                            <li><strong>Consistent messaging and branding</strong> across all proposals</li>
-                            <li><strong>Team satisfaction improved</strong> by eliminating tedious manual work</li>
-                        </ul>
-                        <blockquote class="border-l-4 border-blue-600 pl-6 my-8 italic text-xl">
-                            "O3XO's RFP automation gave us superpowers. We're now responding to three times as many proposals with better quality and winning more deals. What used to be our biggest bottleneck is now a competitive advantage."
-                        </blockquote>
+                    <!-- Solution -->
+                    <div class="animate-on-scroll fade-in">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Solution</h2>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800">Intelligent content orchestration that amplifies specialist expertise</h3>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            O3XO began with a comprehensive workshop to map the firm's RFP response journey and identify optimal intervention points for AI enhancement. We developed a generative AI solution that augmented rather than replaced the work of RFP specialists, focusing on eliminating repetitive tasks while preserving strategic oversight. The system ingested and normalized content from the company's extensive library of past RFP responses, creating an intelligent knowledge base that could instantly surface relevant sections, technical specifications, and proven messaging. We built a user experience prioritizing speed, accuracy, and control, allowing specialists to query the system in natural language, receive contextually appropriate content suggestions, and maintain editorial control over final responses. A sophisticated feedback loop continuously updates the master dataset, ensuring the system learns from new wins and adapts to evolving product features and market positioning over time.
+                        </p>
+                    </div>
+
+                    <!-- Result -->
+                    <div class="animate-on-scroll fade-in">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Result</h2>
+                        <div class="text-center bg-gray-50 rounded-lg p-8 border-l-4" style="border-color: #FFD700;">
+                            <h3 class="text-5xl font-bold mb-4 text-gray-900">40%</h3>
+                            <p class="text-xl text-gray-700">Time saved on RFP responses</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial -->
+                    <div class="animate-on-scroll fade-in">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">In their words</h2>
+                        <div class="bg-gray-50 rounded-lg p-8 border-l-4" style="border-color: #FFD700;">
+                            <blockquote class="text-xl text-gray-800 mb-4 italic">
+                                "We've taken huge steps. I'm feeling good because of the journey we've been on: better responses, better structure, and more efficient outcomes."
+                            </blockquote>
+                            <cite class="text-gray-600 not-italic">
+                                <strong>RFP Specialist</strong>, Global Technology Firm
+                            </cite>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -167,6 +208,9 @@
 
     <!-- Component Loader -->
     <script src="../../assets/js/component-loader.js"></script>
+
+    <!-- Navigation -->
+    <script src="../../assets/js/navigation.js"></script>
 
     <!-- Animations -->
     <script src="../../assets/js/animations.js"></script>

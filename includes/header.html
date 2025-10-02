@@ -24,44 +24,49 @@
                 <svg class="h-6 w-6 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-icon="close"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
             </button>
 
-            <div id="primary-menu" data-nav-panel class="hidden absolute left-0 right-0 top-full mt-4 origin-top rounded-2xl border border-white/10 bg-black/95 px-6 py-6 text-white shadow-2xl lg:static lg:flex lg:mt-0 lg:items-center lg:gap-10 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
-                <ul class="flex flex-col gap-6 lg:flex-row lg:items-center lg:gap-8">
-                    <li class="lg:relative" data-menu-item>
-                        <button type="button" class="flex w-full items-center justify-between gap-3 text-left text-white transition hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black lg:text-sm" data-menu-trigger aria-expanded="false" aria-controls="mega-case-studies">
+            <div id="primary-menu" data-nav-panel class="hidden absolute left-0 right-0 top-full mt-4 origin-top rounded-2xl border border-white/10 bg-black/95 px-6 py-6 text-white shadow-2xl lg:static lg:flex lg:mt-0 lg:items-center lg:gap-10 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none transition-opacity duration-200">
+                <ul class="flex flex-col gap-6 lg:flex-row lg:items-center lg:gap-8" role="menubar">
+                    <li class="lg:relative" data-menu-item role="none">
+                        <button type="button" class="flex w-full items-center justify-between gap-3 text-left text-white transition hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black lg:text-sm lg:pb-6" data-menu-trigger aria-expanded="false" aria-controls="mega-case-studies" aria-haspopup="true" role="menuitem">
                             <span class="text-base font-medium lg:text-sm">Case studies</span>
-                            <svg class="h-4 w-4 flex-shrink-0" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 8 10 12 14 8"/></svg>
+                            <svg class="h-4 w-4 flex-shrink-0 transition-transform duration-200" aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 8 10 12 14 8"/></svg>
                         </button>
-                        <div id="mega-case-studies" class="hidden rounded-2xl border border-white/10 bg-black/95 p-6 text-white shadow-2xl focus:outline-none lg:absolute lg:left-1/2 lg:top-full lg:mt-6 lg:min-w-[660px] lg:-translate-x-1/2">
+                        <div id="mega-case-studies" class="invisible opacity-0 pointer-events-none rounded-2xl border border-white/10 bg-black/95 p-6 text-white shadow-2xl focus:outline-none lg:absolute lg:left-1/2 lg:top-full lg:-mt-4 lg:pt-10 lg:min-w-[720px] lg:-translate-x-1/2 transition-all duration-200" role="menu" aria-orientation="vertical" aria-label="Case studies submenu">
                             <div class="grid gap-4 md:grid-cols-2">
-                                <a href="/case-studies/#case-study-buffalo" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
+                                <a href="/case-studies/buffalo-construction/" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
                                     <p class="text-xs uppercase tracking-wide text-yellow-300">Construction</p>
                                     <p class="mt-2 text-lg font-semibold text-white">Buffalo Construction</p>
                                     <p class="mt-1 text-sm text-gray-300">Automating closeout workflows</p>
                                 </a>
-                                <a href="/case-studies/#case-study-tyndale" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
+                                <a href="/case-studies/tyndale/" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
                                     <p class="text-xs uppercase tracking-wide text-yellow-300">Manufacturing</p>
                                     <p class="mt-2 text-lg font-semibold text-white">Tyndale</p>
                                     <p class="mt-1 text-sm text-gray-300">AI-driven product insight</p>
                                 </a>
-                                <a href="/case-studies/#case-study-mckesson" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
+                                <a href="/case-studies/mckesson/" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
                                     <p class="text-xs uppercase tracking-wide text-yellow-300">Life sciences</p>
                                     <p class="mt-2 text-lg font-semibold text-white">McKesson Compile</p>
                                     <p class="mt-1 text-sm text-gray-300">AI strategy acceleration</p>
                                 </a>
-                                <a href="/case-studies/#case-study-sti" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
+                                <a href="/case-studies/sti-firestop/" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
                                     <p class="text-xs uppercase tracking-wide text-yellow-300">Industrial services</p>
                                     <p class="mt-2 text-lg font-semibold text-white">STI Firestop</p>
-                                    <p class="mt-1 text-sm text-gray-300">Process automation</p>
+                                    <p class="mt-1 text-sm text-gray-300">Product search revolution</p>
                                 </a>
-                                <a href="/case-studies/#case-study-ehazard" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
+                                <a href="/case-studies/e-hazard/" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
                                     <p class="text-xs uppercase tracking-wide text-yellow-300">Training &amp; safety</p>
                                     <p class="mt-2 text-lg font-semibold text-white">e-Hazard</p>
-                                    <p class="mt-1 text-sm text-gray-300">Enhanced safety workflows</p>
+                                    <p class="mt-1 text-sm text-gray-300">Certificate automation magic</p>
                                 </a>
-                                <a href="/case-studies/#case-study-global-tech" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
+                                <a href="/case-studies/global-tech/" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
                                     <p class="text-xs uppercase tracking-wide text-yellow-300">Technology</p>
                                     <p class="mt-2 text-lg font-semibold text-white">Global tech firm</p>
                                     <p class="mt-1 text-sm text-gray-300">RFP automation</p>
+                                </a>
+                                <a href="/case-studies/american-family/" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                    <p class="text-xs uppercase tracking-wide text-yellow-300">Insurance</p>
+                                    <p class="mt-2 text-lg font-semibold text-white">American Family Insurance</p>
+                                    <p class="mt-1 text-sm text-gray-300">Legal document intelligence</p>
                                 </a>
                             </div>
                             <div class="mt-4 flex flex-wrap gap-3 text-sm text-gray-300">
@@ -76,48 +81,34 @@
                             </div>
                         </div>
                     </li>
-                    <li class="lg:relative" data-menu-item>
-                        <button type="button" class="flex w-full items-center justify-between gap-3 text-left text-white transition hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black lg:text-sm" data-menu-trigger aria-expanded="false" aria-controls="mega-about">
+                    <li class="lg:relative" data-menu-item role="none">
+                        <button type="button" class="flex w-full items-center justify-between gap-3 text-left text-white transition hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black lg:text-sm lg:pb-6" data-menu-trigger aria-expanded="false" aria-controls="mega-about" aria-haspopup="true" role="menuitem">
                             <span class="text-base font-medium lg:text-sm">About</span>
-                            <svg class="h-4 w-4 flex-shrink-0" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 8 10 12 14 8"/></svg>
+                            <svg class="h-4 w-4 flex-shrink-0 transition-transform duration-200" aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 8 10 12 14 8"/></svg>
                         </button>
-                        <div id="mega-about" class="hidden rounded-2xl border border-white/10 bg-black/95 p-6 text-white shadow-2xl focus:outline-none lg:absolute lg:left-1/2 lg:top-full lg:mt-6 lg:min-w-[560px] lg:-translate-x-1/2">
+                        <div id="mega-about" class="invisible opacity-0 pointer-events-none rounded-2xl border border-white/10 bg-black/95 p-6 text-white shadow-2xl focus:outline-none lg:absolute lg:left-1/2 lg:top-full lg:-mt-4 lg:pt-10 lg:min-w-[560px] lg:-translate-x-1/2 transition-all duration-200" role="menu" aria-orientation="vertical" aria-label="About submenu">
                             <div class="grid gap-4 md:grid-cols-2">
-                                <a href="/about/#about-story" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
-                                    <p class="text-xs uppercase tracking-wide text-yellow-300">Our Story</p>
-                                    <p class="mt-2 text-lg font-semibold text-white">Reaching beyond the familiar</p>
-                                    <p class="mt-1 text-sm text-gray-300">How O3XO helps leaders move past AI hype into measurable outcomes.</p>
+                                <a href="/about/" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                    <p class="text-xs uppercase tracking-wide text-yellow-300">About O3XO</p>
+                                    <p class="mt-2 text-lg font-semibold text-white">Our story and mission</p>
+                                    <p class="mt-1 text-sm text-gray-300">20+ years of digital transformation expertise applied to AI strategy and execution.</p>
                                 </a>
-                                <a href="/about/#about-why" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
-                                    <p class="text-xs uppercase tracking-wide text-yellow-300">Why O3XO</p>
-                                    <p class="mt-2 text-lg font-semibold text-white">Industry-tailored activation</p>
-                                    <p class="mt-1 text-sm text-gray-300">See how we align AI strategy with complex, data-rich organizations.</p>
-                                </a>
-                                <a href="/about/#about-principles" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
-                                    <p class="text-xs uppercase tracking-wide text-yellow-300">Principles</p>
-                                    <p class="mt-2 text-lg font-semibold text-white">Responsible AI framework</p>
-                                    <p class="mt-1 text-sm text-gray-300">Our approach to measurable value, governance, and human-in-the-loop design.</p>
-                                </a>
-                                <a href="/about/#about-leadership" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
-                                    <p class="text-xs uppercase tracking-wide text-yellow-300">Leadership</p>
-                                    <p class="mt-2 text-lg font-semibold text-white">Meet the team</p>
-                                    <p class="mt-1 text-sm text-gray-300">Experienced strategists, architects, and industry specialists guiding every engagement.</p>
+                                <a href="/about/approach/" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                    <p class="text-xs uppercase tracking-wide text-yellow-300">Our Approach</p>
+                                    <p class="mt-2 text-lg font-semibold text-white">Strategy to activation</p>
+                                    <p class="mt-1 text-sm text-gray-300">Our proven methodology from AI roadmap to measurable results.</p>
                                 </a>
                             </div>
                             <div class="mt-4 flex flex-wrap gap-3 text-sm text-gray-300">
-                                <a href="/about/" class="inline-flex items-center gap-2 font-medium text-white transition hover:text-yellow-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
-                                    Explore the full story
-                                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                                </a>
-                                <a href="/contact/" class="inline-flex items-center gap-2 transition hover:text-yellow-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
+                                <a href="/contact/" class="inline-flex items-center gap-2 font-medium text-white transition hover:text-yellow-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
                                     Talk with our team
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                                 </a>
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <a href="/contact/" class="inline-flex items-center justify-center rounded-lg bg-red-600 px-6 py-2 text-base font-semibold text-white transition hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-black lg:text-sm">
+                    <li role="none" class="flex items-center lg:pb-6">
+                        <a href="/contact/" class="inline-flex items-center justify-center rounded-lg bg-red-600 px-6 py-2 text-base font-semibold text-white transition hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-black lg:text-sm" role="menuitem">
                             Contact
                         </a>
                     </li>

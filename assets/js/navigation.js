@@ -35,14 +35,30 @@
         const closeSubmenu = (trigger, panel) => {
             if (!trigger || !panel) return;
             trigger.setAttribute('aria-expanded', 'false');
-            panel.classList.add('hidden');
+            panel.classList.add('opacity-0', 'pointer-events-none');
+            panel.classList.remove('opacity-100');
+            // Rotate chevron back
+            const chevron = trigger.querySelector('svg');
+            if (chevron) chevron.style.transform = 'rotate(0deg)';
+            // Wait for transition then fully hide
+            setTimeout(() => {
+                if (panel.classList.contains('opacity-0')) {
+                    panel.classList.add('invisible');
+                }
+            }, 200);
         };
 
         const openSubmenu = (trigger, panel) => {
             if (!trigger || !panel) return;
             closeAllSubmenus(panel);
             trigger.setAttribute('aria-expanded', 'true');
-            panel.classList.remove('hidden');
+            panel.classList.remove('invisible', 'opacity-0', 'pointer-events-none');
+            // Rotate chevron down
+            const chevron = trigger.querySelector('svg');
+            if (chevron) chevron.style.transform = 'rotate(180deg)';
+            // Force reflow then add opacity
+            panel.offsetHeight;
+            panel.classList.add('opacity-100');
         };
 
         const closeAllSubmenus = (exceptPanel) => {
@@ -148,6 +164,8 @@
                 return;
             }
 
+            let leaveTimeout;
+
             trigger.addEventListener('click', (event) => {
                 // Allow buttons to toggle on both desktop and mobile
                 event.preventDefault();
@@ -166,6 +184,30 @@
                 if (event.key === 'Escape') {
                     closeSubmenu(trigger, panel);
                     trigger.blur();
+                } else if (event.key === 'ArrowDown' || event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    openSubmenu(trigger, panel);
+                    // Focus first link in panel
+                    const firstLink = panel.querySelector('a[role="menuitem"]');
+                    if (firstLink) {
+                        setTimeout(() => firstLink.focus(), 50);
+                    }
+                } else if (event.key === 'ArrowRight') {
+                    // Move to next menu item
+                    const currentIndex = menuItems.indexOf(item);
+                    const nextItem = menuItems[currentIndex + 1];
+                    if (nextItem) {
+                        const nextTrigger = nextItem.querySelector('[data-menu-trigger]');
+                        if (nextTrigger) nextTrigger.focus();
+                    }
+                } else if (event.key === 'ArrowLeft') {
+                    // Move to previous menu item
+                    const currentIndex = menuItems.indexOf(item);
+                    const prevItem = menuItems[currentIndex - 1];
+                    if (prevItem) {
+                        const prevTrigger = prevItem.querySelector('[data-menu-trigger]');
+                        if (prevTrigger) prevTrigger.focus();
+                    }
                 }
             });
 
@@ -173,18 +215,47 @@
                 if (event.key === 'Escape') {
                     closeSubmenu(trigger, panel);
                     trigger.focus();
+                } else if (event.key === 'ArrowDown') {
+                    event.preventDefault();
+                    // Move to next focusable item in panel
+                    const focusables = Array.from(panel.querySelectorAll('a[role="menuitem"]'));
+                    const currentIndex = focusables.indexOf(document.activeElement);
+                    if (currentIndex < focusables.length - 1) {
+                        focusables[currentIndex + 1].focus();
+                    }
+                } else if (event.key === 'ArrowUp') {
+                    event.preventDefault();
+                    // Move to previous focusable item in panel
+                    const focusables = Array.from(panel.querySelectorAll('a[role="menuitem"]'));
+                    const currentIndex = focusables.indexOf(document.activeElement);
+                    if (currentIndex > 0) {
+                        focusables[currentIndex - 1].focus();
+                    } else {
+                        // If at first item, focus the trigger
+                        closeSubmenu(trigger, panel);
+                        trigger.focus();
+                    }
                 }
             });
 
-            item.addEventListener('mouseenter', () => {
+            const handleMouseEnter = () => {
                 if (!isDesktop()) return;
+                clearTimeout(leaveTimeout);
                 openSubmenu(trigger, panel);
-            });
+            };
 
-            item.addEventListener('mouseleave', () => {
+            const handleMouseLeave = () => {
                 if (!isDesktop()) return;
-                closeSubmenu(trigger, panel);
-            });
+                leaveTimeout = setTimeout(() => {
+                    closeSubmenu(trigger, panel);
+                }, 100);
+            };
+
+            // Add listeners to both item and panel
+            item.addEventListener('mouseenter', handleMouseEnter);
+            item.addEventListener('mouseleave', handleMouseLeave);
+            panel.addEventListener('mouseenter', handleMouseEnter);
+            panel.addEventListener('mouseleave', handleMouseLeave);
 
             item.addEventListener('focusout', (event) => {
                 if (event.relatedTarget && item.contains(event.relatedTarget)) {

@@ -28,6 +28,59 @@
 
     <!-- Animations CSS -->
     <link rel="stylesheet" href="../../assets/css/animations.css">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://o3xo.ai/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Case Studies",
+        "item": "https://o3xo.ai/case-studies/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "e-Hazard",
+        "item": "https://o3xo.ai/case-studies/e-hazard/"
+      }]
+    }
+    </script>
+
+    <!-- Article Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "e-Hazard: Automating electrical safety training operations",
+      "description": "Learn how e-Hazard achieved 70% reduction in hours with O3XO's certificate automation magic.",
+      "image": "https://o3xo.ai/assets/images/case-studies/e-hazard.png",
+      "author": {
+        "@type": "Organization",
+        "name": "O3XO"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "O3XO",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://o3xo.ai/assets/images/logo.svg"
+        }
+      },
+      "datePublished": "2024-04-10",
+      "dateModified": "2024-10-01"
+    }
+    </script>
 </head>
 <body class="bg-gray-50 text-gray-900">
     <!-- Header Component -->
@@ -46,7 +99,7 @@
                     Back to Case Studies
                 </a>
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">e-Hazard</h1>
-                <p class="text-xl md:text-2xl text-white/90 max-w-2xl">Certificate automation magic</p>
+                <p class="text-xl md:text-2xl text-white/90 max-w-2xl">Automating electrical safety training operations</p>
             </div>
         </section>
 
@@ -84,66 +137,54 @@
             </div>
         </section>
 
-        <!-- Challenge Section -->
+        <!-- Introduction -->
         <section class="py-16 bg-white">
             <div class="max-w-7xl mx-auto px-6">
-                <div class="max-w-4xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-8 animate-on-scroll slide-in-left">The Challenge</h2>
-                    <div class="prose prose-lg max-w-none animate-on-scroll fade-in">
-                        <p class="text-lg mb-6">e-Hazard, a leading provider of hazardous materials training and certification, was drowning in manual certificate processing. Their team spent countless hours manually reviewing, extracting data from, and validating thousands of training certificates each month.</p>
-                        <ul class="space-y-3 text-lg">
-                            <li>Manual processing of 5,000+ certificates per month consuming excessive staff time</li>
-                            <li>Data entry errors leading to compliance issues and customer frustration</li>
-                            <li>Slow turnaround times affecting customer satisfaction</li>
-                            <li>Certificates arriving in multiple formats (PDF, scanned images, photos)</li>
-                            <li>Difficulty scaling operations to meet growing demand</li>
-                            <li>High cost per certificate processed due to manual labor requirements</li>
-                        </ul>
-                    </div>
+                <div class="max-w-4xl mx-auto mb-16">
+                    <p class="text-xl text-gray-700 leading-relaxed animate-on-scroll fade-in">
+                        When industry leaders need to modernize operations while staying focused on their core mission, AI can bridge the gap between legacy processes and future efficiency. For e-Hazard, thoughtful AI implementation delivered real impact without disrupting what already works well.
+                    </p>
                 </div>
-            </div>
-        </section>
 
-        <!-- Solution Section -->
-        <section class="py-16 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="max-w-4xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-8 animate-on-scroll slide-in-left">The Solution</h2>
-                    <div class="prose prose-lg max-w-none animate-on-scroll fade-in">
-                        <p class="text-lg mb-6">O3XO developed an intelligent certificate automation system using computer vision and natural language processing to automatically extract, validate, and process certificate data with minimal human intervention.</p>
-                        <ul class="space-y-3 text-lg">
-                            <li>Built AI-powered document processing engine capable of handling multiple certificate formats</li>
-                            <li>Implemented optical character recognition (OCR) with intelligent error correction</li>
-                            <li>Created validation rules engine to verify certificate authenticity and compliance</li>
-                            <li>Developed automated data extraction for key fields (name, certification type, dates, credentials)</li>
-                            <li>Integrated with existing systems for seamless data flow and record keeping</li>
-                            <li>Added quality assurance checks with human-in-the-loop for edge cases</li>
-                            <li>Built audit trail and compliance reporting capabilities</li>
-                        </ul>
+                <!-- Opportunity -->
+                <div class="max-w-4xl mx-auto space-y-16">
+                    <div class="animate-on-scroll fade-in">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Opportunity</h2>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800">AI with purpose and ROI</h3>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            As a leading national provider of electrical safety training, arc flash studies, and consulting services, e-Hazard delivers critical instruction and guidance based on NFPA 70E, NEC, and OSHA standards to help organizations improve workplace safety and maintain compliance. Like many forward-thinking organizations, e-Hazard was eager to explore how AI could drive operational efficiency and create meaningful impact. Their goal was to identify AI use cases that would not only streamline internal workflows but also enhance the value of their core service offerings, including training programs, risk assessments, and safety consulting. The challenge lay in finding the right applications where AI could deliver measurable ROI and sustainable improvements across the business. It also required that we keep an eye on existing technology investments without tacking on substantial, additional expenses.
+                        </p>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Results Section -->
-        <section class="py-16 bg-white">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="max-w-4xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-8 animate-on-scroll slide-in-left">The Results</h2>
-                    <div class="prose prose-lg max-w-none animate-on-scroll fade-in">
-                        <p class="text-lg mb-6">The certificate automation system transformed e-Hazard's operations, dramatically reducing processing time and costs while improving accuracy and customer satisfaction.</p>
-                        <ul class="space-y-3 text-lg">
-                            <li><strong>70% reduction in staff hours</strong> spent on certificate processing, freeing team for higher-value work</li>
-                            <li><strong>99.5% accuracy rate</strong> in automated data extraction, exceeding manual processing accuracy</li>
-                            <li><strong>5,000+ certificates processed monthly</strong> with minimal human intervention</li>
-                            <li><strong>Average processing time reduced from hours to minutes</strong> per certificate</li>
-                            <li><strong>Customer satisfaction scores increased by 45%</strong> due to faster turnaround</li>
-                            <li><strong>Cost per certificate reduced by 65%</strong> through automation</li>
-                            <li><strong>Perfect audit trail</strong> for compliance and regulatory reporting</li>
-                        </ul>
-                        <blockquote class="border-l-4 border-blue-600 pl-6 my-8 italic text-xl">
-                            "O3XO's automation magic gave us back 70% of our team's time. What used to take hours of tedious data entry now happens automatically with better accuracy than we ever achieved manually. It's transformative."
-                        </blockquote>
+                    <!-- Solution -->
+                    <div class="animate-on-scroll fade-in">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Solution</h2>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800">Turning insights into automated workflows</h3>
+                        <p class="text-lg text-gray-700 leading-relaxed">
+                            To unlock the value of AI within e-Hazard's operations, O3 led a collaborative engagement using our proven AI workshop and prioritization methodology. Together with e-Hazard's leadership, we assessed a range of opportunities and identified a clear area for impact: modernizing their manual, paper-based certificate management process. We mapped the workflow end-to-end and evaluated AI solutions capable of ingesting student lists, reading scanned data, and generating CSV files for seamless integration into their certificate management system. Working closely with the e-Hazard team, we developed a solution that prioritized accuracy in document ingestion and data formatting. The approach was validated through stakeholder feedback and iterative refinement, ultimately resulting in a faster, more reliable, and cost-effective way to manage student certificates. And most importantly, it left us with one extremely happy customer.
+                        </p>
+                    </div>
+
+                    <!-- Result -->
+                    <div class="animate-on-scroll fade-in">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Result</h2>
+                        <div class="text-center bg-gray-50 rounded-lg p-8 border-l-4" style="border-color: #FFD700;">
+                            <h3 class="text-5xl font-bold mb-4 text-gray-900">70%</h3>
+                            <p class="text-xl text-gray-700">Reduction in hours spent per week</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial -->
+                    <div class="animate-on-scroll fade-in">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">In their words</h2>
+                        <div class="bg-gray-50 rounded-lg p-8 border-l-4" style="border-color: #FFD700;">
+                            <blockquote class="text-xl text-gray-800 mb-4 italic">
+                                "I am over here doing a happy dance in my tears of joy at how amazing this AI program is. Don't mind me, just living my best life!"
+                            </blockquote>
+                            <cite class="text-gray-600 not-italic">
+                                <strong>Business Process Owner</strong>, e-Hazard
+                            </cite>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -167,6 +208,9 @@
 
     <!-- Component Loader -->
     <script src="../../assets/js/component-loader.js"></script>
+
+    <!-- Navigation -->
+    <script src="../../assets/js/navigation.js"></script>
 
     <!-- Animations -->
     <script src="../../assets/js/animations.js"></script>
