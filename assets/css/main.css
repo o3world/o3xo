@@ -28,6 +28,14 @@ a:focus-visible:not([class*="bg-red"]):not([class*="bg-white"]):not(.btn):not([r
     outline-offset: 4px;
 }
 
+/* Override for inline text links - just underline, no outline */
+p a:hover,
+p a:focus,
+p a:focus-visible {
+    outline: none !important;
+    text-decoration: underline;
+}
+
 /* Override for approach section links - just underline, no color change or outline */
 h2 a[href="/about/approach/"]:hover,
 h2 a[href="/about/approach/"]:focus,
@@ -55,8 +63,8 @@ button[class*="bg-red"]:hover {
     color: white !important;
 }
 
-/* White button hover (exclude nav toggle and mega menu items) */
-a[class*="bg-white"]:hover:not([data-nav-toggle]):not([data-submenu] a),
+/* White button hover (exclude nav toggle, mega menu items, and contact cards) */
+a[class*="bg-white"]:hover:not([data-nav-toggle]):not([data-submenu] a):not([class*="backdrop-blur"]),
 button[class*="bg-white"]:hover:not([data-nav-toggle]) {
     background-color: #f3f3f3 !important;
 }
