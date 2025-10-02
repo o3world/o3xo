@@ -67,7 +67,10 @@
                 const panel = getPanel(trigger);
                 if (!trigger || !panel) return;
                 if (panel !== exceptPanel) {
-                    closeSubmenu(trigger, panel);
+                    // Only close on desktop, leave open on mobile
+                    if (isDesktop()) {
+                        closeSubmenu(trigger, panel);
+                    }
                 }
             });
         };
@@ -97,6 +100,16 @@
             updateToggleIcons(expanded);
             if (expanded) {
                 navPanel.classList.remove('hidden');
+                // On mobile, show all submenu panels
+                if (!isDesktop()) {
+                    menuItems.forEach((item) => {
+                        const panel = item.querySelector('[role="menu"]');
+                        if (panel) {
+                            panel.classList.remove('invisible', 'opacity-0', 'pointer-events-none');
+                            panel.classList.add('opacity-100');
+                        }
+                    });
+                }
             } else if (!isDesktop()) {
                 navPanel.classList.add('hidden');
             }
@@ -149,6 +162,21 @@
         const handleViewportChange = () => {
             setMenuVisibility(false);
             syncPanelForViewport();
+
+            // On desktop, ensure all panels are closed
+            // On mobile, panels will be shown when menu is opened
+            menuItems.forEach((item) => {
+                const trigger = item.querySelector('[data-menu-trigger]');
+                const panel = getPanel(trigger);
+                if (!trigger || !panel) return;
+                if (isDesktop()) {
+                    closeSubmenu(trigger, panel);
+                } else {
+                    // On mobile, hide panels when nav is closed
+                    panel.classList.add('invisible', 'opacity-0', 'pointer-events-none');
+                    panel.classList.remove('opacity-100');
+                }
+            });
         };
 
         if (mediaQuery.addEventListener) {
@@ -165,6 +193,7 @@
             }
 
             let leaveTimeout;
+            let isHovering = false;
 
             trigger.addEventListener('click', (event) => {
                 // Allow buttons to toggle on both desktop and mobile
@@ -240,22 +269,49 @@
 
             const handleMouseEnter = () => {
                 if (!isDesktop()) return;
+                isHovering = true;
                 clearTimeout(leaveTimeout);
-                openSubmenu(trigger, panel);
+
+                // Open immediately if not already open
+                if (trigger.getAttribute('aria-expanded') !== 'true') {
+                    openSubmenu(trigger, panel);
+                }
             };
 
             const handleMouseLeave = () => {
                 if (!isDesktop()) return;
+                isHovering = false;
+
+                // Use a longer delay for more stable behavior - 350ms is a sweet spot
                 leaveTimeout = setTimeout(() => {
-                    closeSubmenu(trigger, panel);
-                }, 100);
+                    // Double-check: only close if still not hovering
+                    if (!isHovering && trigger.getAttribute('aria-expanded') === 'true') {
+                        closeSubmenu(trigger, panel);
+                    }
+                }, 350);
             };
 
-            // Add listeners to both item and panel
+            // Add listeners to the item wrapper (includes button + hover bridge)
             item.addEventListener('mouseenter', handleMouseEnter);
             item.addEventListener('mouseleave', handleMouseLeave);
-            panel.addEventListener('mouseenter', handleMouseEnter);
-            panel.addEventListener('mouseleave', handleMouseLeave);
+
+            // Add listeners to the panel (dropdown content)
+            panel.addEventListener('mouseenter', () => {
+                if (!isDesktop()) return;
+                isHovering = true;
+                clearTimeout(leaveTimeout);
+
+                // Ensure panel stays open when entering from the hover bridge
+                if (trigger.getAttribute('aria-expanded') !== 'true') {
+                    openSubmenu(trigger, panel);
+                }
+            });
+
+            panel.addEventListener('mouseleave', () => {
+                if (!isDesktop()) return;
+                isHovering = false;
+                handleMouseLeave();
+            });
 
             item.addEventListener('focusout', (event) => {
                 if (event.relatedTarget && item.contains(event.relatedTarget)) {

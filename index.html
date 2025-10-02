@@ -86,31 +86,31 @@
     <header class="relative min-h-screen flex items-center justify-center bg-cover bg-center" style="background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('assets/images/header-background.png'); background-size: cover;" role="banner" aria-label="Hero section with technology background">
         <div class="relative z-10 max-w-7xl mx-auto px-6 py-16">
             <div>
-                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 hero-title">
+                <h1 data-hero-animate class="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 hero-title">
                     Enter AI's frontier where potential meets performance
                 </h1>
-                <p class="text-lg md:text-xl text-gray-200 mb-12 max-w-3xl hero-text">
+                <p data-hero-animate class="text-lg md:text-xl text-gray-200 mb-12 max-w-3xl hero-text">
                     The pressure to implement AI is real, but knowing where to start shouldn't keep you up at night. O3XO takes you beyond AI hype into clear results, where we help leaders prove value quickly and build industry‑centric capabilities that propel you forward.
                 </p>
             </div>
 
             <!-- Stats Cards -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-12 hero-stats">
-                <article class="rounded-lg p-8 hover:scale-105 transition-transform duration-300 overflow-hidden relative" style="background-color: var(--color-yellow);">
+                <article data-hero-animate class="rounded-lg p-8 hover-lift hover-scale transition-smooth overflow-hidden relative" style="background-color: var(--color-yellow);">
                     <div class="absolute inset-0 z-0" style="background-image: url('assets/images/yellow-card-bg.png'); background-size: cover; border-radius: inherit; transform: scale(1.1);"></div>
                     <div class="relative z-10">
                         <p class="text-4xl font-bold mb-2">50%+</p>
                         <p class="text-lg md:text-xl">average efficiency gain</p>
                     </div>
                 </article>
-                <article class="rounded-lg p-8 hover:scale-105 transition-transform duration-300 overflow-hidden relative" style="background-color: var(--color-yellow);">
+                <article data-hero-animate class="rounded-lg p-8 hover-lift hover-scale transition-smooth overflow-hidden relative" style="background-color: var(--color-yellow);">
                     <div class="absolute inset-0 z-0" style="background-image: url('assets/images/yellow-card-bg.png'); background-size: cover; border-radius: inherit; transform: scale(1.1);"></div>
                     <div class="relative z-10">
                         <p class="text-4xl font-bold mb-2">10x</p>
                         <p class="text-lg md:text-xl">faster information access</p>
                     </div>
                 </article>
-                <article class="rounded-lg p-8 hover:scale-105 transition-transform duration-300 overflow-hidden relative" style="background-color: var(--color-yellow);">
+                <article data-hero-animate class="rounded-lg p-8 hover-lift hover-scale transition-smooth overflow-hidden relative" style="background-color: var(--color-yellow);">
                     <div class="absolute inset-0 z-0" style="background-image: url('assets/images/yellow-card-bg.png'); background-size: cover; border-radius: inherit; transform: scale(1.1);"></div>
                     <div class="relative z-10">
                         <p class="text-4xl font-bold mb-2">&lt;90 days</p>
@@ -132,20 +132,20 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <article class="border-b border-gray-200 pb-8 animate-on-scroll slide-in-left stagger-1">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-stagger-children>
+                <article class="border-b border-gray-200 pb-8 animate-on-scroll slide-in-left transition-smooth">
                     <h3 class="text-xl font-semibold mb-2">Identify high‑impact use cases</h3>
                     <p class="text-gray-600">Industry‑specific opportunities, not generic AI applications</p>
                 </article>
-                <article class="border-b border-gray-200 pb-8 animate-on-scroll slide-in-right stagger-1">
+                <article class="border-b border-gray-200 pb-8 animate-on-scroll slide-in-right transition-smooth">
                     <h3 class="text-xl font-semibold mb-2">Prove value in less than 90 days</h3>
                     <p class="text-gray-600">Quickly develop solutions that deliver and key KPIs</p>
                 </article>
-                <article class="border-b border-gray-200 pb-8 animate-on-scroll slide-in-left stagger-2">
+                <article class="border-b border-gray-200 pb-8 animate-on-scroll slide-in-left transition-smooth">
                     <h3 class="text-xl font-semibold mb-2">Train and empower teams</h3>
                     <p class="text-gray-600">Solutions that enhance expertise with proper support</p>
                 </article>
-                <article class="border-b border-gray-200 pb-8 animate-on-scroll slide-in-right stagger-2">
+                <article class="border-b border-gray-200 pb-8 animate-on-scroll slide-in-right transition-smooth">
                     <h3 class="text-xl font-semibold mb-2">Scale responsibly</h3>
                     <p class="text-gray-600">From pilots to enterprise platforms with built‑in governance</p>
                 </article>
@@ -163,8 +163,8 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <article class="bg-white/10 backdrop-blur-sm border border-white/20 animate-on-scroll fade-in hover-lift rounded-lg p-6 hover:scale-105 hover:bg-white/15 transition-all duration-300">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-stagger-children>
+                <article class="bg-white/10 backdrop-blur-sm border border-white/20 animate-on-scroll fade-in hover-lift rounded-lg p-6 transition-smooth">
                     <div class="w-12 h-12 mb-4" aria-hidden="true">
                         <svg class="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64">
                             <rect fill="#FFBE00" height="64" rx="32" width="64"></rect>
@@ -175,7 +175,7 @@
                     <p class="text-white">Faster estimates, better profit predictions, smoother project delivery</p>
                 </article>
 
-                <article class="bg-white/10 backdrop-blur-sm border border-white/20 animate-on-scroll fade-in hover-lift rounded-lg p-6 hover:scale-105 hover:bg-white/15 transition-all duration-300">
+                <article class="bg-white/10 backdrop-blur-sm border border-white/20 animate-on-scroll fade-in hover-lift rounded-lg p-6 transition-smooth">
                     <div class="w-12 h-12 mb-4" aria-hidden="true">
                         <svg class="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64">
                             <rect fill="#FFBE00" height="64" rx="32" width="64"></rect>
@@ -186,7 +186,7 @@
                     <p class="text-white">Automate tedious tasks, improve operations, scale expertise in real time</p>
                 </article>
 
-                <article class="bg-white/10 backdrop-blur-sm border border-white/20 animate-on-scroll fade-in hover-lift rounded-lg p-6 hover:scale-105 hover:bg-white/15 transition-all duration-300">
+                <article class="bg-white/10 backdrop-blur-sm border border-white/20 animate-on-scroll fade-in hover-lift rounded-lg p-6 transition-smooth">
                     <div class="w-12 h-12 mb-4" aria-hidden="true">
                         <svg class="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64">
                             <rect fill="#FFBE00" height="64" rx="32" width="64"></rect>
@@ -197,7 +197,7 @@
                     <p class="text-white">More leads, greater efficiency in R&amp;D, compliance, and commercialization</p>
                 </article>
 
-                <article class="bg-white/10 backdrop-blur-sm border border-white/20 animate-on-scroll fade-in hover-lift rounded-lg p-6 hover:scale-105 hover:bg-white/15 transition-all duration-300">
+                <article class="bg-white/10 backdrop-blur-sm border border-white/20 animate-on-scroll fade-in hover-lift rounded-lg p-6 transition-smooth">
                     <div class="w-12 h-12 mb-4" aria-hidden="true">
                         <svg class="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64">
                             <rect fill="#FFBE00" height="64" rx="32" width="64"></rect>
@@ -208,7 +208,7 @@
                     <p class="text-white">Early tenant identification, streamlined management, accounting efficiency</p>
                 </article>
 
-                <article class="bg-white/10 backdrop-blur-sm border border-white/20 animate-on-scroll fade-in hover-lift rounded-lg p-6 hover:scale-105 hover:bg-white/15 transition-all duration-300">
+                <article class="bg-white/10 backdrop-blur-sm border border-white/20 animate-on-scroll fade-in hover-lift rounded-lg p-6 transition-smooth">
                     <div class="w-12 h-12 mb-4" aria-hidden="true">
                         <svg class="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64">
                             <rect fill="#FFBE00" height="64" rx="32" width="64"></rect>
@@ -219,7 +219,7 @@
                     <p class="text-white">Stronger customer support, smarter underwriting, advisor amplification</p>
                 </article>
 
-                <article class="bg-white/10 backdrop-blur-sm border border-white/20 animate-on-scroll fade-in hover-lift rounded-lg p-6 hover:scale-105 hover:bg-white/15 transition-all duration-300">
+                <article class="bg-white/10 backdrop-blur-sm border border-white/20 animate-on-scroll fade-in hover-lift rounded-lg p-6 transition-smooth">
                     <div class="w-12 h-12 mb-4" aria-hidden="true">
                         <svg class="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64">
                             <rect fill="#FFBE00" height="64" rx="32" width="64"></rect>
@@ -249,8 +249,8 @@
                 </a>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-stagger-children>
+                <article class="bg-white rounded-lg overflow-hidden shadow-sm animate-on-scroll fade-in hover-lift transition-smooth">
                     <div class="h-64 bg-gray-300 bg-cover bg-center" style="background-image: url('assets/images/buffalo-case-study.png');"></div>
                     <div class="p-6">
                         <div class="flex items-start justify-between border-b border-gray-200 pb-4 mb-4">
@@ -268,7 +268,7 @@
                     </div>
                 </article>
 
-                <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
+                <article class="bg-white rounded-lg overflow-hidden shadow-sm animate-on-scroll fade-in hover-lift transition-smooth">
                     <div class="h-64 bg-gray-300 bg-cover bg-center" style="background-image: url('assets/images/tyndale-case-study.png');"></div>
                     <div class="p-6">
                         <div class="flex items-start justify-between border-b border-gray-200 pb-4 mb-4">
@@ -286,7 +286,7 @@
                     </div>
                 </article>
 
-                <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
+                <article class="bg-white rounded-lg overflow-hidden shadow-sm animate-on-scroll fade-in hover-lift transition-smooth">
                     <div class="h-64 bg-gray-300 bg-cover bg-center" style="background-image: url('assets/images/mckesson-case-study.png');"></div>
                     <div class="p-6">
                         <div class="flex items-start justify-between border-b border-gray-200 pb-4 mb-4">
@@ -327,9 +327,9 @@
         <div class="max-w-7xl mx-auto">
             <h2 class="text-4xl md:text-5xl font-bold mb-12">Insights from the next frontier</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-stagger-children>
                 <a href="https://www.o3world.com/perspectives/ai-roi-beyond-efficiency/" target="_blank" rel="noopener noreferrer" class="block">
-                    <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
+                    <article class="bg-white rounded-lg overflow-hidden shadow-sm animate-on-scroll fade-in hover-lift transition-smooth">
                         <div class="aspect-square bg-gray-300 bg-cover bg-center" style="background-image: url('assets/images/insight-1.png');"></div>
                         <div class="p-6">
                             <h3 class="text-xl font-semibold flex items-start justify-between">
@@ -341,7 +341,7 @@
                 </a>
 
                 <a href="https://www.o3world.com/perspectives/ai-roi-beyond-efficiency/" target="_blank" rel="noopener noreferrer" class="block">
-                    <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
+                    <article class="bg-white rounded-lg overflow-hidden shadow-sm animate-on-scroll fade-in hover-lift transition-smooth">
                         <div class="aspect-square bg-gray-300 bg-cover bg-center" style="background-image: url('assets/images/insight-2.png');"></div>
                         <div class="p-6">
                             <h3 class="text-xl font-semibold flex items-start justify-between">
@@ -353,7 +353,7 @@
                 </a>
 
                 <a href="https://www.o3world.com/perspectives/ai-roi-beyond-efficiency/" target="_blank" rel="noopener noreferrer" class="block">
-                    <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
+                    <article class="bg-white rounded-lg overflow-hidden shadow-sm animate-on-scroll fade-in hover-lift transition-smooth">
                         <div class="aspect-square bg-gray-300 bg-cover bg-center" style="background-image: url('assets/images/insight-3.png');"></div>
                         <div class="p-6">
                             <h3 class="text-xl font-semibold flex items-start justify-between">
@@ -390,20 +390,22 @@
     <div data-component="footer"></div>
     <noscript>
         <!-- Static footer fallback for no-JS environments -->
-        <footer class="py-12 px-6" style="background-color: var(--color-gray-bg);">
-            <div class="max-w-7xl mx-auto">
-                <div class="mb-6">
-                    <h3 class="text-2xl font-bold mb-2">O3XO</h3>
-                    <p class="text-gray-600 mb-2">Transforming businesses through intelligent AI implementation.</p>
-                    <p class="text-gray-600">© 2025 O3 World, LLC. All rights reserved.</p>
-                </div>
-                <div class="flex gap-6">
-                    <a href="https://www.o3world.com/privacy-policy/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 underline">
-                        Privacy policy
-                    </a>
-                    <a href="https://www.o3world.com/accessibility-statement/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 underline">
-                        Accessibility statement
-                    </a>
+        <footer class="py-8" style="background-color: rgb(243, 243, 243);">
+            <div class="max-w-7xl mx-auto px-4 md:px-6">
+                <div class="flex flex-col">
+                    <div class="mb-4">
+                        <h3 class="text-gray-900 mb-2">O3XO</h3>
+                        <p class="text-gray-600 mb-2">Transforming businesses through intelligent AI implementation.</p>
+                        <p class="text-gray-600">© 2025 O3 World, LLC. All rights reserved.</p>
+                    </div>
+                    <div class="flex gap-6">
+                        <a href="https://www.o3world.com/privacy-policy/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors underline">
+                            Privacy policy
+                        </a>
+                        <a href="https://www.o3world.com/accessibility-statement/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors underline">
+                            Accessibility statement
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>

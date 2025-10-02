@@ -3,8 +3,8 @@
 
 <!-- Logo & Navigation -->
 <div class="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur" data-site-header>
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6" data-site-header-inner>
-        <a href="/" aria-label="O3XO Home" class="flex gap-[1.333px] items-center">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6 lg:py-0" data-site-header-inner>
+        <a href="/" aria-label="O3XO Home" class="flex gap-[1.333px] items-center lg:py-4">
             <svg class="block h-[26.667px] w-[45.6px]" fill="none" preserveAspectRatio="none" viewBox="0 0 46 27" aria-label="O3XO">
                 <title>O3XO</title>
                 <path d="M0 13.3326C0 20.6841 5.98222 26.6667 13.3333 26.6667C20.6845 26.6667 26.6667 20.6856 26.6667 13.3326C26.6667 5.97948 20.686 0 13.3333 0C5.98068 0 0 5.98102 0 13.3326ZM21.2988 13.3326C21.2988 17.7244 17.7265 21.3001 13.3333 21.3001C8.94022 21.3001 5.36783 17.7259 5.36783 13.3326C5.36783 8.9392 8.94176 5.3666 13.3333 5.3666C17.7249 5.3666 21.2988 8.9392 21.2988 13.3326Z" fill="white"/>
@@ -17,59 +17,62 @@
         </a>
 
         <!-- Navigation -->
-        <nav aria-label="Main navigation" class="relative ml-auto">
+        <nav aria-label="Main navigation" class="ml-auto">
             <button type="button" class="inline-flex items-center justify-center rounded-lg border border-white/10 bg-white/5 p-2 text-white transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black lg:hidden" data-nav-toggle aria-controls="primary-menu" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-icon="menu"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
                 <svg class="h-6 w-6 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-icon="close"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
             </button>
 
-            <div id="primary-menu" data-nav-panel class="hidden absolute left-0 right-0 top-full mt-4 origin-top rounded-2xl border border-white/10 bg-black/95 px-6 py-6 text-white shadow-2xl lg:static lg:flex lg:mt-0 lg:items-center lg:gap-10 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none transition-opacity duration-200">
+            <div id="primary-menu" data-nav-panel class="hidden fixed left-0 right-0 top-[72px] mx-4 origin-top rounded-2xl border border-white/10 bg-black/95 px-6 py-6 text-white shadow-2xl lg:static lg:flex lg:mt-0 lg:items-center lg:gap-10 lg:rounded-none lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none lg:mx-0 transition-opacity duration-200">
                 <ul class="flex flex-col gap-6 lg:flex-row lg:items-center lg:gap-8" role="menubar">
                     <li class="lg:relative" data-menu-item role="none">
-                        <button type="button" class="flex w-full items-center justify-between gap-3 text-left text-white transition hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black lg:text-sm lg:pb-6" data-menu-trigger aria-expanded="false" aria-controls="mega-case-studies" aria-haspopup="true" role="menuitem">
+                        <button type="button" class="hidden lg:flex w-full items-center justify-between gap-3 text-left text-white transition hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black lg:text-sm" data-menu-trigger aria-expanded="false" aria-controls="mega-case-studies" aria-haspopup="true" role="menuitem">
                             <span class="text-base font-medium lg:text-sm">Case studies</span>
                             <svg class="h-4 w-4 flex-shrink-0 transition-transform duration-200" aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 8 10 12 14 8"/></svg>
                         </button>
-                        <div id="mega-case-studies" class="invisible opacity-0 pointer-events-none rounded-2xl border border-white/10 bg-black/95 p-6 text-white shadow-2xl focus:outline-none lg:absolute lg:left-1/2 lg:top-full lg:-mt-4 lg:pt-10 lg:min-w-[720px] lg:-translate-x-1/2 transition-all duration-200" role="menu" aria-orientation="vertical" aria-label="Case studies submenu">
-                            <div class="grid gap-4 md:grid-cols-2">
-                                <a href="/case-studies/buffalo-construction/" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
-                                    <p class="text-xs uppercase tracking-wide text-yellow-300">Construction</p>
-                                    <p class="mt-2 text-lg font-semibold text-white">Buffalo Construction</p>
-                                    <p class="mt-1 text-sm text-gray-300">Automating closeout workflows</p>
+                        <div class="lg:hidden mb-3">
+                            <p class="text-sm font-semibold text-yellow-300 uppercase tracking-wide mb-3">Case studies</p>
+                        </div>
+                        <div id="mega-case-studies" class="invisible opacity-0 pointer-events-none lg:rounded-2xl lg:border lg:border-white/10 lg:bg-black/95 lg:p-6 text-white lg:shadow-2xl focus:outline-none lg:absolute lg:left-1/2 lg:top-full lg:mt-2 lg:min-w-[720px] lg:-translate-x-1/2 transition-all duration-200" role="menu" aria-orientation="vertical" aria-label="Case studies submenu">
+                            <div class="flex flex-col gap-3 lg:grid lg:gap-4 md:grid-cols-2">
+                                <a href="/case-studies/buffalo-construction/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                    <p class="text-xs uppercase tracking-wide text-yellow-300 lg:block hidden">Construction</p>
+                                    <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">Buffalo Construction</p>
+                                    <p class="mt-1 text-sm text-gray-300 lg:block hidden">Automating closeout workflows</p>
                                 </a>
-                                <a href="/case-studies/tyndale/" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
-                                    <p class="text-xs uppercase tracking-wide text-yellow-300">Manufacturing</p>
-                                    <p class="mt-2 text-lg font-semibold text-white">Tyndale</p>
-                                    <p class="mt-1 text-sm text-gray-300">AI-driven product insight</p>
+                                <a href="/case-studies/tyndale/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                    <p class="text-xs uppercase tracking-wide text-yellow-300 lg:block hidden">Manufacturing</p>
+                                    <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">Tyndale</p>
+                                    <p class="mt-1 text-sm text-gray-300 lg:block hidden">AI-driven product insight</p>
                                 </a>
-                                <a href="/case-studies/mckesson/" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
-                                    <p class="text-xs uppercase tracking-wide text-yellow-300">Life sciences</p>
-                                    <p class="mt-2 text-lg font-semibold text-white">McKesson Compile</p>
-                                    <p class="mt-1 text-sm text-gray-300">AI strategy acceleration</p>
+                                <a href="/case-studies/mckesson/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                    <p class="text-xs uppercase tracking-wide text-yellow-300 lg:block hidden">Life sciences</p>
+                                    <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">McKesson Compile</p>
+                                    <p class="mt-1 text-sm text-gray-300 lg:block hidden">AI strategy acceleration</p>
                                 </a>
-                                <a href="/case-studies/sti-firestop/" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
-                                    <p class="text-xs uppercase tracking-wide text-yellow-300">Industrial services</p>
-                                    <p class="mt-2 text-lg font-semibold text-white">STI Firestop</p>
-                                    <p class="mt-1 text-sm text-gray-300">Product search revolution</p>
+                                <a href="/case-studies/sti-firestop/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                    <p class="text-xs uppercase tracking-wide text-yellow-300 lg:block hidden">Industrial services</p>
+                                    <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">STI Firestop</p>
+                                    <p class="mt-1 text-sm text-gray-300 lg:block hidden">Product search revolution</p>
                                 </a>
-                                <a href="/case-studies/e-hazard/" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
-                                    <p class="text-xs uppercase tracking-wide text-yellow-300">Training &amp; safety</p>
-                                    <p class="mt-2 text-lg font-semibold text-white">e-Hazard</p>
-                                    <p class="mt-1 text-sm text-gray-300">Certificate automation magic</p>
+                                <a href="/case-studies/e-hazard/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                    <p class="text-xs uppercase tracking-wide text-yellow-300 lg:block hidden">Training &amp; safety</p>
+                                    <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">e-Hazard</p>
+                                    <p class="mt-1 text-sm text-gray-300 lg:block hidden">Certificate automation magic</p>
                                 </a>
-                                <a href="/case-studies/global-tech/" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
-                                    <p class="text-xs uppercase tracking-wide text-yellow-300">Technology</p>
-                                    <p class="mt-2 text-lg font-semibold text-white">Global tech firm</p>
-                                    <p class="mt-1 text-sm text-gray-300">RFP automation</p>
+                                <a href="/case-studies/global-tech/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                    <p class="text-xs uppercase tracking-wide text-yellow-300 lg:block hidden">Technology</p>
+                                    <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">Global tech firm</p>
+                                    <p class="mt-1 text-sm text-gray-300 lg:block hidden">RFP automation</p>
                                 </a>
-                                <a href="/case-studies/american-family/" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
-                                    <p class="text-xs uppercase tracking-wide text-yellow-300">Insurance</p>
-                                    <p class="mt-2 text-lg font-semibold text-white">American Family Insurance</p>
-                                    <p class="mt-1 text-sm text-gray-300">Legal document intelligence</p>
+                                <a href="/case-studies/american-family/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                    <p class="text-xs uppercase tracking-wide text-yellow-300 lg:block hidden">Insurance</p>
+                                    <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">American Family Insurance</p>
+                                    <p class="mt-1 text-sm text-gray-300 lg:block hidden">Legal document intelligence</p>
                                 </a>
                             </div>
-                            <div class="mt-4 flex flex-wrap gap-3 text-sm text-gray-300">
+                            <div class="mt-4 hidden lg:flex flex-wrap gap-3 text-sm text-gray-300">
                                 <a href="/case-studies/" class="inline-flex items-center gap-2 font-medium text-white transition hover:text-yellow-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
                                     View all case studies
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
@@ -82,24 +85,27 @@
                         </div>
                     </li>
                     <li class="lg:relative" data-menu-item role="none">
-                        <button type="button" class="flex w-full items-center justify-between gap-3 text-left text-white transition hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black lg:text-sm lg:pb-6" data-menu-trigger aria-expanded="false" aria-controls="mega-about" aria-haspopup="true" role="menuitem">
+                        <button type="button" class="hidden lg:flex w-full items-center justify-between gap-3 text-left text-white transition hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black lg:text-sm" data-menu-trigger aria-expanded="false" aria-controls="mega-about" aria-haspopup="true" role="menuitem">
                             <span class="text-base font-medium lg:text-sm">About</span>
                             <svg class="h-4 w-4 flex-shrink-0 transition-transform duration-200" aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 8 10 12 14 8"/></svg>
                         </button>
-                        <div id="mega-about" class="invisible opacity-0 pointer-events-none rounded-2xl border border-white/10 bg-black/95 p-6 text-white shadow-2xl focus:outline-none lg:absolute lg:left-1/2 lg:top-full lg:-mt-4 lg:pt-10 lg:min-w-[560px] lg:-translate-x-1/2 transition-all duration-200" role="menu" aria-orientation="vertical" aria-label="About submenu">
-                            <div class="grid gap-4 md:grid-cols-2">
-                                <a href="/about/" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
-                                    <p class="text-xs uppercase tracking-wide text-yellow-300">About O3XO</p>
-                                    <p class="mt-2 text-lg font-semibold text-white">Our story and mission</p>
-                                    <p class="mt-1 text-sm text-gray-300">20+ years of digital transformation expertise applied to AI strategy and execution.</p>
+                        <div class="lg:hidden mb-3">
+                            <p class="text-sm font-semibold text-yellow-300 uppercase tracking-wide mb-3">About</p>
+                        </div>
+                        <div id="mega-about" class="invisible opacity-0 pointer-events-none lg:rounded-2xl lg:border lg:border-white/10 lg:bg-black/95 lg:p-6 text-white lg:shadow-2xl focus:outline-none lg:absolute lg:left-1/2 lg:top-full lg:mt-2 lg:min-w-[560px] lg:-translate-x-1/2 transition-all duration-200" role="menu" aria-orientation="vertical" aria-label="About submenu">
+                            <div class="flex flex-col gap-3 lg:grid lg:gap-4 md:grid-cols-2">
+                                <a href="/about/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                    <p class="text-xs uppercase tracking-wide text-yellow-300 lg:block hidden">About O3XO</p>
+                                    <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">Our story and mission</p>
+                                    <p class="mt-1 text-sm text-gray-300 lg:block hidden">20+ years of digital transformation expertise applied to AI strategy and execution.</p>
                                 </a>
-                                <a href="/about/approach/" class="group block rounded-xl border border-white/10 bg-white/5 p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
-                                    <p class="text-xs uppercase tracking-wide text-yellow-300">Our Approach</p>
-                                    <p class="mt-2 text-lg font-semibold text-white">Strategy to activation</p>
-                                    <p class="mt-1 text-sm text-gray-300">Our proven methodology from AI roadmap to measurable results.</p>
+                                <a href="/about/approach/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                    <p class="text-xs uppercase tracking-wide text-yellow-300 lg:block hidden">Our Approach</p>
+                                    <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">Strategy to activation</p>
+                                    <p class="mt-1 text-sm text-gray-300 lg:block hidden">Our proven methodology from AI roadmap to measurable results.</p>
                                 </a>
                             </div>
-                            <div class="mt-4 flex flex-wrap gap-3 text-sm text-gray-300">
+                            <div class="mt-4 hidden lg:flex flex-wrap gap-3 text-sm text-gray-300">
                                 <a href="/contact/" class="inline-flex items-center gap-2 font-medium text-white transition hover:text-yellow-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
                                     Talk with our team
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
@@ -107,7 +113,7 @@
                             </div>
                         </div>
                     </li>
-                    <li role="none" class="flex items-center lg:pb-6">
+                    <li role="none" class="flex items-center">
                         <a href="/contact/" class="inline-flex items-center justify-center rounded-lg bg-red-600 px-6 py-2 text-base font-semibold text-white transition hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-black lg:text-sm" role="menuitem">
                             Contact
                         </a>
