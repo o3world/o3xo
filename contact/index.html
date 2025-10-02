@@ -24,14 +24,14 @@
     <link rel="stylesheet" href="../assets/css/animations.css">
     <link rel="stylesheet" href="../assets/css/mobile-menu.css">
 </head>
-<body class="bg-white text-gray-900">
+<body class="text-gray-900 bg-white">
     <!-- Header placeholder -->
     <div data-component="header"></div>
     <noscript>
         <!-- Static header fallback for no-JS environments -->
 <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:text-black focus:px-4 focus:py-2 focus:rounded">Skip to main content</a>
 <div class="fixed top-0 left-0 right-0 z-50 bg-black">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center justify-between px-6 py-4 mx-auto max-w-7xl">
         <a href="/" aria-label="O3XO Home" class="flex gap-[1.333px] items-center">
             <svg class="block h-[26.667px] w-[45.6px]" fill="none" preserveAspectRatio="none" viewBox="0 0 46 27" aria-label="O3XO">
                 <title>O3XO</title>
@@ -65,7 +65,7 @@
                     </ul>
                 </li>
                 <li class="sm:self-center">
-                    <a href="/contact/" class="inline-flex items-center justify-center rounded-lg bg-red-600 px-6 py-2 font-semibold text-white hover:bg-red-700">Contact</a>
+                    <a href="/contact/" class="inline-flex items-center justify-center px-6 py-2 font-semibold text-white bg-red-600 rounded-lg hover:bg-red-700">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -77,45 +77,45 @@
     <main id="main-content">
         <!-- Hero Section -->
         <section class="relative w-full pt-32">
-            <div class="absolute top-0 left-0 right-0 bg-cover bg-center bg-no-repeat" style="background-image: url('../assets/images/header-background.webp'); height: calc(100% + 40px);">
+            <div class="absolute top-0 left-0 right-0 bg-center bg-no-repeat bg-cover" style="background-image: url('../assets/images/header-background.webp'); height: calc(100% + 40px);">
                 <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/60"></div>
             </div>
-            <div class="relative z-10 max-w-7xl mx-auto px-4 md:px-6 pt-16 pb-8">
-                <div class="flex flex-col gap-2 max-w-4xl">
-                    <h1 class="text-white text-4xl md:text-5xl mb-4 animate-on-scroll fade-in">Ready to move from AI potential to performance?</h1>
-                    <p class="text-gray-200 text-xl max-w-lg animate-on-scroll fade-in">Let's discuss how O3XO can help you identify high-impact AI use cases and deliver measurable results in less than 90 days.</p>
+            <div class="relative z-10 px-4 pt-16 pb-8 mx-auto max-w-7xl md:px-6">
+                <div class="flex flex-col max-w-4xl gap-2">
+                    <h1 class="mb-4 text-4xl text-white md:text-5xl animate-on-scroll fade-in">Ready to move from AI potential to performance?</h1>
+                    <p class="max-w-lg text-xl text-gray-200 animate-on-scroll fade-in">Let's discuss how O3XO can help you identify high-impact AI use cases and deliver measurable results in less than 90 days.</p>
                 </div>
             </div>
         </section>
 
         <!-- Divider Section -->
-        <section class="py-12 bg-black px-0 py-6">
-            <div class="max-w-7xl mx-auto px-4 md:px-6">
+        <section class="px-0 py-6 py-12 bg-black">
+            <div class="px-4 mx-auto max-w-7xl md:px-6">
                 <div class="w-full h-px bg-black rounded"></div>
             </div>
         </section>
 
         <!-- Start the Conversation Section -->
-        <section class="py-12 relative" style="background-image: url('../assets/images/industries-bg.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <section class="relative py-12" style="background-image: url('../assets/images/industries-bg.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div class="absolute inset-0 bg-black/40"></div>
-            <div class="relative z-10 max-w-7xl mx-auto px-6">
+            <div class="relative z-10 px-6 mx-auto max-w-7xl">
                 <div class="mb-12 animate-on-scroll fade-in">
-                    <h2 class="text-white mb-6 text-3xl md:text-4xl">Start the conversation</h2>
+                    <h2 class="mb-6 text-3xl text-white md:text-4xl">Start the conversation</h2>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
                     <!-- Ready to get started -->
                     <div class="animate-on-scroll fade-in">
-                        <a href="http://assessment.o3world.com/" target="_blank" rel="noopener noreferrer" class="block bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 h-full hover:scale-105 transition-all duration-300 flex flex-col" style="min-height: 320px;">
-                            <div class="space-y-4 h-full flex flex-col">
+                        <a href="http://assessment.o3world.com/" target="_blank" rel="noopener noreferrer" class="flex flex-col block h-full p-6 transition-all duration-300 border rounded-lg bg-white/10 backdrop-blur-sm border-white/20 hover:scale-105" style="min-height: 320px;">
+                            <div class="flex flex-col h-full space-y-4">
                                 <div class="w-12 h-12">
                                     <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
                                         <rect fill="#FFBE00" height="64" rx="32" width="64"/>
                                         <path d="M36.9515 31.9989L48 48L32 36.9528L16 48L27.0485 31.9989L16 16L32 27.0472L48 16L36.9515 31.9989Z" fill="white"/>
                                     </svg>
                                 </div>
-                                <h3 class="text-white text-xl">Ready to get started?</h3>
-                                <p class="text-white leading-relaxed flex-1 whitespace-pre-line">Take the AI assessment — Get personalized insights into the AI opportunities that matter most for your business in under 10 minutes.</p>
-                                <div class="flex items-center gap-2 text-white mt-auto">
+                                <h3 class="text-xl text-white">Ready to get started?</h3>
+                                <p class="flex-1 leading-relaxed text-white whitespace-pre-line">Take the AI assessment — Get personalized insights into the AI opportunities that matter most for your business in under 10 minutes.</p>
+                                <div class="flex items-center gap-2 mt-auto text-white">
                                     <span>Take the assessment</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                                 </div>
@@ -125,17 +125,17 @@
 
                     <!-- Have specific questions -->
                     <div class="animate-on-scroll fade-in">
-                        <a href="https://calendly.com/o3xo" target="_blank" rel="noopener noreferrer" class="block bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 h-full hover:scale-105 transition-all duration-300 flex flex-col" style="min-height: 320px;" aria-label="Schedule a strategy call with O3XO">
-                            <div class="space-y-4 h-full flex flex-col">
+                        <a href="https://calendly.com/o3xo" target="_blank" rel="noopener noreferrer" class="flex flex-col block h-full p-6 transition-all duration-300 border rounded-lg bg-white/10 backdrop-blur-sm border-white/20 hover:scale-105" style="min-height: 320px;" aria-label="Schedule a strategy call with O3XO">
+                            <div class="flex flex-col h-full space-y-4">
                                 <div class="w-12 h-12">
                                     <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
                                         <rect fill="#FFBE00" height="64" rx="32" width="64"/>
                                         <path d="M36.9515 31.9989L48 48L32 36.9528L16 48L27.0485 31.9989L16 16L32 27.0472L48 16L36.9515 31.9989Z" fill="white"/>
                                     </svg>
                                 </div>
-                                <h3 class="text-white text-xl">Have specific questions?</h3>
-                                <p class="text-white leading-relaxed flex-1 whitespace-pre-line">Schedule a strategy call — Discuss your AI goals and challenges with our team to determine the best path forward.</p>
-                                <div class="flex items-center gap-2 text-white mt-auto">
+                                <h3 class="text-xl text-white">Have specific questions?</h3>
+                                <p class="flex-1 leading-relaxed text-white whitespace-pre-line">Schedule a strategy call — Discuss your AI goals and challenges with our team to determine the best path forward.</p>
+                                <div class="flex items-center gap-2 mt-auto text-white">
                                     <span>Schedule a call</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                                 </div>
@@ -145,16 +145,16 @@
 
                     <!-- Need to reach us directly -->
                     <div class="animate-on-scroll fade-in">
-                        <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 h-full hover:bg-white/15 hover:scale-105 transition-all duration-300 flex flex-col" style="min-height: 320px;">
-                            <div class="space-y-4 h-full flex flex-col">
+                        <div class="flex flex-col h-full p-6 transition-all duration-300 border rounded-lg bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 hover:scale-105" style="min-height: 320px;">
+                            <div class="flex flex-col h-full space-y-4">
                                 <div class="w-12 h-12">
                                     <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
                                         <rect fill="#FFBE00" height="64" rx="32" width="64"/>
                                         <path d="M36.9515 31.9989L48 48L32 36.9528L16 48L27.0485 31.9989L16 16L32 27.0472L48 16L36.9515 31.9989Z" fill="white"/>
                                     </svg>
                                 </div>
-                                <h3 class="text-white text-xl">Need to reach us directly?</h3>
-                                <p class="text-white leading-relaxed flex-1 whitespace-pre-line">Email us — <a href="mailto:info@o3xo.com" class="hover:text-blue-300 underline">info@o3xo.com</a></p>
+                                <h3 class="text-xl text-white">Need to reach us directly?</h3>
+                                <p class="flex-1 leading-relaxed text-white whitespace-pre-line">Email us — <a href="mailto:info@o3xo.ai" class="underline hover:text-blue-300">info@o3xo.ai</a></p>
                             </div>
                         </div>
                     </div>
@@ -164,34 +164,34 @@
 
         <!-- What to Expect Section -->
         <section class="py-12 bg-white">
-            <div class="max-w-7xl mx-auto px-4 md:px-6">
+            <div class="px-4 mx-auto max-w-7xl md:px-6">
                 <div class="mb-12 animate-on-scroll fade-in">
-                    <h2 class="text-gray-900 mb-6 text-3xl md:text-4xl">What to expect</h2>
+                    <h2 class="mb-6 text-3xl text-gray-900 md:text-4xl">What to expect</h2>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
                     <div class="animate-on-scroll fade-in">
-                        <div class="rounded-lg p-8 text-gray-900 relative overflow-hidden h-full flex flex-col transition-all duration-300" style="background-color: #FFD700;">
-                            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('../assets/images/yellow-card-bg.webp'); background-size: cover; border-radius: inherit; transform: scale(1.1);"></div>
-                            <div class="relative z-10 flex-1 flex flex-col">
-                                <h3 class="text-gray-900 mb-3 text-xl">Discovery conversation (30&nbsp;minutes)</h3>
+                        <div class="relative flex flex-col h-full p-8 overflow-hidden text-gray-900 transition-all duration-300 rounded-lg" style="background-color: #FFD700;">
+                            <div class="absolute inset-0 bg-center bg-no-repeat bg-cover" style="background-image: url('../assets/images/yellow-card-bg.webp'); background-size: cover; border-radius: inherit; transform: scale(1.1);"></div>
+                            <div class="relative z-10 flex flex-col flex-1">
+                                <h3 class="mb-3 text-xl text-gray-900">Discovery conversation (30&nbsp;minutes)</h3>
                                 <p class="text-gray-900">We'll discuss your business priorities, current challenges, and AI readiness to determine if there's a good fit.</p>
                             </div>
                         </div>
                     </div>
                     <div class="animate-on-scroll fade-in">
-                        <div class="rounded-lg p-8 text-gray-900 relative overflow-hidden h-full flex flex-col transition-all duration-300" style="background-color: #FFD700;">
-                            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('../assets/images/yellow-card-bg.webp'); background-size: cover; border-radius: inherit; transform: scale(1.1);"></div>
-                            <div class="relative z-10 flex-1 flex flex-col">
-                                <h3 class="text-gray-900 mb-3 text-xl">AI assessment workshop (half&nbsp;day)</h3>
+                        <div class="relative flex flex-col h-full p-8 overflow-hidden text-gray-900 transition-all duration-300 rounded-lg" style="background-color: #FFD700;">
+                            <div class="absolute inset-0 bg-center bg-no-repeat bg-cover" style="background-image: url('../assets/images/yellow-card-bg.webp'); background-size: cover; border-radius: inherit; transform: scale(1.1);"></div>
+                            <div class="relative z-10 flex flex-col flex-1">
+                                <h3 class="mb-3 text-xl text-gray-900">AI assessment workshop (half&nbsp;day)</h3>
                                 <p class="text-gray-900">For qualified opportunities, we'll facilitate a collaborative session to identify your highest-impact AI use cases.</p>
                             </div>
                         </div>
                     </div>
                     <div class="animate-on-scroll fade-in">
-                        <div class="rounded-lg p-8 text-gray-900 relative overflow-hidden h-full flex flex-col transition-all duration-300" style="background-color: #FFD700;">
-                            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('../assets/images/yellow-card-bg.webp'); background-size: cover; border-radius: inherit; transform: scale(1.1);"></div>
-                            <div class="relative z-10 flex-1 flex flex-col">
-                                <h3 class="text-gray-900 mb-3 text-xl">Proposal and roadmap (1&nbsp;week)</h3>
+                        <div class="relative flex flex-col h-full p-8 overflow-hidden text-gray-900 transition-all duration-300 rounded-lg" style="background-color: #FFD700;">
+                            <div class="absolute inset-0 bg-center bg-no-repeat bg-cover" style="background-image: url('../assets/images/yellow-card-bg.webp'); background-size: cover; border-radius: inherit; transform: scale(1.1);"></div>
+                            <div class="relative z-10 flex flex-col flex-1">
+                                <h3 class="mb-3 text-xl text-gray-900">Proposal and roadmap (1&nbsp;week)</h3>
                                 <p class="text-gray-900">Receive a detailed proposal with prioritized initiatives, timeline, and expected ROI for your AI activation plan.</p>
                             </div>
                         </div>
@@ -205,18 +205,18 @@
     <div data-component="footer"></div>
     <noscript>
         <!-- Static footer fallback for no-JS environments -->
-        <footer class="py-12 px-6" style="background-color: var(--color-gray-bg);">
-            <div class="max-w-7xl mx-auto">
+        <footer class="px-6 py-12" style="background-color: var(--color-gray-bg);">
+            <div class="mx-auto max-w-7xl">
                 <div class="mb-6">
-                    <h3 class="text-2xl mb-2">O3XO</h3>
-                    <p class="text-gray-600 mb-2">Transforming businesses through intelligent AI implementation.</p>
+                    <h3 class="mb-2 text-2xl">O3XO</h3>
+                    <p class="mb-2 text-gray-600">Transforming businesses through intelligent AI implementation.</p>
                     <p class="text-gray-600">© 2025 O3 World, LLC. All rights reserved.</p>
                 </div>
                 <div class="flex gap-6">
-                    <a href="https://www.o3world.com/privacy-policy/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 underline">
+                    <a href="https://www.o3world.com/privacy-policy/" target="_blank" rel="noopener noreferrer" class="text-gray-600 underline hover:text-gray-900">
                         Privacy policy
                     </a>
-                    <a href="https://www.o3world.com/accessibility-statement/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 underline">
+                    <a href="https://www.o3world.com/accessibility-statement/" target="_blank" rel="noopener noreferrer" class="text-gray-600 underline hover:text-gray-900">
                         Accessibility statement
                     </a>
                 </div>
@@ -228,14 +228,14 @@
     <div data-component="sticky-cta"></div>
     <noscript>
         <!-- Static sticky CTA fallback for no-JS environments -->
-        <aside class="fixed bottom-0 left-0 right-0 z-50 shadow-2xl bg-cover bg-center" style="background-image: url('/assets/images/sticky-cta-bg.webp');" aria-label="Call to action">
-            <div class="max-w-7xl mx-auto px-6 py-6">
-                <div class="flex flex-col md:flex-row md:items-center gap-4 md:gap-6">
+        <aside class="fixed bottom-0 left-0 right-0 z-50 bg-center bg-cover shadow-2xl" style="background-image: url('/assets/images/sticky-cta-bg.webp');" aria-label="Call to action">
+            <div class="px-6 py-6 mx-auto max-w-7xl">
+                <div class="flex flex-col gap-4 md:flex-row md:items-center md:gap-6">
                     <div class="flex-1 text-white">
-                        <h3 class="text-xl md:text-2xl mb-2">Stop guessing, start discovering</h3>
+                        <h3 class="mb-2 text-xl md:text-2xl">Stop guessing, start discovering</h3>
                         <p class="text-sm md:text-base">Identify the AI use cases that matter most for your business.</p>
                     </div>
-                    <a href="http://assessment.o3world.com/" target="_blank" rel="noopener noreferrer" aria-label="Take the AI assessment to identify use cases for your business" class="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-gray-100 transition font-semibold whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 inline-flex items-center justify-center">
+                    <a href="http://assessment.o3world.com/" target="_blank" rel="noopener noreferrer" aria-label="Take the AI assessment to identify use cases for your business" class="inline-flex items-center justify-center px-6 py-3 font-semibold text-blue-600 transition bg-white rounded-lg hover:bg-gray-100 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">
                         Take the AI assessment
                     </a>
                 </div>

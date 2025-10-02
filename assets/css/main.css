@@ -63,9 +63,10 @@ button[class*="bg-red"]:hover {
     color: white !important;
 }
 
-/* White button hover (exclude nav toggle, mega menu items, and contact cards) */
-a[class*="bg-white"]:hover:not([data-nav-toggle]):not([data-submenu] a):not([class*="backdrop-blur"]),
-button[class*="bg-white"]:hover:not([data-nav-toggle]) {
+/* White button hover (exclude nav toggle and mega menu items) */
+/* Exclude contact cards by targeting only elements with bg-white (not bg-white/10) */
+a[class*="bg-white"]:hover:not([data-nav-toggle]):not([data-submenu] a):not([class*="bg-white/"]),
+button[class*="bg-white"]:hover:not([data-nav-toggle]):not([class*="bg-white/"]) {
     background-color: #f3f3f3 !important;
 }
 
