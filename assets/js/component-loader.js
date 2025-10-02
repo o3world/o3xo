@@ -105,6 +105,11 @@
             loadComponent(includesPath + 'header.html', '[data-component="header"]');
         }
 
+        // Load noscript header if placeholder exists
+        if (document.querySelector('[data-component="header-noscript"]')) {
+            loadComponent(includesPath + 'header.noscript.html', '[data-component="header-noscript"]');
+        }
+
         // Load footer if footer placeholder exists
         if (document.querySelector('[data-component="footer"]')) {
             loadComponent(includesPath + 'footer.html', '[data-component="footer"]');
