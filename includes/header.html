@@ -25,38 +25,38 @@
             </button>
 
             <div id="primary-menu" data-nav-panel class="hidden fixed left-0 right-0 top-[72px] bottom-0 z-[60] origin-top bg-black/95 px-6 py-6 text-white overflow-y-auto overscroll-contain lg:static lg:flex lg:mt-0 lg:items-center lg:gap-10 lg:bg-transparent lg:p-0 lg:mx-0 lg:overflow-visible lg:bottom-auto transition-opacity duration-200">
-                <ul class="flex flex-col gap-6 lg:flex-row lg:items-center lg:gap-8" role="menubar">
-                    <li class="lg:relative" data-menu-item role="none">
-                        <button type="button" class="hidden lg:flex w-full items-center justify-between gap-3 text-left text-white transition hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black lg:text-sm" data-menu-trigger aria-expanded="false" aria-controls="mega-industries" aria-haspopup="true" role="menuitem">
+                <ul class="flex flex-col gap-6 lg:flex-row lg:items-center lg:gap-8">
+                    <li class="lg:relative" data-menu-item>
+                        <button id="nav-industries-trigger" type="button" class="hidden lg:flex w-full items-center justify-between gap-3 text-left text-white transition hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black lg:text-sm" data-menu-trigger aria-expanded="false" aria-controls="mega-industries" aria-haspopup="true">
                             <span class="text-base font-medium lg:text-sm">Industries</span>
                             <svg class="h-4 w-4 flex-shrink-0 transition-transform duration-200" aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 8 10 12 14 8"/></svg>
                         </button>
                         <div class="lg:hidden mb-3">
                             <p class="text-sm font-semibold text-yellow-300 uppercase tracking-wide mb-3">Industries</p>
                         </div>
-                        <div id="mega-industries" class="invisible opacity-0 pointer-events-none lg:rounded-2xl lg:border lg:border-white/10 lg:bg-black/95 lg:p-6 text-white lg:shadow-2xl focus:outline-none lg:absolute lg:left-1/2 lg:top-full lg:mt-2 lg:min-w-[720px] lg:-translate-x-1/2 transition-all duration-200" role="menu" aria-orientation="vertical" aria-label="Industries submenu">
+                        <div id="mega-industries" data-submenu role="region" aria-labelledby="nav-industries-trigger" class="invisible opacity-0 pointer-events-none lg:rounded-2xl lg:border lg:border-white/10 lg:bg-black/95 lg:p-6 text-white lg:shadow-2xl focus:outline-none lg:absolute lg:left-1/2 lg:top-full lg:mt-2 lg:min-w-[720px] lg:-translate-x-1/2 transition-all duration-200">
                             <div class="flex flex-col gap-3 lg:grid lg:gap-4 md:grid-cols-2">
-                                <a href="/industries/construction/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                <a href="/industries/construction/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
                                     <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">Construction</p>
                                     <p class="mt-1 text-sm text-gray-300 lg:block hidden">Project lifecycle automation</p>
                                 </a>
-                                <a href="/industries/industrial-services/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                <a href="/industries/industrial-services/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
                                     <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">Industrial services</p>
                                     <p class="mt-1 text-sm text-gray-300 lg:block hidden">Operational efficiency</p>
                                 </a>
-                                <a href="/industries/life-sciences/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                <a href="/industries/life-sciences/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
                                     <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">Pharma + life sciences</p>
                                     <p class="mt-1 text-sm text-gray-300 lg:block hidden">Research to revenue</p>
                                 </a>
-                                <a href="/industries/real-estate/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                <a href="/industries/real-estate/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
                                     <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">Real estate</p>
                                     <p class="mt-1 text-sm text-gray-300 lg:block hidden">Property management optimization</p>
                                 </a>
-                                <a href="/industries/finance-insurance/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                <a href="/industries/finance-insurance/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
                                     <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">Finance + insurance</p>
                                     <p class="mt-1 text-sm text-gray-300 lg:block hidden">Advisory amplification</p>
                                 </a>
-                                <a href="/industries/technology/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                <a href="/industries/technology/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
                                     <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">Technology</p>
                                     <p class="mt-1 text-sm text-gray-300 lg:block hidden">Competitive advantage</p>
                                 </a>
@@ -69,47 +69,47 @@
                             </div>
                         </div>
                     </li>
-                    <li class="lg:relative" data-menu-item role="none">
-                        <button type="button" class="hidden lg:flex w-full items-center justify-between gap-3 text-left text-white transition hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black lg:text-sm" data-menu-trigger aria-expanded="false" aria-controls="mega-case-studies" aria-haspopup="true" role="menuitem">
+                    <li class="lg:relative" data-menu-item>
+                        <button id="nav-case-studies-trigger" type="button" class="hidden lg:flex w-full items-center justify-between gap-3 text-left text-white transition hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black lg:text-sm" data-menu-trigger aria-expanded="false" aria-controls="mega-case-studies" aria-haspopup="true">
                             <span class="text-base font-medium lg:text-sm">Case studies</span>
                             <svg class="h-4 w-4 flex-shrink-0 transition-transform duration-200" aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 8 10 12 14 8"/></svg>
                         </button>
                         <div class="lg:hidden mb-3">
                             <p class="text-sm font-semibold text-yellow-300 uppercase tracking-wide mb-3">Case studies</p>
                         </div>
-                        <div id="mega-case-studies" class="invisible opacity-0 pointer-events-none lg:rounded-2xl lg:border lg:border-white/10 lg:bg-black/95 lg:p-6 text-white lg:shadow-2xl focus:outline-none lg:absolute lg:left-1/2 lg:top-full lg:mt-2 lg:min-w-[720px] lg:-translate-x-1/2 transition-all duration-200" role="menu" aria-orientation="vertical" aria-label="Case studies submenu">
+                        <div id="mega-case-studies" data-submenu role="region" aria-labelledby="nav-case-studies-trigger" class="invisible opacity-0 pointer-events-none lg:rounded-2xl lg:border lg:border-white/10 lg:bg-black/95 lg:p-6 text-white lg:shadow-2xl focus:outline-none lg:absolute lg:left-1/2 lg:top-full lg:mt-2 lg:min-w-[720px] lg:-translate-x-1/2 transition-all duration-200">
                             <div class="flex flex-col gap-3 lg:grid lg:gap-4 md:grid-cols-2">
-                                <a href="/case-studies/buffalo-construction/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                <a href="/case-studies/buffalo-construction/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
                                     <p class="text-xs uppercase tracking-wide text-yellow-300 lg:block hidden">Construction</p>
                                     <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">Buffalo Construction</p>
                                     <p class="mt-1 text-sm text-gray-300 lg:block hidden">Automating closeout workflows</p>
                                 </a>
-                                <a href="/case-studies/tyndale/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                <a href="/case-studies/tyndale/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
                                     <p class="text-xs uppercase tracking-wide text-yellow-300 lg:block hidden">Manufacturing</p>
                                     <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">Tyndale</p>
                                     <p class="mt-1 text-sm text-gray-300 lg:block hidden">AI-driven product insight</p>
                                 </a>
-                                <a href="/case-studies/mckesson/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                <a href="/case-studies/mckesson/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
                                     <p class="text-xs uppercase tracking-wide text-yellow-300 lg:block hidden">Life sciences</p>
                                     <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">McKesson Compile</p>
                                     <p class="mt-1 text-sm text-gray-300 lg:block hidden">AI strategy acceleration</p>
                                 </a>
-                                <a href="/case-studies/sti-firestop/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                <a href="/case-studies/sti-firestop/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
                                     <p class="text-xs uppercase tracking-wide text-yellow-300 lg:block hidden">Industrial services</p>
                                     <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">STI Firestop</p>
                                     <p class="mt-1 text-sm text-gray-300 lg:block hidden">Product search revolution</p>
                                 </a>
-                                <a href="/case-studies/e-hazard/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                <a href="/case-studies/e-hazard/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
                                     <p class="text-xs uppercase tracking-wide text-yellow-300 lg:block hidden">Training &amp; safety</p>
                                     <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">e-Hazard</p>
                                     <p class="mt-1 text-sm text-gray-300 lg:block hidden">Certificate automation magic</p>
                                 </a>
-                                <a href="/case-studies/global-tech/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                <a href="/case-studies/global-tech/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
                                     <p class="text-xs uppercase tracking-wide text-yellow-300 lg:block hidden">Technology</p>
                                     <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">Global tech firm</p>
                                     <p class="mt-1 text-sm text-gray-300 lg:block hidden">RFP automation</p>
                                 </a>
-                                <a href="/case-studies/american-family/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                <a href="/case-studies/american-family/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
                                     <p class="text-xs uppercase tracking-wide text-yellow-300 lg:block hidden">Insurance</p>
                                     <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">American Family Insurance</p>
                                     <p class="mt-1 text-sm text-gray-300 lg:block hidden">Legal document intelligence</p>
@@ -127,22 +127,22 @@
                             </div>
                         </div>
                     </li>
-                    <li class="lg:relative" data-menu-item role="none">
-                        <button type="button" class="hidden lg:flex w-full items-center justify-between gap-3 text-left text-white transition hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black lg:text-sm" data-menu-trigger aria-expanded="false" aria-controls="mega-about" aria-haspopup="true" role="menuitem">
+                    <li class="lg:relative" data-menu-item>
+                        <button id="nav-about-trigger" type="button" class="hidden lg:flex w-full items-center justify-between gap-3 text-left text-white transition hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black lg:text-sm" data-menu-trigger aria-expanded="false" aria-controls="mega-about" aria-haspopup="true">
                             <span class="text-base font-medium lg:text-sm">About</span>
                             <svg class="h-4 w-4 flex-shrink-0 transition-transform duration-200" aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 8 10 12 14 8"/></svg>
                         </button>
                         <div class="lg:hidden mb-3">
                             <p class="text-sm font-semibold text-yellow-300 uppercase tracking-wide mb-3">About</p>
                         </div>
-                        <div id="mega-about" class="invisible opacity-0 pointer-events-none lg:rounded-2xl lg:border lg:border-white/10 lg:bg-black/95 lg:p-6 text-white lg:shadow-2xl focus:outline-none lg:absolute lg:left-1/2 lg:top-full lg:mt-2 lg:min-w-[560px] lg:-translate-x-1/2 transition-all duration-200" role="menu" aria-orientation="vertical" aria-label="About submenu">
+                        <div id="mega-about" data-submenu role="region" aria-labelledby="nav-about-trigger" class="invisible opacity-0 pointer-events-none lg:rounded-2xl lg:border lg:border-white/10 lg:bg-black/95 lg:p-6 text-white lg:shadow-2xl focus:outline-none lg:absolute lg:left-1/2 lg:top-full lg:mt-2 lg:min-w-[560px] lg:-translate-x-1/2 transition-all duration-200">
                             <div class="flex flex-col gap-3 lg:grid lg:gap-4 md:grid-cols-2">
-                                <a href="/about/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                <a href="/about/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
                                     <p class="text-xs uppercase tracking-wide text-yellow-300 lg:block hidden">About O3XO</p>
                                     <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">Our story and mission</p>
                                     <p class="mt-1 text-sm text-gray-300 lg:block hidden">20+ years of digital transformation expertise applied to AI strategy and execution.</p>
                                 </a>
-                                <a href="/about/approach/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black" role="menuitem">
+                                <a href="/about/approach/" class="group block rounded-xl border border-white/10 bg-white/5 p-3 lg:p-4 transition hover:border-white/40 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black">
                                     <p class="text-xs uppercase tracking-wide text-yellow-300 lg:block hidden">Our Approach</p>
                                     <p class="mt-0 lg:mt-2 text-base lg:text-lg font-semibold text-white">Strategy to activation</p>
                                     <p class="mt-1 text-sm text-gray-300 lg:block hidden">Our proven methodology from AI roadmap to measurable results.</p>
@@ -156,8 +156,8 @@
                             </div>
                         </div>
                     </li>
-                    <li role="none" class="flex items-center">
-                        <a href="/contact/" class="inline-flex items-center justify-center rounded-lg bg-red-600 px-6 py-2 text-base font-semibold text-white transition hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-black lg:text-sm" role="menuitem">
+                    <li class="flex items-center">
+                        <a href="/contact/" class="inline-flex items-center justify-center rounded-lg bg-red-600 px-6 py-2 text-base font-semibold text-white transition hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus:ring-offset-black lg:text-sm">
                             Contact
                         </a>
                     </li>

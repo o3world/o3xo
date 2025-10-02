@@ -6,6 +6,28 @@
     'use strict';
 
     /**
+     * Resolve deterministic asset version for cache control.
+     * Allows overrides via window.O3XO.assetVersion, meta tag, or HTML attribute.
+     */
+    const ASSET_VERSION = (() => {
+        if (window.O3XO && typeof window.O3XO.assetVersion === 'string') {
+            return window.O3XO.assetVersion;
+        }
+
+        const metaVersion = document.querySelector('meta[name="asset-version"]');
+        if (metaVersion && metaVersion.getAttribute('content')) {
+            return metaVersion.getAttribute('content');
+        }
+
+        const htmlVersion = document.documentElement.getAttribute('data-asset-version');
+        if (htmlVersion) {
+            return htmlVersion;
+        }
+
+        return '2024.10.06';
+    })();
+
+    /**
      * Calculates the relative path prefix based on current page depth
      * @returns {string} Relative path prefix (e.g., '', '../', '../../')
      */
@@ -41,9 +63,11 @@
             return;
         }
 
-        // Add cache-busting query parameter
-        const cacheBuster = `?v=${Date.now()}`;
-        fetch(componentPath + cacheBuster)
+        const versionedPath = ASSET_VERSION
+            ? `${componentPath}${componentPath.includes('?') ? '&' : '?'}v=${encodeURIComponent(ASSET_VERSION)}`
+            : componentPath;
+
+        fetch(versionedPath)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);

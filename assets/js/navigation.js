@@ -61,16 +61,19 @@
             panel.classList.add('opacity-100');
         };
 
-        const closeAllSubmenus = (exceptPanel) => {
+        const closeAllSubmenus = (exceptPanel, options = {}) => {
+            const forceClose = options.force === true;
+
             menuItems.forEach((item) => {
                 const trigger = item.querySelector('[data-menu-trigger]');
                 const panel = getPanel(trigger);
                 if (!trigger || !panel) return;
-                if (panel !== exceptPanel) {
-                    // Only close on desktop, leave open on mobile
-                    if (isDesktop()) {
-                        closeSubmenu(trigger, panel);
-                    }
+                if (panel === exceptPanel) return;
+
+                trigger.setAttribute('aria-expanded', 'false');
+
+                if (isDesktop() || forceClose) {
+                    closeSubmenu(trigger, panel);
                 }
             });
         };
@@ -109,7 +112,7 @@
 
                     // Show all submenu panels on mobile
                     menuItems.forEach((item) => {
-                        const panel = item.querySelector('[role="menu"]');
+                        const panel = item.querySelector('[data-submenu]');
                         if (panel) {
                             panel.classList.remove('invisible', 'opacity-0', 'pointer-events-none');
                             panel.classList.add('opacity-100');
@@ -127,9 +130,7 @@
                     window.scrollTo(0, parseInt(scrollY || '0') * -1);
                 }
                 navPanel.classList.add('hidden');
-            }
-            if (!expanded) {
-                closeAllSubmenus();
+                closeAllSubmenus(undefined, { force: true });
             }
         };
 
@@ -168,7 +169,7 @@
                 const trigger = item.querySelector('[data-menu-trigger]');
                 const panel = getPanel(trigger);
                 if (!trigger || !panel) return;
-                if (panel.classList.contains('hidden')) return;
+                if (panel.classList.contains('invisible')) return;
                 closeSubmenu(trigger, panel);
                 trigger.focus();
             });
@@ -178,16 +179,16 @@
             setMenuVisibility(false);
             syncPanelForViewport();
 
-            // On desktop, ensure all panels are closed
-            // On mobile, panels will be shown when menu is opened
             menuItems.forEach((item) => {
                 const trigger = item.querySelector('[data-menu-trigger]');
                 const panel = getPanel(trigger);
                 if (!trigger || !panel) return;
+
+                trigger.setAttribute('aria-expanded', 'false');
+
                 if (isDesktop()) {
                     closeSubmenu(trigger, panel);
                 } else {
-                    // On mobile, hide panels when nav is closed
                     panel.classList.add('invisible', 'opacity-0', 'pointer-events-none');
                     panel.classList.remove('opacity-100');
                 }
@@ -232,7 +233,7 @@
                     event.preventDefault();
                     openSubmenu(trigger, panel);
                     // Focus first link in panel
-                    const firstLink = panel.querySelector('a[role="menuitem"]');
+                    const firstLink = panel.querySelector('a[href]');
                     if (firstLink) {
                         setTimeout(() => firstLink.focus(), 50);
                     }
@@ -262,7 +263,7 @@
                 } else if (event.key === 'ArrowDown') {
                     event.preventDefault();
                     // Move to next focusable item in panel
-                    const focusables = Array.from(panel.querySelectorAll('a[role="menuitem"]'));
+                    const focusables = Array.from(panel.querySelectorAll('a[href]'));
                     const currentIndex = focusables.indexOf(document.activeElement);
                     if (currentIndex < focusables.length - 1) {
                         focusables[currentIndex + 1].focus();
@@ -270,7 +271,7 @@
                 } else if (event.key === 'ArrowUp') {
                     event.preventDefault();
                     // Move to previous focusable item in panel
-                    const focusables = Array.from(panel.querySelectorAll('a[role="menuitem"]'));
+                    const focusables = Array.from(panel.querySelectorAll('a[href]'));
                     const currentIndex = focusables.indexOf(document.activeElement);
                     if (currentIndex > 0) {
                         focusables[currentIndex - 1].focus();

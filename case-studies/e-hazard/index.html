@@ -63,6 +63,51 @@
 <body class="bg-black text-white">
     <!-- Header Component -->
     <div data-component="header"></div>
+    <noscript>
+        <!-- Static header fallback for no-JS environments -->
+        <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:text-black focus:px-4 focus:py-2 focus:rounded">Skip to main content</a>
+        <div class="fixed top-0 left-0 right-0 z-50 bg-black">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+                <a href="/" aria-label="O3XO Home" class="flex gap-[1.333px] items-center">
+                    <svg class="block h-[26.667px] w-[45.6px]" fill="none" preserveAspectRatio="none" viewBox="0 0 46 27" aria-label="O3XO">
+                        <title>O3XO</title>
+                        <path d="M0 13.3326C0 20.6841 5.98222 26.6667 13.3333 26.6667C20.6845 26.6667 26.6667 20.6856 26.6667 13.3326C26.6667 5.97948 20.686 0 13.3333 0C5.98068 0 0 5.98102 0 13.3326ZM21.2988 13.3326C21.2988 17.7244 17.7265 21.3001 13.3333 21.3001C8.94022 21.3001 5.36783 17.7259 5.36783 13.3326C5.36783 8.9392 8.94176 5.3666 13.3333 5.3666C17.7249 5.3666 21.2988 8.9392 21.2988 13.3326Z" fill="white"/>
+                        <path d="M36.8919 26.6667C35.3731 26.6667 34.0014 26.4457 32.7766 26.0037C31.5518 25.5371 30.523 24.8864 29.6902 24.0516C28.8818 23.1922 28.3184 22.1854 28 21.0313L32.6296 19.6685C32.8011 19.9632 33.0338 20.3315 33.3278 20.7735C33.6217 21.1909 34.0259 21.547 34.5403 21.8416C35.0547 22.1363 35.7283 22.2836 36.5612 22.2836C37.7859 22.2836 38.7535 21.9521 39.4639 21.2891C40.1987 20.6016 40.5662 19.7176 40.5662 18.6372C40.5662 17.9006 40.3825 17.2499 40.015 16.6851C39.6476 16.1203 39.0475 15.6906 38.2146 15.396C37.4063 15.0767 36.3407 14.9171 35.018 14.9171H33.4747V10.7919H35.018C36.7326 10.7919 38.0064 10.4972 38.8392 9.90793C39.6721 9.31861 40.0885 8.5083 40.0885 7.47699C40.0885 6.88767 39.9415 6.35974 39.6476 5.89319C39.3537 5.42665 38.9372 5.05833 38.3983 4.78822C37.8594 4.51812 37.2348 4.38307 36.5244 4.38307C36.059 4.38307 35.5813 4.46901 35.0914 4.64089C34.6015 4.78822 34.1484 5.04605 33.7319 5.41438C33.34 5.75814 33.0216 6.26152 32.7766 6.9245L28.2205 5.5617C28.5634 4.35851 29.1513 3.35176 29.9841 2.54145C30.8415 1.70658 31.858 1.08043 33.0338 0.662994C34.2096 0.221005 35.4221 1.01725e-05 36.6714 1.01725e-05C38.2636 1.01725e-05 39.6966 0.306947 40.9704 0.92082C42.2441 1.51014 43.2484 2.33273 43.9833 3.38859C44.7182 4.44445 45.0856 5.65992 45.0856 7.035C45.0856 8.38552 44.7059 9.5396 43.9466 10.4972C43.2117 11.4303 42.2196 12.1793 40.9704 12.744C42.3911 13.407 43.5179 14.291 44.3507 15.396C45.1836 16.4764 45.6 17.7532 45.6 19.2265C45.6 20.7735 45.1958 22.1117 44.3875 23.2413C43.5791 24.3462 42.5136 25.1934 41.1908 25.7827C39.8681 26.372 38.4351 26.6667 36.8919 26.6667Z" fill="white"/>
+                    </svg>
+                    <svg class="block h-[32px] w-[57.333px]" fill="none" preserveAspectRatio="none" viewBox="0 0 58 32">
+                        <path d="M20.9515 15.9989L32 32L16 20.9528L0 32L11.0485 15.9989L0 0L16 11.0472L32 0L20.9515 15.9989Z" fill="#FFC92B"/>
+                        <path d="M30.6667 15.9992C30.6667 23.3508 36.6489 29.3333 44 29.3333C51.3511 29.3333 57.3333 23.3523 57.3333 15.9992C57.3333 8.64615 51.3527 2.66667 44 2.66667C36.6473 2.66667 30.6667 8.64769 30.6667 15.9992ZM51.9655 15.9992C51.9655 20.3911 48.3931 23.9667 44 23.9667C39.6069 23.9667 36.0345 20.3926 36.0345 15.9992C36.0345 11.6059 39.6084 8.03326 44 8.03326C48.3916 8.03326 51.9655 11.6059 51.9655 15.9992Z" fill="#FFC92B"/>
+                    </svg>
+                </a>
+                <nav aria-label="Main navigation">
+                    <ul class="flex flex-col gap-4 text-white sm:flex-row sm:items-start sm:gap-8">
+                        <li>
+                            <a href="/case-studies/" class="font-semibold hover:text-gray-300">Case studies</a>
+                            <ul class="mt-2 space-y-1 text-sm text-gray-300">
+                                <li><a href="/case-studies/buffalo-construction/" class="hover:text-white">Buffalo Construction</a></li>
+                                <li><a href="/case-studies/tyndale/" class="hover:text-white">Tyndale</a></li>
+                                <li><a href="/case-studies/mckesson/" class="hover:text-white">McKesson Compile</a></li>
+                                <li><a href="/case-studies/sti-firestop/" class="hover:text-white">STI Firestop</a></li>
+                                <li><a href="/case-studies/e-hazard/" class="hover:text-white">e-Hazard</a></li>
+                                <li><a href="/case-studies/global-tech/" class="hover:text-white">Global tech firm</a></li>
+                                <li><a href="/case-studies/american-family/" class="hover:text-white">American Family Insurance</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/about/" class="font-semibold hover:text-gray-300">About</a>
+                            <ul class="mt-2 space-y-1 text-sm text-gray-300">
+                                <li><a href="/about/" class="hover:text-white">Our story and mission</a></li>
+                                <li><a href="/about/approach/" class="hover:text-white">Strategy to activation</a></li>
+                            </ul>
+                        </li>
+                        <li class="sm:self-center">
+                            <a href="/contact/" class="inline-flex items-center justify-center rounded-lg bg-red-600 px-6 py-2 font-semibold text-white hover:bg-red-700">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </noscript>
 
     <!-- Main Content -->
     <main id="main-content" class="min-h-screen">

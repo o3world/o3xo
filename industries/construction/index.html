@@ -18,31 +18,169 @@
     <link rel="stylesheet" href="../../assets/css/animations.css">
     <link rel="stylesheet" href="../../assets/css/mobile-menu.css">
 </head>
-<body class="bg-white text-gray-900">
+<body class="bg-black text-white">
     <!-- Header placeholder -->
     <div data-component="header"></div>
 
     <main id="main-content">
         <!-- Hero Section -->
-        <section class="relative w-full">
-            <div class="absolute top-0 left-0 right-0 bg-cover bg-center bg-no-repeat" style="background-image: url('../../assets/images/header-background.png'); height: calc(100% + 40px);">
-                <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/60"></div>
-            </div>
-            <div class="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-8">
-                <div class="flex flex-col gap-2 max-w-4xl">
-                    <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-4" data-hero-animate>AI for Construction</h1>
-                    <p class="text-gray-200 text-lg md:text-xl max-w-3xl" data-hero-animate>Transform your project lifecycle from estimation to closeout. We help construction companies streamline bidding processes, predict project profitability, and accelerate closeout procedures while integrating with existing project management systems.</p>
+        <section class="relative w-full bg-cover bg-center bg-no-repeat" style="background-image: url('../../assets/images/header-background.png');">
+            <div class="absolute inset-0" style="background-image: linear-gradient(237.506deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 85.02%), linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);"></div>
+            <div class="relative w-full py-12">
+                <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pt-12 md:pt-16 pb-12">
+                    <div class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start lg:items-end w-full">
+                        <div class="flex flex-col gap-6 items-start flex-1 lg:max-w-3xl">
+                            <div class="w-full">
+                                <h1 class="text-white w-full" data-hero-animate>AI solutions built for construction</h1>
+                            </div>
+                            <div class="w-full">
+                                <p class="leading-[1.5] text-gray-200 text-lg md:text-xl" data-hero-animate>Construction projects demand precision, speed, and accountability. Our AI solutions integrate with your existing workflows to reduce manual effort, protect margins, and accelerate project delivery, helping you win more work and complete it profitably.</p>
+                            </div>
+                        </div>
+                        <div class="w-full lg:w-auto lg:flex-shrink-0">
+                            <div class="rounded-lg overflow-hidden w-full max-w-md mx-auto lg:mx-0 lg:w-96 aspect-[4/3]" data-hero-animate>
+                                <img src="../../assets/images/construction-industry.jpg" alt="Construction project" class="object-cover w-full h-full">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Content Section -->
-        <section class="py-16 bg-white">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll fade-in">Coming Soon</h2>
-                    <p class="text-xl text-gray-600 mb-8 animate-on-scroll fade-in">We're building out detailed content for this industry page. Check back soon or <a href="/contact/" class="text-red-600 hover:underline">contact us</a> to learn more about our construction solutions.</p>
-                    <a href="/industries/" class="inline-block bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-smooth">Back to Industries</a>
+        <!-- Pain Points Section -->
+        <section class="relative w-full bg-black border-t border-gray-600">
+            <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12 w-full">
+                <div class="flex items-start justify-between w-full mb-6">
+                    <div class="flex flex-col gap-3 items-start">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white animate-on-scroll slide-in-left">Stop losing money on every project</h2>
+                    </div>
+                </div>
+                <div class="w-full max-w-3xl mb-12">
+                    <p class="text-lg text-gray-200 animate-on-scroll slide-in-up">AI can solve these persistent pain points and help you deliver more consistent results.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 w-full" data-stagger-children>
+                    <!-- Pain Point 1 -->
+                    <div class="group cursor-pointer transition-all duration-300 h-full hover:scale-105">
+                        <div class="rounded-lg p-8 relative overflow-hidden h-full flex flex-col" style="background-color: #FFD700; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -2px, rgba(0, 0, 0, 0.15) 0px 10px 15px -3px;">
+                            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style="background-image: url('../../assets/images/yellow-card-bg.png'); transform: scale(1.1);"></div>
+                            <div class="relative z-10 flex-1 flex flex-col">
+                                <h3 class="text-2xl font-bold mb-4 text-gray-900">Time-intensive estimation processes</h3>
+                                <p class="text-lg text-gray-900">Your estimating team spends weeks on complex bids, often missing opportunities. Automated quantity takeoffs and data-driven pricing generate comprehensive estimates in hours instead of weeks.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pain Point 2 -->
+                    <div class="group cursor-pointer transition-all duration-300 h-full hover:scale-105">
+                        <div class="rounded-lg p-8 relative overflow-hidden h-full flex flex-col" style="background-color: #FFD700; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -2px, rgba(0, 0, 0, 0.15) 0px 10px 15px -3px;">
+                            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style="background-image: url('../../assets/images/yellow-card-bg.png'); transform: scale(1.1);"></div>
+                            <div class="relative z-10 flex-1 flex flex-col">
+                                <h3 class="text-2xl font-bold mb-4 text-gray-900">Messy handoffs from precon to construction teams</h3>
+                                <p class="text-lg text-gray-900">Critical project details get lost transitioning from office to field. Seamless documentation systems ensure your project teams always have current project information and decision history.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pain Point 3 -->
+                    <div class="group cursor-pointer transition-all duration-300 h-full hover:scale-105">
+                        <div class="rounded-lg p-8 relative overflow-hidden h-full flex flex-col" style="background-color: #FFD700; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -2px, rgba(0, 0, 0, 0.15) 0px 10px 15px -3px;">
+                            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style="background-image: url('../../assets/images/yellow-card-bg.png'); transform: scale(1.1);"></div>
+                            <div class="relative z-10 flex-1 flex flex-col">
+                                <h3 class="text-2xl font-bold mb-4 text-gray-900">Project delays + cost overruns</h3>
+                                <p class="text-lg text-gray-900">Small issues snowball into major schedule and budget problems. Predictive AI solutions can identify potential delays before they occur and provide early warning systems to keep projects on track.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pain Point 4 -->
+                    <div class="group cursor-pointer transition-all duration-300 h-full hover:scale-105">
+                        <div class="rounded-lg p-8 relative overflow-hidden h-full flex flex-col" style="background-color: #FFD700; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -2px, rgba(0, 0, 0, 0.15) 0px 10px 15px -3px;">
+                            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20" style="background-image: url('../../assets/images/yellow-card-bg.png'); transform: scale(1.1);"></div>
+                            <div class="relative z-10 flex-1 flex flex-col">
+                                <h3 class="text-2xl font-bold mb-4 text-gray-900">Vendor management + productivity losses</h3>
+                                <p class="text-lg text-gray-900">Coordinating multiple subcontractors creates constant communication overhead. Streamlined communications and automated performance tracking eliminate the chaos across all your projects and clarity on when and how projects can close out.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA to Approach Section -->
+        <section class="relative w-full py-12 animate-on-scroll fade-in">
+            <a href="/about/approach/" class="block cursor-pointer bg-black/90 backdrop-blur-sm text-white hover:text-gray-200 transition-all duration-300 group hover:bg-black border-t border-b border-gray-600 w-full py-12">
+                <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+                    <div class="flex items-center gap-3 md:gap-4 justify-start">
+                        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white group-hover:text-gray-200 transition-colors duration-300">Learn more about our approach to AI strategy + activation</h2>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 md:w-6 md:h-6 group-hover:translate-x-1 transition-transform duration-300 flex-shrink-0 text-white" aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <!-- Related Content Section -->
+        <section class="relative w-full bg-black">
+            <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12">
+                <div class="flex items-center justify-between w-full mb-6">
+                    <div class="flex flex-col gap-3 items-start">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white animate-on-scroll fade-in">Related content</h2>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-full md:max-w-[66.67%]">
+                    <!-- Case Study Card -->
+                    <div class="flex flex-col gap-4 animate-on-scroll fade-in">
+                        <div class="inline-block bg-white/10 backdrop-blur-sm rounded-full px-3 py-1 border border-white/20 self-start mb-2">
+                            <span class="text-white text-sm">Related case study</span>
+                        </div>
+                        <a href="/case-studies/buffalo-construction/" class="block group">
+                            <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:opacity-80 transition-all duration-300 transform hover:scale-105">
+                                <div class="h-64 bg-gray-300 bg-cover bg-center" style="background-image: url('../../assets/images/buffalo-case-study.png');"></div>
+                                <div class="p-6 space-y-4">
+                                    <div class="flex items-center justify-between border-b border-gray-200 pb-2">
+                                        <div>
+                                            <h4 class="text-xl font-semibold text-gray-900">Buffalo Construction</h4>
+                                            <p class="text-gray-600">Automating closeout</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-gray-400 group-hover:text-gray-900 transition-colors" aria-hidden="true">
+                                            <path d="M5 12h14"></path>
+                                            <path d="m12 5 7 7-7 7"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="text-gray-600">Discover how AI-powered closeouts saved weeks on every project</p>
+                                    <div class="pt-2">
+                                        <h3 class="text-3xl font-bold text-gray-900 mb-1">2+</h3>
+                                        <p class="text-gray-600">Weeks saved on closeout process</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+
+                    <!-- Perspective Card -->
+                    <div class="flex flex-col gap-4 animate-on-scroll fade-in">
+                        <div class="inline-block bg-white/10 backdrop-blur-sm rounded-full px-3 py-1 border border-white/20 self-start mb-2">
+                            <span class="text-white text-sm">Related perspective</span>
+                        </div>
+                        <a href="https://www.o3world.com/perspectives/the-ai-hierarchy-of-needs-a-strategic-framework-for-businesses/" target="_blank" rel="noopener noreferrer" class="block group">
+                            <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:opacity-80 transition-all duration-300 transform hover:scale-105">
+                                <div class="aspect-square bg-gray-300 bg-cover bg-center" style="background-image: url('https://www.o3world.com/wp-content/uploads/2024/12/build-vs-buy-hero.jpg');"></div>
+                                <div class="p-6">
+                                    <h4 class="text-xl font-semibold text-gray-900 leading-tight flex items-center justify-between">
+                                        The build vs. buy dilemma: Making smart AI investment choices
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 ml-2 flex-shrink-0" aria-hidden="true">
+                                            <path d="M7 7h10v10"></path>
+                                            <path d="M7 17 17 7"></path>
+                                        </svg>
+                                    </h4>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
