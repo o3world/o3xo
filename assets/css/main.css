@@ -42,8 +42,8 @@ button[class*="bg-red"]:hover {
     color: white !important;
 }
 
-/* White button hover (exclude nav toggle) */
-a[class*="bg-white"]:hover:not([data-nav-toggle]),
+/* White button hover (exclude nav toggle and mega menu items) */
+a[class*="bg-white"]:hover:not([data-nav-toggle]):not([data-submenu] a),
 button[class*="bg-white"]:hover:not([data-nav-toggle]) {
     background-color: #f3f3f3 !important;
 }
