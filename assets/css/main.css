@@ -19,20 +19,10 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 0 2px black, 0 0 0 4px white !important;
 }
 
-/* Text hover and focus - blue (except for buttons) */
+/* Text hover and focus - underline (except for buttons) */
 a:hover:not([class*="bg-red"]):not([class*="bg-white"]):not(.btn):not([role="button"]),
 a:focus:not([class*="bg-red"]):not([class*="bg-white"]):not(.btn):not([role="button"]),
 a:focus-visible:not([class*="bg-red"]):not([class*="bg-white"]):not(.btn):not([role="button"]) {
-    color: var(--color-blue-hover);
-    outline: 2px solid var(--color-blue-hover);
-    outline-offset: 4px;
-}
-
-/* Override for inline text links - just underline, no outline */
-p a:hover,
-p a:focus,
-p a:focus-visible {
-    outline: none !important;
     text-decoration: underline;
 }
 
