@@ -23,6 +23,9 @@
         let hasShown = false;
         let isVisible = false;
 
+        // Hide CTA initially
+        cta.style.transform = 'translateY(100%)';
+
         // Get CTA height and add padding to body
         const updateBodyPadding = () => {
             const ctaHeight = cta.offsetHeight;
@@ -34,6 +37,7 @@
             if (hasShown) return;
             hasShown = true;
             isVisible = true;
+            cta.style.transform = 'translateY(0)';
             updateBodyPadding();
         };
 
@@ -51,14 +55,18 @@
             updateBodyPadding();
         };
 
-        // Check if user is near bottom of page (within 200px of footer)
+        // Check if user is near bottom of page
         const checkScrollPosition = () => {
-            const scrollPosition = window.scrollY + window.innerHeight;
-            const documentHeight = document.documentElement.scrollHeight;
-            const distanceFromBottom = documentHeight - scrollPosition;
+            const footer = document.querySelector('footer');
+            if (!footer) {
+                return;
+            }
 
-            // Hide CTA when within 200px of bottom to reveal footer
-            if (distanceFromBottom < 200) {
+            const footerRect = footer.getBoundingClientRect();
+            const viewportHeight = window.innerHeight;
+
+            // Hide CTA when footer is visible in viewport (top of footer is in view)
+            if (footerRect.top < viewportHeight) {
                 hideCTA();
             } else if (hasShown) {
                 revealCTA();
@@ -83,6 +91,7 @@
                 showCTA();
                 window.removeEventListener('scroll', handleInitialScroll);
                 window.addEventListener('scroll', checkScrollPosition, { passive: true });
+                checkScrollPosition(); // Check immediately after showing
             }
         }, 3000);
 

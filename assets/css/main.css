@@ -1,15 +1,110 @@
 :root {
     --color-yellow: rgb(255, 215, 0);
     --color-gray-bg: rgb(243, 243, 243);
+    --color-blue-hover: #1971e9;
 }
 
 body {
     font-family: 'Figtree', ui-sans-serif, system-ui, sans-serif;
+    font-weight: 300; /* Light for body */
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Figtree', ui-sans-serif, system-ui, sans-serif;
-    font-weight: 700;
+    font-weight: 400; /* Regular for headings */
+}
+
+/* Text hover - blue (except for buttons) */
+a:hover:not([class*="bg-red"]):not([class*="bg-white"]):not(.btn):not([role="button"]) {
+    color: var(--color-blue-hover);
+}
+
+/* Mega menu link cards - restore hover background changes */
+[data-submenu] a.group:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Mega menu links should keep white text on hover */
+[data-submenu] a:hover {
+    color: white !important;
+}
+
+/* Red button hover - keep white text, darken background */
+a[class*="bg-red"]:hover,
+button[class*="bg-red"]:hover {
+    background-color: #c41e1e !important; /* Darker red */
+    color: white !important;
+}
+
+/* White button hover */
+a[class*="bg-white"]:hover,
+button[class*="bg-white"]:hover {
+    background-color: #f3f3f3 !important;
+}
+
+/* Button styles - lower corner radius to 4px */
+button,
+.btn,
+a[class*="bg-red"],
+a[class*="bg-white"][class*="text-blue"],
+a.rounded-lg,
+button.rounded-lg,
+.rounded-lg[href*="/contact"],
+[type="button"],
+[type="submit"],
+[role="button"] {
+    border-radius: 4px !important;
+}
+
+/* Sticky CTA - increased height and vertical centering */
+[data-sticky-cta] {
+    height: 112px;
+}
+
+/* Mega Menu - Full width with blue eyebrow text */
+@media (width >= 64rem) {
+    /* Make parent menu item relative to viewport */
+    [data-menu-item] {
+        position: static !important;
+    }
+
+    [data-submenu] {
+        left: 0 !important;
+        right: 0 !important;
+        transform: none !important;
+        width: 100vw !important;
+        max-width: 100vw !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    /* Center the content within the mega menu */
+    [data-submenu] > div {
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    /* Eyebrow text in menus should be blue */
+    [data-submenu] .text-yellow-300 {
+        color: #1971e9 !important;
+    }
+}
+
+/* Footer - Extended height */
+footer {
+    min-height: auto !important;
+}
+
+/* Case study background - galaxy pattern */
+.case-study-hero {
+    background-image: url('../images/header-background.webp') !important;
+    background-size: cover !important;
+    background-position: center !important;
 }
 
 /* Accessibility utilities */
