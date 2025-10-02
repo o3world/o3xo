@@ -28,6 +28,15 @@ a:focus-visible:not([class*="bg-red"]):not([class*="bg-white"]):not(.btn):not([r
     outline-offset: 4px;
 }
 
+/* Override for approach section links - just underline, no color change or outline */
+h2 a[href="/about/approach/"]:hover,
+h2 a[href="/about/approach/"]:focus,
+h2 a[href="/about/approach/"]:focus-visible {
+    color: white !important;
+    outline: none !important;
+    text-decoration: underline;
+}
+
 /* Mega menu link cards - restore hover background changes */
 [data-submenu] a.group:hover {
     background-color: rgba(255, 255, 255, 0.1) !important;
