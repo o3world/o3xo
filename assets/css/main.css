@@ -14,6 +14,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400; /* Regular for headings */
 }
 
+/* Hamburger menu button hover and focus - match focus ring style */
+[data-nav-toggle]:hover {
+    box-shadow: 0 0 0 2px black, 0 0 0 4px white !important;
+}
+
 /* Text hover - blue (except for buttons) */
 a:hover:not([class*="bg-red"]):not([class*="bg-white"]):not(.btn):not([role="button"]) {
     color: var(--color-blue-hover);
@@ -37,9 +42,9 @@ button[class*="bg-red"]:hover {
     color: white !important;
 }
 
-/* White button hover */
-a[class*="bg-white"]:hover,
-button[class*="bg-white"]:hover {
+/* White button hover (exclude nav toggle) */
+a[class*="bg-white"]:hover:not([data-nav-toggle]),
+button[class*="bg-white"]:hover:not([data-nav-toggle]) {
     background-color: #f3f3f3 !important;
 }
 
