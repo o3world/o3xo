@@ -3,14 +3,25 @@
   "version": "1.0.0",
   "main": "capture.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:css": "tailwindcss -i ./assets/css/tailwind-source.css -o ./assets/css/tailwind.css --minify",
+    "build:js": "terser assets/js/component-loader.js assets/js/navigation.js assets/js/sticky-cta.js assets/js/animations.js -o assets/js/bundle.min.js --compress --mangle",
+    "build": "npm run build:css && npm run build:js",
+    "watch:css": "tailwindcss -i ./assets/css/tailwind-source.css -o ./assets/css/tailwind.css --watch",
+    "dev": "npm run watch:css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "AI strategy & implementation partner website built with Tailwind CSS and vanilla JavaScript.",
   "dependencies": {
     "cheerio": "^1.1.2",
     "puppeteer": "^24.23.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.1.1",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.18",
+    "terser": "^5.44.0"
   }
 }

@@ -16,10 +16,11 @@
     <meta name="twitter:image" content="https://o3xo.ai/assets/images/og-image.png">
     <link rel="canonical" href="https://o3xo.ai/about/approach/">
     <link rel="icon" type="image/png" href="../../favicon.png">
+    <link rel="stylesheet" href="../../assets/css/tailwind.css">
     <link rel="stylesheet" href="../../assets/css/styles.css">
     <link rel="stylesheet" href="../../assets/css/main.css">
     <link rel="stylesheet" href="../../assets/css/animations.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../assets/css/mobile-menu.css">
 </head>
 <body class="bg-white text-gray-900">
     <!-- Header placeholder -->
@@ -27,65 +28,146 @@
 
     <main id="main-content">
         <!-- Hero Section -->
-        <section class="relative w-full pt-32">
+        <section class="relative w-full">
             <div class="absolute top-0 left-0 right-0 bg-cover bg-center bg-no-repeat" style="background-image: url('../../assets/images/header-background.png'); height: calc(100% + 40px);">
                 <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/60"></div>
             </div>
-            <div class="relative z-10 max-w-7xl mx-auto px-4 md:px-6 pt-16 pb-8">
+            <div class="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-8">
                 <div class="flex flex-col gap-2 max-w-4xl">
-                    <h1 class="text-white text-4xl md:text-6xl font-bold mb-4 animate-on-scroll fade-in">AI strategy to activation: A unified approach for organizational success</h1>
-                    <p class="text-gray-200 text-xl max-w-3xl animate-on-scroll fade-in">Transform AI ambitions into measurable outcomes through our proven strategy and activation methodology. We guide teams from initial assessment to full-scale deployment, ensuring initiatives deliver business value while building internal capabilities for sustained success.</p>
+                    <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-4">AI strategy to activation: A&nbsp;unified approach for organizational success</h1>
+                    <p class="text-gray-200 text-lg md:text-xl max-w-3xl">Transform AI ambitions into measurable outcomes through our proven strategy and activation methodology. We guide teams from initial assessment to full-scale deployment, ensuring initiatives deliver business value while building internal capabilities for sustained success.</p>
                 </div>
             </div>
         </section>
 
         <!-- From Roadmap to Results Section -->
-        <section class="py-16 bg-white">
-            <div class="max-w-7xl mx-auto px-4 md:px-6">
-                <div class="max-w-6xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll fade-in">From roadmap to results</h2>
-                    <p class="text-xl text-gray-700 leading-relaxed mb-12 animate-on-scroll fade-in">From strategic clarity to measurable results—we unite teams and leadership to deliver solutions that enhance company expertise and accelerate project success.</p>
+        <section class="mt-12 py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="max-w-6xl">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">From roadmap to results</h2>
+                    <div class="max-w-3xl">
+                        <p class="text-lg text-gray-900">From strategic clarity to measurable results—we unite teams and leadership to deliver solutions that enhance company expertise and accelerate project success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <!-- Two Column Layout -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                        <!-- AI Strategy -->
-                        <div class="bg-gray-50 rounded-lg p-8 animate-on-scroll fade-in">
-                            <h3 class="text-2xl font-bold mb-4">AI strategy</h3>
-                            <p class="text-gray-700 leading-relaxed mb-6">Comprehensive assessment and workshop to identify high-value use cases, prioritize initiatives, and create your AI roadmap.</p>
+        <!-- Strategy & Activation Section -->
+        <section class="py-12 relative bg-cover bg-center bg-no-repeat" style="background-image: url('../../assets/images/header-background.png');">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative z-10 max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- AI Strategy Column -->
+                    <div class="space-y-8">
+                        <div>
+                            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">AI strategy</h2>
+                            <p class="text-white text-lg mb-8">Comprehensive assessment and workshop to identify high-value use cases, prioritize initiatives, and create your AI roadmap.</p>
+                        </div>
 
-                            <div class="space-y-6">
-                                <div>
-                                    <h4 class="font-semibold text-lg mb-2">Assess + align</h4>
-                                    <p class="text-gray-600">Define AI business objectives and assess current systems</p>
+                        <div class="space-y-12">
+                            <!-- Assess + Align Card -->
+                            <div class="group cursor-pointer hover:scale-105 transition-all duration-300">
+                                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 h-full hover:bg-white/15 transition-all duration-300 shadow-[0_4px_6px_-2px_rgba(255,255,255,0.05),0_10px_15px_-3px_rgba(255,255,255,0.1)]">
+                                    <div class="space-y-4 h-full flex flex-col">
+                                        <div class="w-12 h-12">
+                                            <svg class="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64">
+                                                <rect fill="#FFBE00" height="64" rx="32" width="64"></rect>
+                                                <path d="M36.9515 31.9989L48 48L32 36.9528L16 48L27.0485 31.9989L16 16L32 27.0472L48 16L36.9515 31.9989Z" fill="white"></path>
+                                            </svg>
+                                        </div>
+                                        <h4 class="text-xl font-semibold text-white">Assess + align</h4>
+                                        <p class="text-white leading-relaxed flex-1">Define AI business objectives and assess current systems</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 class="font-semibold text-lg mb-2">Ideate + explore</h4>
-                                    <p class="text-gray-600">Workshop to generate company-specific use cases with your team</p>
+                            </div>
+
+                            <!-- Ideate + Explore Card -->
+                            <div class="group cursor-pointer hover:scale-105 transition-all duration-300">
+                                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 h-full hover:bg-white/15 transition-all duration-300 shadow-[0_4px_6px_-2px_rgba(255,255,255,0.05),0_10px_15px_-3px_rgba(255,255,255,0.1)]">
+                                    <div class="space-y-4 h-full flex flex-col">
+                                        <div class="w-12 h-12">
+                                            <svg class="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64">
+                                                <rect fill="#FFBE00" height="64" rx="32" width="64"></rect>
+                                                <path d="M36.9515 31.9989L48 48L32 36.9528L16 48L27.0485 31.9989L16 16L32 27.0472L48 16L36.9515 31.9989Z" fill="white"></path>
+                                            </svg>
+                                        </div>
+                                        <h4 class="text-xl font-semibold text-white">Ideate + explore</h4>
+                                        <p class="text-white leading-relaxed flex-1">Workshop to generate company-specific use cases with your team</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 class="font-semibold text-lg mb-2">Evaluate + plan</h4>
-                                    <p class="text-gray-600">Prioritize initiatives and develop implementation roadmap</p>
+                            </div>
+
+                            <!-- Evaluate + Plan Card -->
+                            <div class="group cursor-pointer hover:scale-105 transition-all duration-300">
+                                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 h-full hover:bg-white/15 transition-all duration-300 shadow-[0_4px_6px_-2px_rgba(255,255,255,0.05),0_10px_15px_-3px_rgba(255,255,255,0.1)]">
+                                    <div class="space-y-4 h-full flex flex-col">
+                                        <div class="w-12 h-12">
+                                            <svg class="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64">
+                                                <rect fill="#FFBE00" height="64" rx="32" width="64"></rect>
+                                                <path d="M36.9515 31.9989L48 48L32 36.9528L16 48L27.0485 31.9989L16 16L32 27.0472L48 16L36.9515 31.9989Z" fill="white"></path>
+                                            </svg>
+                                        </div>
+                                        <h4 class="text-xl font-semibold text-white">Evaluate + plan</h4>
+                                        <p class="text-white leading-relaxed flex-1">Prioritize initiatives and develop implementation roadmap</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- AI Activation -->
-                        <div class="bg-gray-50 rounded-lg p-8 animate-on-scroll fade-in">
-                            <h3 class="text-2xl font-bold mb-4">AI activation</h3>
-                            <p class="text-gray-700 leading-relaxed mb-6">Rapid use case development that validates key use cases, then scales successful pilots across your project portfolio.</p>
+                    <!-- AI Activation Column -->
+                    <div class="space-y-8">
+                        <div>
+                            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">AI activation</h2>
+                            <p class="text-white text-lg mb-8">Rapid use case development that validates key use cases, then scales successful pilots across your project portfolio.</p>
+                        </div>
 
-                            <div class="space-y-6">
-                                <div>
-                                    <h4 class="font-semibold text-lg mb-2">Plan + prepare</h4>
-                                    <p class="text-gray-600">Confirm vision and integrate with company data and systems</p>
+                        <div class="space-y-12">
+                            <!-- Plan + Prepare Card -->
+                            <div class="group cursor-pointer hover:scale-105 transition-all duration-300">
+                                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 h-full hover:bg-white/15 transition-all duration-300 shadow-[0_4px_6px_-2px_rgba(255,255,255,0.05),0_10px_15px_-3px_rgba(255,255,255,0.1)]">
+                                    <div class="space-y-4 h-full flex flex-col">
+                                        <div class="w-12 h-12">
+                                            <svg class="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64">
+                                                <rect fill="#FFBE00" height="64" rx="32" width="64"></rect>
+                                                <path d="M36.9515 31.9989L48 48L32 36.9528L16 48L27.0485 31.9989L16 16L32 27.0472L48 16L36.9515 31.9989Z" fill="white"></path>
+                                            </svg>
+                                        </div>
+                                        <h4 class="text-xl font-semibold text-white">Plan + prepare</h4>
+                                        <p class="text-white leading-relaxed flex-1">Confirm vision and integrate with company data and systems</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 class="font-semibold text-lg mb-2">Launch + learn</h4>
-                                    <p class="text-gray-600">Develop AI solutions for key use cases, then learn from user insight</p>
+                            </div>
+
+                            <!-- Launch + Learn Card -->
+                            <div class="group cursor-pointer hover:scale-105 transition-all duration-300">
+                                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 h-full hover:bg-white/15 transition-all duration-300 shadow-[0_4px_6px_-2px_rgba(255,255,255,0.05),0_10px_15px_-3px_rgba(255,255,255,0.1)]">
+                                    <div class="space-y-4 h-full flex flex-col">
+                                        <div class="w-12 h-12">
+                                            <svg class="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64">
+                                                <rect fill="#FFBE00" height="64" rx="32" width="64"></rect>
+                                                <path d="M36.9515 31.9989L48 48L32 36.9528L16 48L27.0485 31.9989L16 16L32 27.0472L48 16L36.9515 31.9989Z" fill="white"></path>
+                                            </svg>
+                                        </div>
+                                        <h4 class="text-xl font-semibold text-white">Launch + learn</h4>
+                                        <p class="text-white leading-relaxed flex-1">Develop AI solutions for key use cases, then learn from user insight</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 class="font-semibold text-lg mb-2">Scale + embed</h4>
-                                    <p class="text-gray-600">Operationalize across org, train teams and develop advocacy</p>
+                            </div>
+
+                            <!-- Scale + Embed Card -->
+                            <div class="group cursor-pointer hover:scale-105 transition-all duration-300">
+                                <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 h-full hover:bg-white/15 transition-all duration-300 shadow-[0_4px_6px_-2px_rgba(255,255,255,0.05),0_10px_15px_-3px_rgba(255,255,255,0.1)]">
+                                    <div class="space-y-4 h-full flex flex-col">
+                                        <div class="w-12 h-12">
+                                            <svg class="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64">
+                                                <rect fill="#FFBE00" height="64" rx="32" width="64"></rect>
+                                                <path d="M36.9515 31.9989L48 48L32 36.9528L16 48L27.0485 31.9989L16 16L32 27.0472L48 16L36.9515 31.9989Z" fill="white"></path>
+                                            </svg>
+                                        </div>
+                                        <h4 class="text-xl font-semibold text-white">Scale + embed</h4>
+                                        <p class="text-white leading-relaxed flex-1">Operationalize across org, train teams and develop advocacy</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -95,69 +177,185 @@
         </section>
 
         <!-- FAQ Section -->
-        <section class="py-16 bg-gray-50">
-            <div class="max-w-4xl mx-auto px-4 md:px-6">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 animate-on-scroll fade-in">AI Implementation FAQ</h2>
-                <p class="text-xl text-gray-700 mb-12 animate-on-scroll fade-in">Quick answers to the questions we hear most about integrating AI into your business.</p>
+        <section class="py-12 relative bg-cover bg-center bg-no-repeat" style="background-image: url('../../assets/images/header-background.png');">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative z-10 max-w-7xl mx-auto px-6">
+                <div class="mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">AI Implementation FAQ</h2>
+                    <p class="text-white text-lg max-w-3xl">Quick answers to the questions we hear most about integrating AI into your business.</p>
+                </div>
 
-                <div class="space-y-8">
-                    <!-- FAQ Item 1 -->
-                    <div class="animate-on-scroll fade-in">
-                        <h3 class="text-xl font-bold mb-3">How do we start working with O3XO?</h3>
-                        <p class="text-gray-700 leading-relaxed">We don't build AI for AI's sake—everything starts with your business objectives. Some clients need help identifying use cases and building a roadmap, while others come with defined KPIs ready to scope. In both cases, we focus on measurable impact and ROI. You can start by taking our AI assessment.</p>
-                    </div>
+                <div class="w-full max-w-[800px]">
+                    <div class="w-full" data-accordion>
+                        <!-- FAQ Item 1 -->
+                        <div class="border-b border-white/20" data-accordion-item>
+                            <button type="button" class="flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-sm font-medium transition-all outline-none hover:underline text-white hover:text-gray-200 text-left w-full" data-accordion-trigger>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" fill="#FFBE00"/>
+                                        <path d="M13.8 7.2L18 12l-4.2 4.8M6 12h12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                    <h4 class="text-lg font-semibold text-white">How do we start working with O3XO?</h4>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300 size-4 shrink-0 translate-y-0.5 transition-transform duration-200">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                            <div class="overflow-hidden transition-all duration-300 max-h-0" data-accordion-content>
+                                <div class="pb-4 pt-0 text-white">
+                                    <p>We don't build AI for AI's sake—everything starts with your business objectives. Some clients need help identifying use cases and building a roadmap, while others come with defined KPIs ready to scope. In both cases, we focus on measurable impact and ROI. You can start by taking our AI assessment.</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- FAQ Item 2 -->
-                    <div class="animate-on-scroll fade-in">
-                        <h3 class="text-xl font-bold mb-3">Should we build or buy AI?</h3>
-                        <p class="text-gray-700 leading-relaxed">Building creates solutions tailored to your needs and minimizes disruption by bridging systems. Buying may fit if a tool aligns closely with your goals, but it often comes with licensing, training, and implementation costs. We'll help you weigh the trade-offs.</p>
-                    </div>
+                        <!-- FAQ Item 2 -->
+                        <div class="border-b border-white/20" data-accordion-item>
+                            <button type="button" class="flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-sm font-medium transition-all outline-none hover:underline text-white hover:text-gray-200 text-left w-full" data-accordion-trigger>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" fill="#FFBE00"/>
+                                        <path d="M13.8 7.2L18 12l-4.2 4.8M6 12h12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                    <h4 class="text-lg font-semibold text-white">Should we build or buy AI?</h4>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300 size-4 shrink-0 translate-y-0.5 transition-transform duration-200">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                            <div class="overflow-hidden transition-all duration-300 max-h-0" data-accordion-content>
+                                <div class="pb-4 pt-0 text-white">
+                                    <p>Building creates solutions tailored to your needs and minimizes disruption by bridging systems. Buying may fit if a tool aligns closely with your goals, but it often comes with licensing, training, and implementation costs. We'll help you weigh the trade-offs.</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- FAQ Item 3 -->
-                    <div class="animate-on-scroll fade-in">
-                        <h3 class="text-xl font-bold mb-3">Can AI work with our current systems?</h3>
-                        <p class="text-gray-700 leading-relaxed">Yes. We emphasize integration over disruption—our solutions connect with both legacy systems and modern SaaS, scaling with your needs.</p>
-                    </div>
+                        <!-- FAQ Item 3 -->
+                        <div class="border-b border-white/20" data-accordion-item>
+                            <button type="button" class="flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-sm font-medium transition-all outline-none hover:underline text-white hover:text-gray-200 text-left w-full" data-accordion-trigger>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" fill="#FFBE00"/>
+                                        <path d="M13.8 7.2L18 12l-4.2 4.8M6 12h12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                    <h4 class="text-lg font-semibold text-white">Can AI work with our current systems?</h4>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300 size-4 shrink-0 translate-y-0.5 transition-transform duration-200">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                            <div class="overflow-hidden transition-all duration-300 max-h-0" data-accordion-content>
+                                <div class="pb-4 pt-0 text-white">
+                                    <p>Yes. We emphasize integration over disruption—our solutions connect with both legacy systems and modern SaaS, scaling with your needs.</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- FAQ Item 4 -->
-                    <div class="animate-on-scroll fade-in">
-                        <h3 class="text-xl font-bold mb-3">How do you define success in AI projects?</h3>
-                        <p class="text-gray-700 leading-relaxed">Success is tied to outcomes that matter—lower costs, greater efficiency, faster response times, or new revenue. We set clear metrics upfront and measure progress throughout.</p>
-                    </div>
+                        <!-- FAQ Item 4 -->
+                        <div class="border-b border-white/20" data-accordion-item>
+                            <button type="button" class="flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-sm font-medium transition-all outline-none hover:underline text-white hover:text-gray-200 text-left w-full" data-accordion-trigger>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" fill="#FFBE00"/>
+                                        <path d="M13.8 7.2L18 12l-4.2 4.8M6 12h12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                    <h4 class="text-lg font-semibold text-white">How do you define success in AI projects?</h4>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300 size-4 shrink-0 translate-y-0.5 transition-transform duration-200">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                            <div class="overflow-hidden transition-all duration-300 max-h-0" data-accordion-content>
+                                <div class="pb-4 pt-0 text-white">
+                                    <p>Success is tied to outcomes that matter—lower costs, greater efficiency, faster response times, or new revenue. We set clear metrics upfront and measure progress throughout.</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- FAQ Item 5 -->
-                    <div class="animate-on-scroll fade-in">
-                        <h3 class="text-xl font-bold mb-3">Will AI replace jobs in our company?</h3>
-                        <p class="text-gray-700 leading-relaxed">Our focus is augmentation, not replacement. AI reduces repetitive tasks and empowers employees to focus on higher-value work, strengthening rather than shrinking your teams.</p>
-                    </div>
+                        <!-- FAQ Item 5 -->
+                        <div class="border-b border-white/20" data-accordion-item>
+                            <button type="button" class="flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-sm font-medium transition-all outline-none hover:underline text-white hover:text-gray-200 text-left w-full" data-accordion-trigger>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" fill="#FFBE00"/>
+                                        <path d="M13.8 7.2L18 12l-4.2 4.8M6 12h12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                    <h4 class="text-lg font-semibold text-white">Will AI replace jobs in our company?</h4>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300 size-4 shrink-0 translate-y-0.5 transition-transform duration-200">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                            <div class="overflow-hidden transition-all duration-300 max-h-0" data-accordion-content>
+                                <div class="pb-4 pt-0 text-white">
+                                    <p>Our focus is augmentation, not replacement. AI reduces repetitive tasks and empowers employees to focus on higher-value work, strengthening rather than shrinking your teams.</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- FAQ Item 6 -->
-                    <div class="animate-on-scroll fade-in">
-                        <h3 class="text-xl font-bold mb-3">What investment is required to begin?</h3>
-                        <p class="text-gray-700 leading-relaxed">Engagements scale to your needs. We generally begin with a fixed-price AI use case assessment project, then transition to pilot development where we start with smaller pilots to prove value and manage risk, then expand to larger initiatives once results are clear.</p>
-                    </div>
+                        <!-- FAQ Item 6 -->
+                        <div class="border-b border-white/20" data-accordion-item>
+                            <button type="button" class="flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-sm font-medium transition-all outline-none hover:underline text-white hover:text-gray-200 text-left w-full" data-accordion-trigger>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" fill="#FFBE00"/>
+                                        <path d="M13.8 7.2L18 12l-4.2 4.8M6 12h12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                    <h4 class="text-lg font-semibold text-white">What investment is required to begin?</h4>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300 size-4 shrink-0 translate-y-0.5 transition-transform duration-200">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                            <div class="overflow-hidden transition-all duration-300 max-h-0" data-accordion-content>
+                                <div class="pb-4 pt-0 text-white">
+                                    <p>Engagements scale to your needs. We generally begin with a fixed-price AI use case assessment project, then transition to pilot development where we start with smaller pilots to prove value and manage risk, then expand to larger initiatives once results are clear.</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- FAQ Item 7 -->
-                    <div class="animate-on-scroll fade-in">
-                        <h3 class="text-xl font-bold mb-3">How soon will we see results?</h3>
-                        <p class="text-gray-700 leading-relaxed">Simple solutions can launch in weeks. Larger initiatives are broken into phases that deliver impact within 90 days, while keeping long-term transformation on track.</p>
-                    </div>
+                        <!-- FAQ Item 7 -->
+                        <div class="border-b border-white/20" data-accordion-item>
+                            <button type="button" class="flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-sm font-medium transition-all outline-none hover:underline text-white hover:text-gray-200 text-left w-full" data-accordion-trigger>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" fill="#FFBE00"/>
+                                        <path d="M13.8 7.2L18 12l-4.2 4.8M6 12h12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                    <h4 class="text-lg font-semibold text-white">How soon will we see results?</h4>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300 size-4 shrink-0 translate-y-0.5 transition-transform duration-200">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                            <div class="overflow-hidden transition-all duration-300 max-h-0" data-accordion-content>
+                                <div class="pb-4 pt-0 text-white">
+                                    <p>Simple solutions can launch in weeks. Larger initiatives are broken into phases that deliver impact within 90 days, while keeping long-term transformation on track.</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <!-- FAQ Item 8 -->
-                    <div class="animate-on-scroll fade-in">
-                        <h3 class="text-xl font-bold mb-3">How do you train teams on AI initiatives?</h3>
-                        <p class="text-gray-700 leading-relaxed">We build AI fluency across your organization. Training is tied to real use cases, rollout plans, and ongoing engagement programs to create adoption and advocacy.</p>
+                        <!-- FAQ Item 8 -->
+                        <div class="border-b border-white/20" data-accordion-item>
+                            <button type="button" class="flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-sm font-medium transition-all outline-none hover:underline text-white hover:text-gray-200 text-left w-full" data-accordion-trigger>
+                                <div class="flex items-start gap-3">
+                                    <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" fill="#FFBE00"/>
+                                        <path d="M13.8 7.2L18 12l-4.2 4.8M6 12h12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                    <h4 class="text-lg font-semibold text-white">How do you train teams on AI initiatives?</h4>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300 size-4 shrink-0 translate-y-0.5 transition-transform duration-200">
+                                    <path d="m6 9 6 6 6-6"></path>
+                                </svg>
+                            </button>
+                            <div class="overflow-hidden transition-all duration-300 max-h-0" data-accordion-content>
+                                <div class="pb-4 pt-0 text-white">
+                                    <p>We build AI fluency across your organization. Training is tied to real use cases, rollout plans, and ongoing engagement programs to create adoption and advocacy.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
-            <div class="max-w-4xl mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 animate-on-scroll fade-in">Ready to transform your AI ambitions into measurable outcomes?</h2>
-                <p class="text-xl text-white/90 mb-8 animate-on-scroll fade-in">Let's discuss how our proven methodology can deliver results for your organization.</p>
-                <a href="../../contact/" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition font-semibold text-lg animate-on-scroll fade-in">Get in Touch</a>
             </div>
         </section>
     </main>
@@ -168,10 +366,11 @@
     <!-- Sticky CTA Component -->
     <div data-component="sticky-cta"></div>
 
-    <!-- Component Loader -->
+    <!-- Scripts -->
     <script src="../../assets/js/component-loader.js"></script>
-
-    <!-- Animations -->
+    <script src="../../assets/js/navigation.js"></script>
+    <script src="../../assets/js/sticky-cta.js"></script>
     <script src="../../assets/js/animations.js"></script>
+    <script src="../../assets/js/accordion.js"></script>
 </body>
 </html>
