@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://o3xo.netlify.app/sitemap.xml
