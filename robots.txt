@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://o3xo.ai/sitemap.xml
+Sitemap: https://www.o3xo.ai/sitemap.xml
