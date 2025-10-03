@@ -106,9 +106,9 @@ button.rounded-lg,
         padding-right: 1.5rem;
     }
 
-    /* Eyebrow text in menus should be blue */
+    /* Eyebrow text in menus should be brand yellow */
     [data-submenu] .text-yellow-300 {
-        color: #1971e9 !important;
+        color: var(--color-yellow) !important;
     }
 }
 
