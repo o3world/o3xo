@@ -38,14 +38,14 @@
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/mobile-menu.css">
 </head>
-<body class="bg-white text-gray-900">
+<body class="text-gray-900 bg-white">
     <!-- Header placeholder -->
     <div data-component="header"></div>
     <noscript>
         <!-- Static header fallback for no-JS environments -->
 <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:text-black focus:px-4 focus:py-2 focus:rounded">Skip to main content</a>
 <div class="fixed top-0 left-0 right-0 z-50 bg-black">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center justify-between px-6 py-4 mx-auto max-w-7xl">
         <a href="/" aria-label="O3XO Home" class="flex gap-[1.333px] items-center">
             <svg class="block h-[26.667px] w-[45.6px]" fill="none" preserveAspectRatio="none" viewBox="0 0 46 27" aria-label="O3XO">
                 <title>O3XO</title>
@@ -79,7 +79,7 @@
                     </ul>
                 </li>
                 <li class="sm:self-center">
-                    <a href="/contact/" class="inline-flex items-center justify-center rounded-lg bg-red-600 px-6 py-2 font-semibold text-white hover:bg-red-700">Contact</a>
+                    <a href="/contact/" class="inline-flex items-center justify-center px-6 py-2 font-semibold text-white bg-red-600 rounded-lg hover:bg-red-700">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -89,38 +89,38 @@
     </noscript>
 
     <!-- Hero Section -->
-    <header class="relative flex items-center justify-center bg-cover bg-center" style="background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('assets/images/header-background.webp'); background-size: cover; padding-top: 180px; padding-bottom: 80px;" role="banner" aria-label="Hero section with technology background">
-        <div class="relative z-10 max-w-7xl mx-auto px-6">
+    <header class="relative flex items-center justify-center bg-center bg-cover" style="background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('assets/images/header-background.webp'); background-size: cover; padding-top: 180px; padding-bottom: 80px;" role="banner" aria-label="Hero section with technology background">
+        <div class="relative z-10 px-6 mx-auto max-w-7xl">
             <div>
-                <h1 data-hero-animate class="text-5xl md:text-6xl lg:text-7xl text-white mb-6 hero-title">
+                <h1 data-hero-animate class="mb-6 text-5xl text-white md:text-6xl lg:text-7xl hero-title">
                     Enter AI's frontier where potential meets performance
                 </h1>
-                <p data-hero-animate class="text-lg md:text-xl text-gray-200 mb-12 max-w-3xl hero-text">
-                    The pressure to implement AI is real, but knowing where to start shouldn't keep you up at night. O3XO takes you beyond AI hype into clear results, where we help leaders prove value quickly and build industry‑centric capabilities that propel you forward.
+                <p data-hero-animate class="max-w-3xl mb-12 text-lg text-gray-200 md:text-xl hero-text">
+                    AI doesn&rsquo;t have to be overwhelming. Start smart, prove ROI, and scale confidently with&nbsp;O3XO.
                 </p>
             </div>
 
             <!-- Stats Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mt-12 hero-stats">
-                <article data-hero-animate class="rounded-lg p-8 hover-lift transition-smooth overflow-hidden relative" style="background-color: var(--color-yellow);">
+            <div class="grid grid-cols-1 gap-6 mt-12 md:grid-cols-3 md:gap-8 hero-stats">
+                <article data-hero-animate class="relative p-8 overflow-hidden rounded-lg" style="background-color: var(--color-yellow);">
                     <div class="absolute inset-0 z-0" style="background-image: url('assets/images/yellow-card-bg.webp'); background-size: cover; border-radius: inherit; transform: scale(1.1);"></div>
                     <div class="relative z-10">
-                        <p class="text-4xl font-bold mb-2">50%+</p>
-                        <p class="text-lg md:text-xl">average efficiency gain</p>
+                        <p class="mb-2 text-4xl"><strong>50%+</strong></p>
+                        <p class="text-lg md:text-xl">Average efficiency gain</p>
                     </div>
                 </article>
-                <article data-hero-animate class="rounded-lg p-8 hover-lift transition-smooth overflow-hidden relative" style="background-color: var(--color-yellow);">
+                <article data-hero-animate class="relative p-8 overflow-hidden rounded-lg" style="background-color: var(--color-yellow);">
                     <div class="absolute inset-0 z-0" style="background-image: url('assets/images/yellow-card-bg.webp'); background-size: cover; border-radius: inherit; transform: scale(1.1);"></div>
                     <div class="relative z-10">
-                        <p class="text-4xl font-bold mb-2">10x</p>
-                        <p class="text-lg md:text-xl">faster information access</p>
+                        <p class="mb-2 text-4xl"><strong>10x</strong></p>
+                        <p class="text-lg md:text-xl">Faster information access</p>
                     </div>
                 </article>
-                <article data-hero-animate class="rounded-lg p-8 hover-lift transition-smooth overflow-hidden relative" style="background-color: var(--color-yellow);">
+                <article data-hero-animate class="relative p-8 overflow-hidden rounded-lg" style="background-color: var(--color-yellow);">
                     <div class="absolute inset-0 z-0" style="background-image: url('assets/images/yellow-card-bg.webp'); background-size: cover; border-radius: inherit; transform: scale(1.1);"></div>
                     <div class="relative z-10">
-                        <p class="text-4xl font-bold mb-2">&lt;90 days</p>
-                        <p class="text-lg md:text-xl">average time to ROI</p>
+                        <p class="mb-2 text-4xl"><strong>&lt;90 days</strong></p>
+                        <p class="text-lg md:text-xl">Average time to ROI</p>
                     </div>
                 </article>
             </div>
@@ -129,110 +129,110 @@
 
     <main id="main-content">
     <!-- Strategy Section -->
-    <section class="py-20 px-6 bg-white">
-        <div class="max-w-7xl mx-auto">
+    <section class="px-6 py-20 bg-white">
+        <div class="mx-auto max-w-7xl">
             <div class="mb-12 animate-on-scroll fade-in">
-                <h2 class="text-4xl md:text-5xl mb-6">Your AI strategy + execution-partner</h2>
-                <p class="text-xl text-gray-600 max-w-3xl">
-                    O3XO takes executives, technology and innovation leaders from boardroom pressure to competitive advantage in less than 90 days. We combine O3's 20+ years of digital transformation expertise with industry‑specific AI capabilities to deliver human‑looped solutions that enhance expertise, prove ROI fast, and scale-responsibly.
+                <h2 class="mb-6 text-4xl md:text-5xl">Your AI strategy + execution-partner</h2>
+                <p class="max-w-3xl text-xl text-gray-600">
+                    Go from boardroom pressure to competitive advantage in less than 90 days with O3XO, which helps executives, technology and innovation leaders move with clarity and direction. Drawing on 20+ years of digital transformation experience and deep industry knowledge, we deliver human-looped solutions that strengthen your team&rsquo;s skills, demonstrate value quickly and grow sustainably over time.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-stagger-children>
-                <article class="border-b border-gray-200 pb-8 animate-on-scroll slide-in-left transition-smooth">
-                    <h3 class="text-xl mb-2">Identify high‑impact use cases</h3>
-                    <p class="text-gray-600">Industry‑specific opportunities, not generic AI applications</p>
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2" data-stagger-children>
+                <article class="pb-8 border-b border-gray-200 animate-on-scroll slide-in-left transition-smooth">
+                    <h3 class="mb-2 text-xl">Discover impact</h3>
+                    <p class="text-gray-600">Identify high-value, industry-specific opportunities</p>
                 </article>
-                <article class="border-b border-gray-200 pb-8 animate-on-scroll slide-in-right transition-smooth">
-                    <h3 class="text-xl mb-2">Prove value in less than 90 days</h3>
-                    <p class="text-gray-600">Quickly develop solutions that deliver and key KPIs</p>
+                <article class="pb-8 border-b border-gray-200 animate-on-scroll slide-in-right transition-smooth">
+                    <h3 class="mb-2 text-xl">Prove value in less than 90 days</h3>
+                    <p class="text-gray-600">Develop solutions that deliver measurable KPI results</p>
                 </article>
-                <article class="border-b border-gray-200 pb-8 animate-on-scroll slide-in-left transition-smooth">
-                    <h3 class="text-xl mb-2">Train and empower teams</h3>
-                    <p class="text-gray-600">Solutions that enhance expertise with proper support</p>
+                <article class="pb-8 border-b border-gray-200 animate-on-scroll slide-in-left transition-smooth">
+                    <h3 class="mb-2 text-xl">Empower teams</h3>
+                    <p class="text-gray-600">Enhance expertise with training and support</p>
                 </article>
-                <article class="border-b border-gray-200 pb-8 animate-on-scroll slide-in-right transition-smooth">
-                    <h3 class="text-xl mb-2">Scale responsibly</h3>
-                    <p class="text-gray-600">From pilots to enterprise platforms with built‑in governance</p>
+                <article class="pb-8 border-b border-gray-200 animate-on-scroll slide-in-right transition-smooth">
+                    <h3 class="mb-2 text-xl">Scale responsibly</h3>
+                    <p class="text-gray-600">Integrate seamlessly and grow with governance</p>
                 </article>
             </div>
         </div>
     </section>
 
     <!-- Industries Section -->
-    <section class="py-20 px-6 relative bg-cover bg-center" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/images/industries-bg.webp'); background-size: cover;" aria-label="Industries section with cityscape background">
-        <div class="max-w-7xl mx-auto relative z-10">
+    <section class="relative px-6 py-20 bg-center bg-cover" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/images/industries-bg.webp'); background-size: cover;" aria-label="Industries section with cityscape background">
+        <div class="relative z-10 mx-auto max-w-7xl">
             <div class="mb-12 animate-on-scroll fade-in">
-                <h2 class="text-4xl md:text-5xl text-white mb-6">AI expertise tailored to your industry</h2>
-                <p class="text-xl text-white max-w-3xl">
-                    We help data‑rich, complex businesses like yours use AI in a meaningful, measurable way.
+                <h2 class="mb-6 text-4xl text-white md:text-5xl">AI expertise tailored to your industry</h2>
+                <p class="max-w-3xl text-xl text-white">
+                    Put AI to work in ways that are meaningful, measurable and built for real impact with our help.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-stagger-children>
-                <a href="/industries/construction/" class="block bg-white/10 backdrop-blur-sm border border-white/20 animate-on-scroll fade-in hover-lift rounded-lg p-6 transition-smooth group">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3" data-stagger-children>
+                <a href="/industries/construction/" class="block p-6 border rounded-lg bg-white/10 backdrop-blur-sm border-white/20 animate-on-scroll fade-in hover-lift transition-smooth group">
                     <div class="w-12 h-12 mb-4" aria-hidden="true">
                         <svg class="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64" aria-hidden="true">
                             <rect fill="#FFBE00" height="64" rx="32" width="64"></rect>
                             <path d="M36.9515 31.9989L48 48L32 36.9528L16 48L27.0485 31.9989L16 16L32 27.0472L48 16L36.9515 31.9989Z" fill="white"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl text-white mb-2">Construction</h3>
+                    <h3 class="mb-2 text-xl text-white">Construction</h3>
                     <p class="text-white">Faster estimates, better profit predictions, smoother project delivery</p>
                 </a>
 
-                <a href="/industries/industrial-services/" class="block bg-white/10 backdrop-blur-sm border border-white/20 animate-on-scroll fade-in hover-lift rounded-lg p-6 transition-smooth group">
+                <a href="/industries/industrial-services/" class="block p-6 border rounded-lg bg-white/10 backdrop-blur-sm border-white/20 animate-on-scroll fade-in hover-lift transition-smooth group">
                     <div class="w-12 h-12 mb-4" aria-hidden="true">
                         <svg class="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64" aria-hidden="true">
                             <rect fill="#FFBE00" height="64" rx="32" width="64"></rect>
                             <path d="M36.9515 31.9989L48 48L32 36.9528L16 48L27.0485 31.9989L16 16L32 27.0472L48 16L36.9515 31.9989Z" fill="white"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl text-white mb-2">Industrial services</h3>
+                    <h3 class="mb-2 text-xl text-white">Industrial services</h3>
                     <p class="text-white">Automate tedious tasks, improve operations, scale expertise in real time</p>
                 </a>
 
-                <a href="/industries/life-sciences/" class="block bg-white/10 backdrop-blur-sm border border-white/20 animate-on-scroll fade-in hover-lift rounded-lg p-6 transition-smooth group">
+                <a href="/industries/life-sciences/" class="block p-6 border rounded-lg bg-white/10 backdrop-blur-sm border-white/20 animate-on-scroll fade-in hover-lift transition-smooth group">
                     <div class="w-12 h-12 mb-4" aria-hidden="true">
                         <svg class="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64" aria-hidden="true">
                             <rect fill="#FFBE00" height="64" rx="32" width="64"></rect>
                             <path d="M36.9515 31.9989L48 48L32 36.9528L16 48L27.0485 31.9989L16 16L32 27.0472L48 16L36.9515 31.9989Z" fill="white"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl text-white mb-2">Pharma + life sciences</h3>
+                    <h3 class="mb-2 text-xl text-white">Life sciences</h3>
                     <p class="text-white">More leads, greater efficiency in R&amp;D, compliance, and commercialization</p>
                 </a>
 
-                <a href="/industries/real-estate/" class="block bg-white/10 backdrop-blur-sm border border-white/20 animate-on-scroll fade-in hover-lift rounded-lg p-6 transition-smooth group">
+                <a href="/industries/real-estate/" class="block p-6 border rounded-lg bg-white/10 backdrop-blur-sm border-white/20 animate-on-scroll fade-in hover-lift transition-smooth group">
                     <div class="w-12 h-12 mb-4" aria-hidden="true">
                         <svg class="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64" aria-hidden="true">
                             <rect fill="#FFBE00" height="64" rx="32" width="64"></rect>
                             <path d="M36.9515 31.9989L48 48L32 36.9528L16 48L27.0485 31.9989L16 16L32 27.0472L48 16L36.9515 31.9989Z" fill="white"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl text-white mb-2">Real estate</h3>
+                    <h3 class="mb-2 text-xl text-white">Real estate</h3>
                     <p class="text-white">Early tenant identification, streamlined management, accounting efficiency</p>
                 </a>
 
-                <a href="/industries/finance-insurance/" class="block bg-white/10 backdrop-blur-sm border border-white/20 animate-on-scroll fade-in hover-lift rounded-lg p-6 transition-smooth group">
+                <a href="/industries/finance-insurance/" class="block p-6 border rounded-lg bg-white/10 backdrop-blur-sm border-white/20 animate-on-scroll fade-in hover-lift transition-smooth group">
                     <div class="w-12 h-12 mb-4" aria-hidden="true">
                         <svg class="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64" aria-hidden="true">
                             <rect fill="#FFBE00" height="64" rx="32" width="64"></rect>
                             <path d="M36.9515 31.9989L48 48L32 36.9528L16 48L27.0485 31.9989L16 16L32 27.0472L48 16L36.9515 31.9989Z" fill="white"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl text-white mb-2">Finance + insurance</h3>
+                    <h3 class="mb-2 text-xl text-white">Finance + insurance</h3>
                     <p class="text-white">Stronger customer support, smarter underwriting, advisor amplification</p>
                 </a>
 
-                <a href="/industries/technology/" class="block bg-white/10 backdrop-blur-sm border border-white/20 animate-on-scroll fade-in hover-lift rounded-lg p-6 transition-smooth group">
+                <a href="/industries/technology/" class="block p-6 border rounded-lg bg-white/10 backdrop-blur-sm border-white/20 animate-on-scroll fade-in hover-lift transition-smooth group">
                     <div class="w-12 h-12 mb-4" aria-hidden="true">
                         <svg class="block w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 64 64" aria-hidden="true">
                             <rect fill="#FFBE00" height="64" rx="32" width="64"></rect>
                             <path d="M36.9515 31.9989L48 48L32 36.9528L16 48L27.0485 31.9989L16 16L32 27.0472L48 16L36.9515 31.9989Z" fill="white"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl text-white mb-2">Technology</h3>
+                    <h3 class="mb-2 text-xl text-white">Technology</h3>
                     <p class="text-white">Product‑specific AI, faster lead generation, automated customer support</p>
                 </a>
             </div>
@@ -240,36 +240,36 @@
     </section>
 
     <!-- Case Studies Section -->
-    <section id="case-studies" class="py-20 px-6 bg-gray-50">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row md:items-start justify-between mb-12 gap-6">
+    <section id="case-studies" class="px-6 py-20 bg-gray-50">
+        <div class="mx-auto max-w-7xl">
+            <div class="flex flex-col justify-between gap-6 mb-12 md:flex-row md:items-start">
                 <div class="max-w-3xl">
-                    <h2 class="text-4xl md:text-5xl mb-4">Impact in action</h2>
+                    <h2 class="mb-4 text-4xl md:text-5xl">Impact in action</h2>
                     <p class="text-xl text-gray-600">
                         See how we help supercharge teams, create business opportunities, and streamline operations.
                     </p>
                 </div>
-                <a href="/case-studies/" aria-label="View all case studies" class="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-smooth flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 inline-flex focus-ring btn-press">
+                <a href="/case-studies/" aria-label="View all case studies" class="flex inline-flex items-center gap-2 px-6 py-3 text-white bg-red-600 rounded-lg hover:bg-red-700 transition-smooth focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 focus-ring btn-press">
                     View all case studies
                     <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                 </a>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-stagger-children>
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3" data-stagger-children>
                 <a href="/case-studies/buffalo-construction/" class="block group">
-                    <article class="bg-white rounded-lg overflow-hidden shadow-sm animate-on-scroll fade-in hover-lift transition-smooth h-full">
-                        <div class="h-64 bg-gray-300 bg-cover bg-center" data-bg="assets/images/buffalo-case-study.webp"></div>
+                    <article class="h-full overflow-hidden bg-white rounded-lg shadow-sm animate-on-scroll fade-in hover-lift transition-smooth">
+                        <div class="h-64 bg-gray-300 bg-center bg-cover" data-bg="assets/images/buffalo-case-study.webp"></div>
                         <div class="p-6">
-                            <div class="flex items-start justify-between border-b border-gray-200 pb-4 mb-4">
+                            <div class="flex items-start justify-between pb-4 mb-4 border-b border-gray-200">
                                 <div>
-                                    <h3 class="text-xl group-hover:text-red-600 transition-colors">Buffalo Construction</h3>
+                                    <h3 class="text-xl transition-colors group-hover:text-red-600">Buffalo Construction</h3>
                                     <p class="text-gray-600">Automating closeout</p>
                                 </div>
-                                <svg aria-hidden="true" class="w-5 h-5 text-gray-400 group-hover:text-red-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-gray-400 transition-colors group-hover:text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                             </div>
-                            <p class="text-gray-600 mb-4">Discover how AI‑powered closeouts saved weeks on every project</p>
+                            <p class="mb-4 text-gray-600">Discover how AI‑powered closeouts saved weeks on every project</p>
                             <div>
-                                <p class="text-3xl font-bold mb-1">2+</p>
+                                <p class="mb-1 text-3xl"><strong>2+</strong></p>
                                 <p class="text-gray-600">Weeks saved on closeout process</p>
                             </div>
                         </div>
@@ -277,19 +277,19 @@
                 </a>
 
                 <a href="/case-studies/tyndale/" class="block group">
-                    <article class="bg-white rounded-lg overflow-hidden shadow-sm animate-on-scroll fade-in hover-lift transition-smooth h-full">
-                        <div class="h-64 bg-gray-300 bg-cover bg-center" data-bg="assets/images/tyndale-case-study.webp"></div>
+                    <article class="h-full overflow-hidden bg-white rounded-lg shadow-sm animate-on-scroll fade-in hover-lift transition-smooth">
+                        <div class="h-64 bg-gray-300 bg-center bg-cover" data-bg="assets/images/tyndale-case-study.webp"></div>
                         <div class="p-6">
-                            <div class="flex items-start justify-between border-b border-gray-200 pb-4 mb-4">
+                            <div class="flex items-start justify-between pb-4 mb-4 border-b border-gray-200">
                                 <div>
-                                    <h3 class="text-xl group-hover:text-red-600 transition-colors">Tyndale</h3>
+                                    <h3 class="text-xl transition-colors group-hover:text-red-600">Tyndale</h3>
                                     <p class="text-gray-600">AI‑driven product insight</p>
                                 </div>
-                                <svg aria-hidden="true" class="w-5 h-5 text-gray-400 group-hover:text-red-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-gray-400 transition-colors group-hover:text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                             </div>
-                            <p class="text-gray-600 mb-4">See how we turned years of expert content into new client connections</p>
+                            <p class="mb-4 text-gray-600">See how we turned years of expert content into new client connections</p>
                             <div>
-                                <p class="text-3xl font-bold mb-1">20+</p>
+                                <p class="mb-1 text-3xl"><strong>20+</strong></p>
                                 <p class="text-gray-600">New contacts per week</p>
                             </div>
                         </div>
@@ -297,19 +297,19 @@
                 </a>
 
                 <a href="/case-studies/mckesson/" class="block group">
-                    <article class="bg-white rounded-lg overflow-hidden shadow-sm animate-on-scroll fade-in hover-lift transition-smooth h-full">
-                        <div class="h-64 bg-gray-300 bg-cover bg-center" data-bg="assets/images/mckesson-case-study.webp"></div>
+                    <article class="h-full overflow-hidden bg-white rounded-lg shadow-sm animate-on-scroll fade-in hover-lift transition-smooth">
+                        <div class="h-64 bg-gray-300 bg-center bg-cover" data-bg="assets/images/mckesson-case-study.webp"></div>
                         <div class="p-6">
-                            <div class="flex items-start justify-between border-b border-gray-200 pb-4 mb-4">
+                            <div class="flex items-start justify-between pb-4 mb-4 border-b border-gray-200">
                                 <div>
-                                    <h3 class="text-xl group-hover:text-red-600 transition-colors">McKesson Compile</h3>
+                                    <h3 class="text-xl transition-colors group-hover:text-red-600">McKesson Compile</h3>
                                     <p class="text-gray-600">AI strategy acceleration</p>
                                 </div>
-                                <svg aria-hidden="true" class="w-5 h-5 text-gray-400 group-hover:text-red-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                                <svg aria-hidden="true" class="w-5 h-5 text-gray-400 transition-colors group-hover:text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
                             </div>
-                            <p class="text-gray-600 mb-4">See how we identified dozens of use cases in our rapid workshop process</p>
+                            <p class="mb-4 text-gray-600">See how we identified dozens of use cases in our rapid workshop process</p>
                         <div>
-                            <p class="text-3xl font-bold mb-1">&lt;3</p>
+                            <p class="mb-1 text-3xl"><strong>&lt;3</strong></p>
                             <p class="text-gray-600">Weeks from strategy to prioritized AI roadmap</p>
                         </div>
                     </div>
@@ -320,57 +320,57 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="py-20 px-6 relative bg-cover bg-center bg-black" data-bg-overlay="linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7))" data-bg="assets/images/header-background.webp">
-        <div class="max-w-7xl mx-auto relative z-10">
-            <div class="inline-block bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20 mb-8">
+    <section class="relative px-6 py-20 bg-black bg-center bg-cover" data-bg-overlay="linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7))" data-bg="assets/images/header-background.webp">
+        <div class="relative z-10 mx-auto max-w-7xl">
+            <div class="inline-block px-4 py-2 mb-8 border rounded-full bg-white/10 backdrop-blur-sm border-white/20">
                 <span class="text-white">Trusted by leading organizations</span>
             </div>
             <div class="max-w-4xl">
-                <blockquote class="text-3xl md:text-4xl text-white mb-8">
+                <blockquote class="mb-8 text-3xl text-white md:text-4xl">
                     "I was expecting the ROI for our project next year, but we are going to immediately see that value now."
                 </blockquote>
-                <cite class="text-gray-300 not-italic text-lg">Brett Norton, President, Buffalo Construction, Inc</cite>
+                <cite class="text-lg not-italic text-gray-300">Brett Norton, President, Buffalo Construction, Inc</cite>
             </div>
         </div>
     </section>
 
     <!-- Insights Section -->
-    <section class="py-20 px-6 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-4xl md:text-5xl mb-12">Insights from the next frontier</h2>
+    <section class="px-6 py-20 bg-white">
+        <div class="mx-auto max-w-7xl">
+            <h2 class="mb-12 text-4xl md:text-5xl">Insights from the next frontier</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-stagger-children>
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-3" data-stagger-children>
                 <a href="https://www.o3world.com/perspectives/ai-roi-beyond-efficiency/" target="_blank" rel="noopener noreferrer" class="block">
-                    <article class="bg-white rounded-lg overflow-hidden shadow-sm animate-on-scroll fade-in hover-lift transition-smooth">
-                        <div class="aspect-square bg-gray-300 bg-cover bg-center" data-bg="assets/images/insight-1.webp"></div>
+                    <article class="overflow-hidden bg-white rounded-lg shadow-sm animate-on-scroll fade-in hover-lift transition-smooth">
+                        <div class="bg-gray-300 bg-center bg-cover aspect-square" data-bg="assets/images/insight-1.webp"></div>
                         <div class="p-6">
-                            <h3 class="text-xl flex items-start justify-between">
+                            <h3 class="flex items-start justify-between text-xl">
                                 The build vs. buy dilemma: Making smart AI investment choices
-                                <svg aria-hidden="true" class="w-5 h-5 flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                             </h3>
                         </div>
                     </article>
                 </a>
 
                 <a href="https://www.o3world.com/perspectives/ai-roi-beyond-efficiency/" target="_blank" rel="noopener noreferrer" class="block">
-                    <article class="bg-white rounded-lg overflow-hidden shadow-sm animate-on-scroll fade-in hover-lift transition-smooth">
-                        <div class="aspect-square bg-gray-300 bg-cover bg-center" data-bg="assets/images/insight-2.webp"></div>
+                    <article class="overflow-hidden bg-white rounded-lg shadow-sm animate-on-scroll fade-in hover-lift transition-smooth">
+                        <div class="bg-gray-300 bg-center bg-cover aspect-square" data-bg="assets/images/insight-2.webp"></div>
                         <div class="p-6">
-                            <h3 class="text-xl flex items-start justify-between">
+                            <h3 class="flex items-start justify-between text-xl">
                                 The AI hierarchy of needs: a strategic framework for businesses
-                                <svg aria-hidden="true" class="w-5 h-5 flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                             </h3>
                         </div>
                     </article>
                 </a>
 
                 <a href="https://www.o3world.com/perspectives/ai-roi-beyond-efficiency/" target="_blank" rel="noopener noreferrer" class="block">
-                    <article class="bg-white rounded-lg overflow-hidden shadow-sm animate-on-scroll fade-in hover-lift transition-smooth">
-                        <div class="aspect-square bg-gray-300 bg-cover bg-center" data-bg="assets/images/insight-3.webp"></div>
+                    <article class="overflow-hidden bg-white rounded-lg shadow-sm animate-on-scroll fade-in hover-lift transition-smooth">
+                        <div class="bg-gray-300 bg-center bg-cover aspect-square" data-bg="assets/images/insight-3.webp"></div>
                         <div class="p-6">
-                            <h3 class="text-xl flex items-start justify-between">
+                            <h3 class="flex items-start justify-between text-xl">
                                 Beyond efficiency: The real ROI of AI—and how to measure it
-                                <svg aria-hidden="true" class="w-5 h-5 flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                                <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                             </h3>
                         </div>
                     </article>
@@ -380,17 +380,17 @@
     </section>
 
     <!-- Conference Section -->
-    <section class="py-20 px-6 relative bg-cover bg-center bg-black" data-bg-overlay="linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7))" data-bg="assets/images/conference-bg.webp">
-        <div class="max-w-7xl mx-auto relative z-10">
+    <section class="relative px-6 py-20 bg-black bg-center bg-cover" data-bg-overlay="linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7))" data-bg="assets/images/conference-bg.webp">
+        <div class="relative z-10 mx-auto max-w-7xl">
             <div class="max-w-2xl">
-                <div class="inline-block bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20 mb-8">
+                <div class="inline-block px-4 py-2 mb-8 border rounded-full bg-white/10 backdrop-blur-sm border-white/20">
                     <span class="text-white">Thought leaders in AI innovation</span>
                 </div>
-                <h2 class="text-4xl md:text-5xl text-white mb-6">1682: the business of innovation conference</h2>
-                <p class="text-xl text-gray-200 mb-8">
+                <h2 class="mb-6 text-4xl text-white md:text-5xl">1682: the business of innovation conference</h2>
+                <p class="mb-8 text-xl text-gray-200">
                     The 1682 Conference brings together leaders, innovators, and visionaries to explore the power of AI in shaping profit and process.
                 </p>
-                <a href="https://www.o3world.com/1682" target="_blank" rel="noopener noreferrer" aria-label="Learn more about the 1682 Conference" class="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2 inline-flex">
+                <a href="https://www.o3world.com/1682" target="_blank" rel="noopener noreferrer" aria-label="Learn more about the 1682 Conference" class="flex inline-flex items-center gap-2 px-6 py-3 text-white transition bg-red-600 rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-2">
                     Learn more about 1682
                     <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                 </a>
@@ -403,18 +403,18 @@
     <noscript>
         <!-- Static footer fallback for no-JS environments -->
         <footer class="py-8" style="background-color: rgb(243, 243, 243);">
-            <div class="max-w-7xl mx-auto px-4 md:px-6">
+            <div class="px-4 mx-auto max-w-7xl md:px-6">
                 <div class="flex flex-col">
                     <div class="mb-4">
-                        <h3 class="text-gray-900 mb-2">O3XO</h3>
-                        <p class="text-gray-600 mb-2">Transforming businesses through intelligent AI implementation.</p>
+                        <h3 class="mb-2 text-gray-900">O3XO</h3>
+                        <p class="mb-2 text-gray-600">Transforming businesses through intelligent AI implementation.</p>
                         <p class="text-gray-600">© 2025 O3 World, LLC. All rights reserved.</p>
                     </div>
                     <div class="flex gap-6">
-                        <a href="https://www.o3world.com/privacy-policy/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors underline">
+                        <a href="https://www.o3world.com/privacy-policy/" target="_blank" rel="noopener noreferrer" class="text-gray-600 underline transition-colors hover:text-gray-900">
                             Privacy policy
                         </a>
-                        <a href="https://www.o3world.com/accessibility-statement/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-gray-900 transition-colors underline">
+                        <a href="https://www.o3world.com/accessibility-statement/" target="_blank" rel="noopener noreferrer" class="text-gray-600 underline transition-colors hover:text-gray-900">
                             Accessibility statement
                         </a>
                     </div>
@@ -428,14 +428,14 @@
     <div data-component="sticky-cta"></div>
     <noscript>
         <!-- Static sticky CTA fallback for no-JS environments -->
-        <aside class="fixed bottom-0 left-0 right-0 z-50 shadow-2xl bg-cover bg-center" style="background-image: url('/assets/images/sticky-cta-bg.webp');" aria-label="Call to action">
-            <div class="max-w-7xl mx-auto px-6 py-6">
-                <div class="flex flex-col md:flex-row md:items-center gap-4 md:gap-6">
+        <aside class="fixed bottom-0 left-0 right-0 z-50 bg-center bg-cover shadow-2xl" style="background-image: url('/assets/images/sticky-cta-bg.webp');" aria-label="Call to action">
+            <div class="px-6 py-6 mx-auto max-w-7xl">
+                <div class="flex flex-col gap-4 md:flex-row md:items-center md:gap-6">
                     <div class="flex-1 text-white">
-                        <h3 class="text-xl md:text-2xl mb-2">Stop guessing, start discovering</h3>
+                        <h3 class="mb-2 text-xl md:text-2xl">Stop guessing, start discovering</h3>
                         <p class="text-sm md:text-base">Identify the AI use cases that matter most for your business.</p>
                     </div>
-                    <a href="http://assessment.o3world.com/" target="_blank" rel="noopener noreferrer" aria-label="Take the AI assessment to identify use cases for your business" class="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-gray-100 transition font-semibold whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 inline-flex items-center justify-center">
+                    <a href="http://assessment.o3world.com/" target="_blank" rel="noopener noreferrer" aria-label="Take the AI assessment to identify use cases for your business" class="inline-flex items-center justify-center px-6 py-3 font-semibold text-blue-600 transition bg-white rounded-lg hover:bg-gray-100 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">
                         Take the AI assessment
                     </a>
                 </div>
