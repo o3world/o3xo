@@ -19,11 +19,19 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 0 2px black, 0 0 0 4px white !important;
 }
 
-/* Text hover and focus - underline (except for buttons) */
-a:hover:not([class*="bg-red"]):not([class*="bg-white"]):not(.btn):not([role="button"]),
-a:focus:not([class*="bg-red"]):not([class*="bg-white"]):not(.btn):not([role="button"]),
-a:focus-visible:not([class*="bg-red"]):not([class*="bg-white"]):not(.btn):not([role="button"]) {
+/* Text hover and focus - underline (except for buttons and case study cards) */
+a:hover:not([class*="bg-red"]):not([class*="bg-white"]):not(.btn):not([role="button"]):not(.group),
+a:focus:not([class*="bg-red"]):not([class*="bg-white"]):not(.btn):not([role="button"]):not(.group),
+a:focus-visible:not([class*="bg-red"]):not([class*="bg-white"]):not(.btn):not([role="button"]):not(.group) {
     text-decoration: underline;
+}
+
+/* Case study card links - no underline on hover, only lift effect */
+a.group[href*="/case-studies/"]:hover,
+a.group[href*="/case-studies/"]:focus,
+a.group[href*="/case-studies/"]:focus-visible,
+a.group[href*="/case-studies/"] * {
+    text-decoration: none !important;
 }
 
 /* Override for approach section links - just underline, no color change or outline */
