@@ -109,9 +109,9 @@ button.rounded-lg,
     border-radius: 4px !important;
 }
 
-/* Sticky CTA - increased height and vertical centering */
+/* Sticky CTA - flexible height to fit content */
 [data-sticky-cta] {
-    height: 112px;
+    min-height: 112px;
 }
 
 /* Mega Menu - Full width with blue eyebrow text */
