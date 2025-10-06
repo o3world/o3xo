@@ -4,9 +4,36 @@
     --color-blue-hover: #1971e9;
 }
 
+/* Mobile optimizations */
+html {
+    scroll-behavior: smooth;
+    /* Prevent text size adjustment on orientation change */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
 body {
     font-family: 'Figtree', ui-sans-serif, system-ui, sans-serif;
     font-weight: 300; /* Light for body */
+    /* Improve font rendering on mobile */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure minimum touch target size for mobile (44x44px) */
+button,
+a,
+[role="button"],
+input[type="submit"],
+input[type="button"] {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+/* Improve scrolling on iOS */
+.overflow-y-auto,
+[data-nav-panel] {
+    -webkit-overflow-scrolling: touch;
 }
 
 h1, h2, h3, h4, h5, h6 {

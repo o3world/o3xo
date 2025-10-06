@@ -29,7 +29,10 @@
         // Get CTA height and add padding to body
         const updateBodyPadding = () => {
             const ctaHeight = cta.offsetHeight;
-            document.body.style.paddingBottom = `${ctaHeight}px`;
+            // Account for safe area insets on mobile devices
+            const safeAreaInset = parseInt(getComputedStyle(document.documentElement).getPropertyValue('env(safe-area-inset-bottom)') || '0');
+            const totalPadding = ctaHeight + safeAreaInset;
+            document.body.style.paddingBottom = `max(${ctaHeight}px, calc(${ctaHeight}px + env(safe-area-inset-bottom, 0px)))`;
         };
 
         // Show/hide CTA based on scroll position

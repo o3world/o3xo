@@ -75,11 +75,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url>
+  <!-- STI Firestop - DISABLED -->
+  <!-- <url>
     <loc>https://www.o3xo.ai/case-studies/sti-firestop/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
+  </url> -->
   <url>
     <loc>https://www.o3xo.ai/case-studies/e-hazard/</loc>
     <changefreq>monthly</changefreq>
