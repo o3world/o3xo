@@ -28,11 +28,13 @@
 
         // Get CTA height and add padding to body
         const updateBodyPadding = () => {
-            const ctaHeight = cta.offsetHeight;
-            // Account for safe area insets on mobile devices
-            const safeAreaInset = parseInt(getComputedStyle(document.documentElement).getPropertyValue('env(safe-area-inset-bottom)') || '0');
-            const totalPadding = ctaHeight + safeAreaInset;
-            document.body.style.paddingBottom = `max(${ctaHeight}px, calc(${ctaHeight}px + env(safe-area-inset-bottom, 0px)))`;
+            // Use getBoundingClientRect for accurate height including borders/padding
+            const ctaHeight = cta.getBoundingClientRect().height;
+            // Add extra buffer for iOS Safari's dynamic toolbar (44px is typical iOS toolbar height)
+            const isMobile = window.innerWidth < 768;
+            const iosBuffer = isMobile ? 10 : 0; // Extra 10px buffer on mobile
+            const totalHeight = Math.ceil(ctaHeight + iosBuffer);
+            document.body.style.paddingBottom = `max(${totalHeight}px, calc(${totalHeight}px + env(safe-area-inset-bottom, 0px)))`;
         };
 
         // Show/hide CTA based on scroll position
@@ -98,12 +100,26 @@
             }
         }, 3000);
 
-        // Update padding on window resize
+        // Update padding on window resize and iOS Safari viewport changes
+        let resizeTimer;
         window.addEventListener('resize', () => {
             if (hasShown && isVisible && cta.offsetHeight) {
-                updateBodyPadding();
+                // Debounce resize events for iOS Safari toolbar state changes
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(() => {
+                    updateBodyPadding();
+                }, 100);
             }
         }, { passive: true });
+
+        // Listen for iOS visualViewport changes (iOS Safari dynamic toolbar)
+        if (window.visualViewport) {
+            window.visualViewport.addEventListener('resize', () => {
+                if (hasShown && isVisible) {
+                    updateBodyPadding();
+                }
+            });
+        }
 
         // Dismiss functionality
         dismissBtn.addEventListener('click', (e) => {

@@ -36,6 +36,20 @@ input[type="button"] {
     -webkit-overflow-scrolling: touch;
 }
 
+/* iOS Safari toolbar compensation for sticky CTA */
+#sticky-cta {
+    /* Add extra bottom padding on mobile to account for iOS Safari toolbar states */
+    padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+@media (max-width: 767px) {
+    #sticky-cta {
+        /* Ensure button is always visible above iOS Safari's toolbar */
+        min-height: fit-content;
+        max-height: 30vh; /* Prevent CTA from taking too much screen space */
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Figtree', ui-sans-serif, system-ui, sans-serif;
     font-weight: 400; /* Regular for headings */
