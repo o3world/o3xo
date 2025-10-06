@@ -4,9 +4,10 @@
   "main": "capture.js",
   "scripts": {
     "inject:noscript": "node scripts/inject-noscript.js",
+    "inject:version": "node scripts/inject-version.js",
     "build:css": "tailwindcss -i ./assets/css/tailwind-source.css -o ./assets/css/tailwind.css --minify",
     "build:js": "terser assets/js/component-loader.js assets/js/navigation.js assets/js/sticky-cta.js assets/js/animations.js -o assets/js/bundle.min.js --compress --mangle",
-    "build": "npm run inject:noscript && npm run build:css && npm run build:js",
+    "build": "npm run inject:noscript && npm run inject:version && npm run build:css && npm run build:js",
     "watch:css": "tailwindcss -i ./assets/css/tailwind-source.css -o ./assets/css/tailwind.css --watch",
     "dev": "npm run watch:css"
   },
